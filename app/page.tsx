@@ -7,6 +7,13 @@ import MacOSDock from "@/components/ui/mac-dock";
 import { BackgroundComponent } from "@/components/ui/background-component";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { GitHubEvents } from "@/components/ui/github-events";
+// Removed Logos3 from hero position; replaced with HeroTechStack
+import { HeroTechStack } from "@/components/ui/hero-tech-stack";
+import { ExperienceSection } from "@/components/ui/experience-section";
+import { OpenSourceSection } from "@/components/ui/open-source-section";
+import { TopSkillsBar } from "@/components/ui/top-skills-bar";
+import { TechStackSection } from "@/components/ui/tech-stack-section";
+import { ScheduleCallSection } from "@/components/ui/schedule-call";
 
 
 // Portfolio data
@@ -16,19 +23,28 @@ const portfolioData = {
       title: 'AI-Powered Code Review Tool',
       description: 'An intelligent code review assistant that uses machine learning to identify potential bugs and suggest improvements in real-time.',
       tags: ['Python', 'Machine Learning', 'OpenAI', 'FastAPI'],
-      imageContent: <div className="text-2xl text-white/50">🤖</div>
+      imageContent: <div className="text-2xl text-white/50">🤖</div>,
+      liveUrl: 'https://example.com/code-review',
+      githubUrl: 'https://github.com/VAIBHAVSING/code-review-ai',
+      highlight: 'ML + AI'
     },
     {
       title: 'Real-time Collaboration Platform',
       description: 'A web-based platform for real-time collaborative coding and project management, featuring live editing and video conferencing.',
       tags: ['React', 'Node.js', 'Socket.io', 'WebRTC'],
-      imageContent: <div className="text-2xl text-white/50">⚡</div>
+      imageContent: <div className="text-2xl text-white/50">⚡</div>,
+      liveUrl: 'https://example.com/collab',
+      githubUrl: 'https://github.com/VAIBHAVSING/realtime-collab',
+      highlight: 'Realtime'
     },
     {
       title: 'Open Source UI Component Library',
       description: 'A comprehensive React component library with 50+ customizable components, used by developers worldwide.',
       tags: ['React', 'TypeScript', 'Storybook', 'Rollup'],
-      imageContent: <div className="text-2xl text-white/50">🎨</div>
+      imageContent: <div className="text-2xl text-white/50">🎨</div>,
+      liveUrl: 'https://example.com/ui-kit',
+      githubUrl: 'https://github.com/VAIBHAVSING/ui-component-lib',
+      highlight: 'Library'
     },
   ],
   stats: [
@@ -42,15 +58,35 @@ const portfolioData = {
       icon: '/home.webp',
       onClick: () => { document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }
     },
+    // {
+    //   name: 'Experience',
+    //   icon: '/projects.webp',
+    //   onClick: () => { document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' }); }
+    // },
     {
       name: 'Projects',
       icon: '/projects.webp',
       onClick: () => { document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }); }
     },
+    // {
+    //   name: 'Stack',
+    //   icon: '/skills.webp',
+    //   onClick: () => { document.getElementById('stack')?.scrollIntoView({ behavior: 'smooth' }); }
+    // },
     {
       name: 'Skills',
       icon: '/skills.webp',
       onClick: () => { document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' }); }
+    },
+    // {
+    //   name: 'OSS',
+    //   icon: '/github.webp',
+    //   onClick: () => { document.getElementById('oss')?.scrollIntoView({ behavior: 'smooth' }); }
+    // },
+    {
+      name: 'Contact',
+      icon: '/email.webp',
+      onClick: () => { document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }
     },
     {
       name: 'GitHub',
@@ -62,11 +98,7 @@ const portfolioData = {
       icon: '/linkedin.webp',
       onClick: () => { window.open('https://linkedin.com/in/vaibhavsingh', '_blank'); }
     },
-    {
-      name: 'Email',
-      icon: '/email.webp',
-      onClick: () => { window.location.href = 'mailto:vaibhav@example.com'; }
-    },
+    // email handled by Contact section / scheduling
     {
       name: 'Resume',
       icon: '/resume.webp',
@@ -113,7 +145,7 @@ export default function Home() {
         </div>
 
         {/* New Hero Section with Typewriter Effect */}
-        <section className="relative w-full min-h-screen flex flex-col items-center justify-center px-6 py-6 overflow-hidden">
+        <section id="about" className="relative w-full min-h-screen flex flex-col items-center justify-center px-6 py-6 overflow-hidden">
           <div className="max-w-[80%] mx-auto text-center relative z-10">
             {/* Avatar */}
             <div className="mb-4">
@@ -138,6 +170,8 @@ export default function Home() {
               <TypewriterEffectSmooth words={typewriterWords} />
             </div>
 
+            <HeroTechStack  />
+            <div className="mb-10"></div>
             {/* Description */}
             <div className="mb-8">
               <p className="text-lg md:text-xl max-w-3xl leading-relaxed font-sans text-muted-foreground mx-auto">
@@ -154,10 +188,10 @@ export default function Home() {
                 View My Work
               </button>
               <button
-                onClick={() => { window.location.href = 'mailto:vaibhav@example.com'; }}
+                onClick={() => { document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}
                 className="group bg-card/50 backdrop-blur-sm hover:bg-card/70 min-w-[160px] font-sans text-sm font-medium text-foreground rounded-lg px-6 py-3 border border-border/50 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
-                Get In Touch
+                Schedule a Call
               </button>
             </div>
           </div>
@@ -168,11 +202,21 @@ export default function Home() {
           <div className="absolute bottom-40 left-16 w-1 h-4 bg-primary/40 animate-pulse delay-1500"></div>
         </section>
 
-        {/* Projects Section */}
-        <ProjectsSection projects={portfolioData.projects} />
+  {/* (Former carousel removed to emphasize concise hero tech stack) */}
 
-        {/* Skills Section */}
-        <SkillsSection stats={portfolioData.stats} />
+  {/* Detailed Tech Stack Section */}
+  <TechStackSection />
+
+  {/* Experience Section */}
+  <ExperienceSection />
+
+  {/* Projects Section */}
+  <ProjectsSection projects={portfolioData.projects} />
+
+  {/* Open Source */}
+  <OpenSourceSection />
+
+  <ScheduleCallSection />
       </div>
 
       {/* Mac Dock */}

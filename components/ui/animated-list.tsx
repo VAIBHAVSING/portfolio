@@ -14,18 +14,15 @@ export const AnimatedList = React.memo(
     const [currentIndex, setCurrentIndex] = useState(0);
     const childrenArray = React.Children.toArray(children);
 
+    const [paused, setPaused] = useState(false);
     useEffect(() => {
-      if (childrenArray.length <= 4) {
-        // If 4 or fewer items, just show all of them
-        return;
-      }
-
+      if (childrenArray.length <= 4) return;
+      if (paused) return;
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % childrenArray.length);
       }, delay);
-
       return () => clearInterval(interval);
-    }, [childrenArray.length, delay]);
+    }, [childrenArray.length, delay, paused]);
 
     const itemsToShow = useMemo(() => {
       if (childrenArray.length <= 4) {
@@ -40,7 +37,11 @@ export const AnimatedList = React.memo(
     }, [currentIndex, childrenArray]);
 
     return (
-      <div className={`flex flex-col items-center gap-4 ${className}`}>
+      <div
+        className={`flex flex-col items-center gap-4 ${className}`}
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
         <AnimatePresence>
           {itemsToShow.map((item) => (
             <AnimatedListItem key={(item as ReactElement).key}>

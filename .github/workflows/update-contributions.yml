@@ -1,0 +1,59 @@
+name: Update Contributions Cache
+
+on:
+  schedule:
+    - cron: '0 3 * * *' # daily at 03:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install deps
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate contributions cache
+        env:
+          GITHUB_TOKEN: ${{ secrets.CONTRIB_GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ secrets.CONTRIB_GITHUB_USERNAME || 'VAIBHAVSING' }}
+        run: pnpm ts-node scripts/update-contributions-cache.ts
+
+      - name: Commit changes
+        run: |
+          if [ -n "$(git status --porcelain public/data/contributions.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git checkout -B chore/update-contributions-cache
+            git add public/data/contributions.json
+            git commit -m "chore: update contributions cache"
+          else
+            echo "No changes to commit"
+          fi
+
+      - name: Create Pull Request
+        if: success()
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/update-contributions-cache
+          title: "chore: update contributions cache"
+          commit-message: "chore: update contributions cache"
+          body: "Automated update of cached GitHub contributions JSON."
+          labels: automated, contributions
+          delete-branch: true

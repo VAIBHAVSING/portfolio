@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useCallback, useEffect } from 'react';
-
+import Image from 'next/image';
 // Types for the component
 interface DockApp {
   id: string;
@@ -285,7 +285,7 @@ const MacOSDock: React.FC<MacOSDockProps> = ({
                 zIndex: Math.round(scale * 10)
               }}
             >
-              <img
+              <Image
                 src={app.icon}
                 alt={app.name}
                 width={scaledSize}

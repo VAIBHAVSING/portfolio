@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import { cn } from '@/lib/utils';
 import { Cpu, Globe2, Database, Cloud, Wrench } from 'lucide-react';
 
 interface StackGroup {

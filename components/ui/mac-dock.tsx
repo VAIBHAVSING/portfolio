@@ -1,5 +1,5 @@
-'use client';
 
+"use client";
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import Image from 'next/image';
 // Types for the component
@@ -16,6 +16,12 @@ interface MacOSDockProps {
   className?: string;
 }
 
+interface ResponsiveConfig {
+  baseIconSize: number;
+  maxScale: number;
+  effectWidth: number;
+}
+
 const MacOSDock: React.FC<MacOSDockProps> = ({
   apps,
   onAppClick,
@@ -30,60 +36,35 @@ const MacOSDock: React.FC<MacOSDockProps> = ({
   const animationFrameRef = useRef<number | undefined>(undefined);
   const lastMouseMoveTime = useRef<number>(0);
 
-  // Responsive size calculations based on viewport
-  const getResponsiveConfig = useCallback(() => {
-    if (typeof window === 'undefined') {
-      return { baseIconSize: 64, maxScale: 1.6, effectWidth: 240 };
-    }
+  // Deterministic default config for SSR + first client render
+  const DEFAULT_CONFIG: ResponsiveConfig = { baseIconSize: 64, maxScale: 1.6, effectWidth: 240 };
 
-    // Base calculations on smaller dimension for better mobile experience
+  // Responsive size calculations based on viewport (run only client-side after mount)
+  const getResponsiveConfig = useCallback((): ResponsiveConfig => {
+    if (typeof window === 'undefined') return DEFAULT_CONFIG;
     const smallerDimension = Math.min(window.innerWidth, window.innerHeight);
-
-    // Scale icon size based on screen size
     if (smallerDimension < 480) {
-      // Mobile phones
-      return {
-        baseIconSize: Math.max(40, smallerDimension * 0.08),
-        maxScale: 1.4,
-        effectWidth: smallerDimension * 0.4
-      };
+      return { baseIconSize: Math.max(40, smallerDimension * 0.08), maxScale: 1.4, effectWidth: smallerDimension * 0.4 };
     } else if (smallerDimension < 768) {
-      // Tablets
-      return {
-        baseIconSize: Math.max(48, smallerDimension * 0.07),
-        maxScale: 1.5,
-        effectWidth: smallerDimension * 0.35
-      };
+      return { baseIconSize: Math.max(48, smallerDimension * 0.07), maxScale: 1.5, effectWidth: smallerDimension * 0.35 };
     } else if (smallerDimension < 1024) {
-      // Small laptops
-      return {
-        baseIconSize: Math.max(56, smallerDimension * 0.06),
-        maxScale: 1.6,
-        effectWidth: smallerDimension * 0.3
-      };
+      return { baseIconSize: Math.max(56, smallerDimension * 0.06), maxScale: 1.6, effectWidth: smallerDimension * 0.3 };
     } else {
-      // Desktop and large screens
-      return {
-        baseIconSize: Math.max(64, Math.min(80, smallerDimension * 0.05)),
-        maxScale: 1.8,
-        effectWidth: 300
-      };
+      return { baseIconSize: Math.max(64, Math.min(80, smallerDimension * 0.05)), maxScale: 1.8, effectWidth: 300 };
     }
   }, []);
 
-  const [config, setConfig] = useState(getResponsiveConfig);
+  const [config, setConfig] = useState<ResponsiveConfig>(DEFAULT_CONFIG);
   const { baseIconSize, maxScale, effectWidth } = config;
   const minScale = 1.0;
   const baseSpacing = Math.max(4, baseIconSize * 0.08);
 
-  // Update config on window resize
+  // Hydration-safe: upgrade to responsive config after mount; listen for resizes
   useEffect(() => {
-    const handleResize = () => {
-      setConfig(getResponsiveConfig());
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    const applyConfig = () => setConfig(getResponsiveConfig());
+    applyConfig(); // initial after mount
+    window.addEventListener('resize', applyConfig);
+    return () => window.removeEventListener('resize', applyConfig);
   }, [getResponsiveConfig]);
 
   // Authentic macOS cosine-based magnification algorithm
@@ -208,10 +189,10 @@ const MacOSDock: React.FC<MacOSDockProps> = ({
 
   const handleAppClick = (appId: string, index: number) => {
     if (iconRefs.current[index]) {
-      if (typeof window !== 'undefined' && (window as any).gsap) {
-        const gsap = (window as any).gsap;
+      const winGsap = typeof window !== 'undefined' ? (window as unknown as { gsap?: { to: (el: Element | null, vars: { [k: string]: unknown }) => void } }).gsap : undefined;
+      if (winGsap) {
+        const gsap = winGsap;
         const bounceHeight = currentScales[index] > 1.3 ? -baseIconSize * 0.2 : -baseIconSize * 0.15;
-
         gsap.to(iconRefs.current[index], {
           y: bounceHeight,
           duration: 0.2,

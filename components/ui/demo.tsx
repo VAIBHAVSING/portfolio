@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import { AnimatedList } from "@/components/ui/animated-list";
 import { GitPullRequest, GitMerge, OctagonX, GitCommit, CircleDot } from 'lucide-react';
+import Image from "next/image";
 
 interface Item {
   name: string;
@@ -53,7 +54,7 @@ const Notification = ({ name, description, icon, color, time, url, title, repoFu
       <div className="flex flex-row items-center gap-3">
         {orgAvatar ? (
           <div className="relative size-10 rounded-2xl overflow-hidden border border-white/10">
-            <img src={orgAvatar} alt={orgName} className="object-cover w-full h-full" />
+            <Image src={orgAvatar} alt={orgName} width={40} height={40} className="object-cover w-full h-full" />
             <div className="absolute -bottom-1 -right-1 size-5 rounded-full flex items-center justify-center border border-background" style={{ backgroundColor: color }}>
               {getIcon(icon)}
             </div>

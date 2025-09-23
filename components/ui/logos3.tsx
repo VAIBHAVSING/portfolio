@@ -2,6 +2,7 @@
 
 import AutoScroll from "embla-carousel-auto-scroll";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Image from "next/image";
 
 interface Logo {
   id: string;
@@ -90,7 +91,7 @@ const Logos3 = ({
                 >
                   <div className="mx-10 flex shrink-0 items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
                     <div>
-                      <img
+                      <Image
                         src={logo.image}
                         alt={logo.description}
                         className={logo.className}

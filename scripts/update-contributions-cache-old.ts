@@ -269,7 +269,9 @@ async function fetchSearchPages(): Promise<any[]> {
   const all: any[] = [];
   for (let page = 1; page <= maxPages; page++) {
     const url = `https://api.github.com/search/issues?q=${encodeURIComponent(`author:${USERNAME} type:pr`)}&sort=created&order=desc&per_page=${perPage}&page=${page}`;
-    const data = await safeFetch(url);
+  // Legacy script fallback: safeFetch no longer imported; using fetch directly
+  // @ts-ignore legacy
+  const data = await fetch(url).then(r => r.json()).catch(() => null);
     if (!data.items || data.items.length === 0) break;
     all.push(...data.items);
     if (data.items.length < perPage) break;
@@ -288,7 +290,8 @@ async function enrich(raw: any[]): Promise<ContributionRecord[]> {
     
     try {
       if (pr.state !== 'open') {
-        const prResp = await fetch(`https://api.github.com/repos/${repoFull}/pulls/${prNumber}`, { headers: headers() });
+  // @ts-ignore legacy headers helper removed
+  const prResp = await fetch(`https://api.github.com/repos/${repoFull}/pulls/${prNumber}`, { headers: typeof headers === 'function' ? headers() : {} as any });
         if (prResp.ok) {
           details = await prResp.json();
           // Check both merged_at and merged boolean fields
@@ -304,7 +307,8 @@ async function enrich(raw: any[]): Promise<ContributionRecord[]> {
     // Always double-check merge endpoint for closed PRs if not already marked as merged
     if (pr.state === 'closed' && !merged) {
       try {
-        const mergeResp = await fetch(`https://api.github.com/repos/${repoFull}/pulls/${prNumber}/merge`, { headers: headers() });
+  // @ts-ignore legacy headers helper removed
+  const mergeResp = await fetch(`https://api.github.com/repos/${repoFull}/pulls/${prNumber}/merge`, { headers: typeof headers === 'function' ? headers() : {} as any });
         if (mergeResp.status === 204) {
           merged = true;
           console.log(`PR ${repoFull}#${prNumber} confirmed merged via merge endpoint`);

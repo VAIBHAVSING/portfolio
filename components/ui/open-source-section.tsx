@@ -3,6 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { GitPullRequest, Star, GitMerge, OctagonX, Loader2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useContributions } from '@/components/ui/contributions-context';
+import Image from 'next/image';
 
 function timeAgo(date: Date): string {
   const seconds = Math.floor((Date.now() - date.getTime()) / 1000);
@@ -45,7 +46,8 @@ interface ContributionItem {
   labels?: { name: string; color: string }[];
 }
 
-interface OpenSourceSectionProps { }
+// Accept no props currently; explicit type = {} is unnecessary and flagged by lint.
+type OpenSourceSectionProps = Record<string, never>;
 
 export function OpenSourceSection({}: OpenSourceSectionProps) {
   const { contributions, loading } = useContributions();
@@ -215,7 +217,18 @@ export function OpenSourceSection({}: OpenSourceSectionProps) {
                       </div>
                       <div className="hidden md:flex md:col-span-2 items-center gap-3">
                         <div className="h-8 w-8 rounded-lg overflow-hidden ring-1 ring-border bg-muted flex items-center justify-center">
-                          {pr.ownerAvatar ? <img src={pr.ownerAvatar} alt={pr.repo} className="h-full w-full object-cover" /> : <span className="text-[10px] text-muted-foreground">ORG</span>}
+                          {pr.ownerAvatar ? (
+                            <Image
+                              src={pr.ownerAvatar}
+                              alt={pr.repo}
+                              width={32}
+                              height={32}
+                              sizes="32px"
+                              className="h-full w-full object-cover"
+                            />
+                          ) : (
+                            <span className="text-[10px] text-muted-foreground">ORG</span>
+                          )}
                         </div>
                         <span className="text-[11px] text-muted-foreground font-mono truncate">#{pr.number}</span>
                       </div>

@@ -29,45 +29,54 @@ const ContributionsContext = createContext<ContributionsContextValue | undefined
 const TTL_MS = 30 * 60 * 1000;
 const STORAGE_KEY = 'all-contributions-cache-v1';
 
-async function fetchAllPRsDirect(username: string): Promise<ContributionRecord[]> {
-  // Strategy: fetch multiple pages of search results (up to 5 pages * 50 results trimmed)
-  const perPage = 50;
-  const maxPages = 3; // up to 150 PRs to cap rate usage
-  const all: any[] = [];
+interface GitHubLabel { name: string; color: string }
+interface GitHubSearchItem {
+  repository_url: string;
+  html_url: string;
+  title: string;
+  state: string; // open | closed
+  created_at: string;
+  comments?: number;
+  labels?: GitHubLabel[];
+}
+interface GitHubSearchResponse { items?: GitHubSearchItem[] }
+interface GitHubPRDetails {
+  additions?: number;
+  deletions?: number;
+  merged_at?: string;
+  base?: { repo?: { language?: string; owner?: { avatar_url?: string } } };
+}
 
+async function fetchAllPRsDirect(username: string): Promise<ContributionRecord[]> {
+  const perPage = 50;
+  const maxPages = 3;
+  const all: GitHubSearchItem[] = [];
   for (let page = 1; page <= maxPages; page++) {
     const search = await fetch(`https://api.github.com/search/issues?q=${encodeURIComponent(`author:${username} type:pr`)}&sort=created&order=desc&per_page=${perPage}&page=${page}`);
-    const data = await search.json();
-    if (!data.items) break;
+    const data: GitHubSearchResponse = await search.json();
+    if (!Array.isArray(data.items)) break;
     all.push(...data.items);
-    if (data.items.length < perPage) break; // no more
+    if (data.items.length < perPage) break;
   }
-
-  // Enrich in controlled concurrency (batch of 10)
   const results: ContributionRecord[] = [];
   const batchSize = 10;
   for (let i = 0; i < all.length; i += batchSize) {
     const slice = all.slice(i, i + batchSize);
-    const enriched = await Promise.all(slice.map(async (pr: any) => {
+    const enriched = await Promise.all(slice.map(async (pr): Promise<ContributionRecord | null> => {
       try {
         const repoFull = pr.repository_url.replace('https://api.github.com/repos/', '');
         const prNumMatch = pr.html_url.match(/pull\/(\d+)/);
         const prNumber = prNumMatch ? parseInt(prNumMatch[1], 10) : 0;
-        let details: any = {};
+        let details: GitHubPRDetails = {};
         try {
           const prResp = await fetch(`https://api.github.com/repos/${repoFull}/pulls/${prNumber}`, { headers: { 'Accept': 'application/vnd.github+json' } });
-          if (prResp.ok) details = await prResp.json();
+          if (prResp.ok) details = await prResp.json() as GitHubPRDetails;
         } catch {}
-        // If PR is closed and no merged_at present, double-check merge via /merge endpoint (returns 204 if merged)
         let merged = false;
-        if (pr.state === 'open') {
-          merged = false;
-        } else if (details.merged_at) {
-          merged = true;
-        } else if (pr.state === 'closed') {
+        if (pr.state === 'open') merged = false; else if (details.merged_at) merged = true; else if (pr.state === 'closed') {
           try {
             const mergeResp = await fetch(`https://api.github.com/repos/${repoFull}/pulls/${prNumber}/merge`, { headers: { 'Accept': 'application/vnd.github+json' } });
-            if (mergeResp.status === 204) merged = true; // merged
+            if (mergeResp.status === 204) merged = true;
           } catch {}
         }
         return {
@@ -82,15 +91,12 @@ async function fetchAllPRsDirect(username: string): Promise<ContributionRecord[]
           deletions: details.deletions,
           language: details.base?.repo?.language,
           ownerAvatar: details.base?.repo?.owner?.avatar_url,
-          labels: Array.isArray(pr.labels) ? pr.labels.slice(0,4).map((l: any) => ({ name: l.name, color: l.color })) : []
-        } as ContributionRecord;
-      } catch {
-        return null;
-      }
+          labels: Array.isArray(pr.labels) ? pr.labels.slice(0,4).map(l => ({ name: l.name, color: l.color })) : []
+        };
+      } catch { return null; }
     }));
-    results.push(...enriched.filter(Boolean) as ContributionRecord[]);
+    results.push(...enriched.filter((r): r is ContributionRecord => r !== null));
   }
-
   return results;
 }
 
@@ -125,8 +131,8 @@ export function ContributionsProvider({ username = 'VAIBHAVSING', children }: { 
       try {
         localStorage.setItem(STORAGE_KEY, JSON.stringify({ ts: Date.now(), data }));
       } catch {}
-    } catch (e: any) {
-      setError(e?.message || 'Failed to fetch contributions');
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Failed to fetch contributions');
     } finally {
       setLoading(false);
     }

@@ -31,9 +31,9 @@ export default function Home() {
 
   return (
     <BackgroundComponent>
-  <div className="relative z-10 space-y-24 md:space-y-32">
+  <div className="relative z-10 space-y-10 ">
         {/* GitHub Events - Notification system at bottom right */}
-        <div className="fixed bottom-6 right-6 z-[100]">
+        <div className="fixed bottom-4 right-4 z-[100]">
           <GitHubEvents />
         </div>
 

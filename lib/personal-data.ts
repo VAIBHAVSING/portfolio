@@ -2,9 +2,9 @@
 // Only static objects and plain data here (no JSX / functions relying on browser APIs).
 
 export const PERSONAL_INFO = {
-  name: 'Vaibhav Singh',
+  name: 'Vaibhav Patil',
   firstName: 'Vaibhav',
-  lastName: 'Singh',
+  lastName: 'Patil',
   headlineWords: [
     { text: 'Open' },
     { text: 'Source' },
@@ -16,13 +16,13 @@ export const PERSONAL_INFO = {
   bio: 'I build innovative solutions and contribute to open source projects. Currently pursuing Computer Science while creating impactful software that makes a difference.',
   avatar: '/avatar.webp',
   resume: {
-    downloadName: 'Vaibhav_Singh_Resume.pdf',
+    downloadName: 'Vaibhav_Patil_Resume.pdf',
     path: '/resume.pdf'
   },
   socials: {
     github: 'https://github.com/VAIBHAVSING',
-    linkedin: 'https://linkedin.com/in/vaibhavsingh',
-    email: 'mailto:vaibhav@example.com'
+    linkedin: 'https://www.linkedin.com/in/vaibhavpatil24/',
+    email: 'mailto:vpatil5212@gmail.com'
   }
 } as const;
 
@@ -62,7 +62,7 @@ export const DOCK_ITEMS = [
   { name: 'Skills', icon: '/skills.webp', targetId: 'skills' },
   { name: 'Contact', icon: '/email.webp', targetId: 'contact' },
   { name: 'GitHub', icon: '/github.webp', external: 'https://github.com/VAIBHAVSING' },
-  { name: 'LinkedIn', icon: '/linkedin.webp', external: 'https://linkedin.com/in/vaibhavsingh' },
+  { name: 'LinkedIn', icon: '/linkedin.webp', external: 'https://www.linkedin.com/in/vaibhavpatil24/' },
   { name: 'Resume', icon: '/resume.webp', download: true },
 ] as const;
 

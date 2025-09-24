@@ -33,7 +33,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.CONTRIB_GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ secrets.CONTRIB_GITHUB_USERNAME || 'VAIBHAVSING' }}
-        run: pnpm ts-node scripts/update-contributions-cache.ts
+        run: pnpm run update-cache
 
       - name: Commit changes
         run: |

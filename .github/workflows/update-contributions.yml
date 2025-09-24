@@ -12,29 +12,35 @@ jobs:
       contents: write
       pull-requests: write
     steps:
+      # Step 1: Checkout the repository
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Step 2: Setup PNPM
       - name: Setup PNPM
         uses: pnpm/action-setup@v3
         with:
           version: 9
 
+      # Step 3: Setup Node.js
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'pnpm'
 
-      - name: Install deps
-        run: pnpm install --frozen-lockfile 
+      # Step 4: Install dependencies
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
+      # Step 5: Run the TypeScript script using ts-node
       - name: Generate contributions cache
         env:
           GITHUB_TOKEN: ${{ secrets.CONTRIB_GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ secrets.CONTRIB_GITHUB_USERNAME || 'VAIBHAVSING' }}
-        run: pnpm run update-cache
+        run: node --loader ts-node/esm scripts/update-contributions-cache.ts
 
+      # Step 6: Commit any changes
       - name: Commit changes
         run: |
           if [ -n "$(git status --porcelain public/data/contributions.json)" ]; then
@@ -45,8 +51,8 @@ jobs:
             git commit -m "chore: update contributions cache"
           else
             echo "No changes to commit"
-          fi
 
+      # Step 7: Create Pull Request if changes exist
       - name: Create Pull Request
         if: success()
         uses: peter-evans/create-pull-request@v6

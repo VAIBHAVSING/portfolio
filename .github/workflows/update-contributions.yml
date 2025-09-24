@@ -27,7 +27,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install deps
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile && pnpm install -g ts-node
 
       - name: Generate contributions cache
         env:

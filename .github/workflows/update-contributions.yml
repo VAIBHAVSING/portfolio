@@ -38,7 +38,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.CONTRIB_GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ secrets.CONTRIB_GITHUB_USERNAME || 'VAIBHAVSING' }}
-        run: node --loader ts-node/esm scripts/update-contributions-cache.ts
+        run: pnpm update-cache
 
       # Step 6: Commit any changes
       - name: Commit changes

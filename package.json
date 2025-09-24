@@ -7,7 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "update-cache": "ts-node --loader ts-node/esm scripts/update-contributions-cache.ts"
+    "update-cache": "ts-node --esm scripts/update-contributions-cache.ts"
   },
   "dependencies": {
     "@octokit/auth-token": "^6.0.0",

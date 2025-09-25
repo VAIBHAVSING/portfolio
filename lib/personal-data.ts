@@ -40,8 +40,8 @@ export const PROJECTS = [
 
 export const DOCK_ITEMS = [
   { name: 'About', icon: '/home.webp', targetId: 'about' },
-  { name: 'Projects', icon: '/projects.webp', targetId: 'projects' },
   { name: 'Skills', icon: '/skills.webp', targetId: 'skills' },
+   { name: 'Projects', icon: '/projects.webp', targetId: 'projects' },
   { name: 'Contact', icon: '/email.webp', targetId: 'contact' },
   { name: 'GitHub', icon: '/github.webp', external: 'https://github.com/VAIBHAVSING' },
   { name: 'LinkedIn', icon: '/linkedin.webp', external: 'https://www.linkedin.com/in/vaibhavpatil24/' },

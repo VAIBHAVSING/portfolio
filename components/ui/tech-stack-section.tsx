@@ -38,7 +38,7 @@ const groups: StackGroup[] = [
 
 export function TechStackSection() {
   return (
-    <section id="stack" className="py-28 relative">
+    <section id="skills" className="py-28 relative">
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background via-background/70 to-background" />
       <div className="absolute inset-0 -z-10 pointer-events-none opacity-30 bg-[radial-gradient(circle_at_15%_20%,rgba(120,119,198,0.12),transparent_55%),radial-gradient(circle_at_85%_40%,rgba(56,189,248,0.10),transparent_55%)]" />
       <div className="max-w-6xl mx-auto px-6">

@@ -9,6 +9,7 @@ import { OpenSourceSection } from "@/components/ui/open-source-section";
 import { TechStackSection } from "@/components/ui/tech-stack-section";
 import { ScheduleCallSection } from "@/components/ui/schedule-call";
 import { PERSONAL_INFO, PROJECTS } from '@/lib/personal-data';
+import {GithubShowcase} from '@/components/ui/GithubShowcase';
 
 
 // Derived project objects enriched for UI (map static PROJECTS to expected shape)
@@ -52,15 +53,17 @@ export default function Home() {
     <ExperienceSection />
   </div>
 
-  {/* Projects Section */}
-  <div id="projects" className="px-6">
-    <ProjectsSection projects={mappedProjects} />
-  </div>
-
-  {/* Open Source */}
+ {/* Open Source */}
   <div id="oss" className="px-6">
     <OpenSourceSection />
   </div>
+
+  {/* Projects Section */}
+  <div id="projects" className="px-6">
+    <ProjectsSection projects={mappedProjects} />
+    <GithubShowcase/>
+  </div>
+
 
   <div id="contact" className="px-6">
     <ScheduleCallSection />

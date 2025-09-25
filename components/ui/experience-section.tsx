@@ -2,6 +2,7 @@
 import React from 'react';
 import { Briefcase, Code2, GraduationCap, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface ExperienceItem {
   role: string;
@@ -22,61 +23,32 @@ interface ExperienceSectionProps {
 export function ExperienceSection({
   items = [
     {
-      role: 'Full Stack Engineer',
+      role: 'Open Source Developer',
       company: 'Open Source / Community',
       period: '2024 - Present',
       description: 'Ship production-grade features & performance improvements across React / Node microservices & CI automation.',
       impact: [
         'Optimized bundle & introduced code-splitting reducing initial load ~30%',
         'Implemented PR quality gates (tests + lint) cutting regressions',
-        'Led migration toward design system tokens improving UI consistency'
       ],
-      tech: ['TypeScript', 'Next.js', 'Node.js', 'PostgreSQL', 'CI/CD'],
+      tech: ['TypeScript', 'Next.js', 'Node.js', 'PostgreSQL', 'CI/CD','Github-Action','Python'],
       type: 'work',
       logo: '🌐'
     },
     {
-      role: 'Frontend Developer Intern',
-      company: 'Tech Startup',
-      period: 'Summer 2024',
+      role: 'Software Engineering Intern',
+      company: 'Lingo.dev[YC-F24]',
+      period: 'July-25 Aug-25',
       description: 'Owned UI component library & performance uplift initiative.',
       impact: [
-        'Refactored legacy CSS to utility-first Tailwind architecture',
-        'Improved Lighthouse Performance 72 ➜ 95 & Accessibility 88 ➜ 100',
-        'Introduced Storybook driven component documentation'
+        'Contributed to SDKs and CLI at Lingo.dev, helping developers integrate the platform into their products.',
+        'Developed and maintained end-to-end Deno.js SDKs to streamline adoption and usage.',
+        'Enhanced tooling and contribution workflows, supporting the open-source community.'
       ],
-      tech: ['React', 'Tailwind', 'Vite', 'Storybook'],
+      tech: ['React', 'Typescript', 'Compiler', 'Cli','SDK', ''],
       type: 'internship',
-      logo: '⚡'
+      logo: 'https://avatars.githubusercontent.com/u/155387533?v=4'
     },
-    {
-      role: 'Freelance Developer',
-      company: 'Independent',
-      period: '2023 - 2024',
-      description: 'Delivered SaaS dashboards, landing pages & workflow automations.',
-      impact: [
-        'Reduced manual ops for a client ~15 hrs/month via automation',
-        'Implemented secure Stripe billing & webhook handlers',
-        'Delivered multi-tenant RBAC & audit logging'
-      ],
-      tech: ['Next.js', 'FastAPI', 'Stripe', 'Prisma', 'Docker'],
-      type: 'freelance',
-      logo: '🛠️'
-    },
-    {
-      role: 'Computer Science (B.Tech)',
-      company: 'Academic',
-      period: '2021 - 2025',
-      description: 'Foundations in algorithms, data structures, distributed systems & software engineering.',
-      impact: [
-        'Built capstone full‑stack project applying microservice principles',
-        'Hackathon finalist – rapid prototype delivery under 24h',
-        'Active peer mentor for data structure labs'
-      ],
-      tech: ['DSA', 'OOP', 'DBMS', 'OS', 'Networks'],
-      type: 'education',
-      logo: '🎓'
-    }
   ]
 }: ExperienceSectionProps) {
   return (
@@ -97,12 +69,21 @@ export function ExperienceSection({
               >
                 <div className="flex items-start gap-4">
                   <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-muted text-primary text-lg font-semibold">
-                    {item.logo ? <span className="select-none" aria-hidden>{item.logo}</span> : <Icon className="h-5 w-5" />}
+                    {(() => {
+                      const isUrl = (str: string) => /^https?:\/\//.test(str) || str.startsWith('/');
+                        return item.logo && isUrl(item.logo) ? (
+                        <Image src={item.logo} alt={item.company} width={40} height={40} className="object-contain" />
+                        ) : item.logo ? (
+                        <span className="select-none" aria-hidden>{item.logo}</span>
+                        ) : (
+                        <Icon className="h-5 w-5" />
+                        );
+                    })()}
                   </span>
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-1">
                       <h3 className="font-medium text-sm md:text-base leading-snug">{item.role}</h3>
-                      <span className="text-[10px] rounded-md bg-primary/10 text-primary px-2 py-0.5 tracking-wide font-medium border border-primary/15 uppercase">{item.company}</span>
+                      <span className="text-[10px] rounded-md bg-primary/10 text-primary px-2 py-0.5 tracking-wide font-medium border border-primary/15 ">{item.company}</span>
                     </div>
                     <p className="text-[11px] uppercase tracking-wide text-muted-foreground mb-2">{item.period}</p>
                     <p className="text-xs md:text-sm leading-relaxed text-muted-foreground">{item.description}</p>

@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { useCallback, useEffect, useState } from "react";
+import {Githubusercontent }from "./GithubShowcase";
 
 interface BackgroundComponentProps {
   children: React.ReactNode;
@@ -36,6 +37,10 @@ export const BackgroundComponent: React.FC<BackgroundComponentProps> = ({
     });
   }, []);
 
+  const userContent={
+    Href:"https://github.com/VAIBHAVSING/portfolio",
+    CtaText:'Source Code'
+  }
   return (
     <div className={cn("min-h-screen w-full relative bg-background overflow-hidden", className)}>
       {/* Static subtle base gradient */}
@@ -82,7 +87,19 @@ export const BackgroundComponent: React.FC<BackgroundComponentProps> = ({
         </span>
         <span className="sr-only">Toggle {theme === 'dark' ? 'light' : 'dark'} mode</span>
       </button>
-
+      {/* Github Repo Link  */}
+      <div
+        className={cn(
+          "group fixed top-4 right-4 z-50 inline-flex items-center justify-center",
+          "h-10 max-w-[140px] rounded-full border border-border/60 px-3",
+          "backdrop-blur-md bg-card/70 shadow-sm hover:shadow-md transition-all",
+          "hover:scale-105 active:scale-95 overflow-hidden",
+          // text styling for the inner content (will be inherited by the child)
+          "text-sm font-medium text-foreground/90 truncate"
+        )}
+      >
+        <Githubusercontent userContent={userContent} />
+      </div>
       <div className="relative z-10 w-full h-full">{children}</div>
     </div>
   );

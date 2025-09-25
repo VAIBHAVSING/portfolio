@@ -27,12 +27,12 @@ const groups: StackGroup[] = [
   {
     title: 'DevOps & Cloud',
     icon: <Cloud className="h-5 w-5" />,
-    items: ['Docker', 'GitHub Actions', 'CI/CD', 'Vercel', 'AWS (Basics)', 'Linux']
+    items: ['Docker', 'GitHub Actions', 'CI/CD', 'Vercel', 'AWS', 'Linux','Terraform']
   },
   {
     title: 'Tools & Others',
     icon: <Wrench className="h-5 w-5" />,
-    items: ['Jest', 'Playwright', 'Storybook', 'Stripe', 'Figma', 'ESLint', 'Prettier']
+    items: ['Jest', 'Playwright', 'Storybook', 'Stripe', 'Figma', 'ESLint', 'Prettier','Postman','NeoVim']
   }
 ];
 

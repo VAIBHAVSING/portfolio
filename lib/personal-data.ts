@@ -28,32 +28,14 @@ export const PERSONAL_INFO = {
 
 export const PROJECTS = [
   {
-    title: 'AI-Powered Code Review Tool',
-    description: 'An intelligent code review assistant that uses machine learning to identify potential bugs and suggest improvements in real-time.',
-    tags: ['Python', 'Machine Learning', 'OpenAI', 'FastAPI'],
+    title: 'Unified Cloud SDK',
+    description: 'A Go Unified Cloud SDK designed to give developers a consistent, intuitive API for integrating multiple cloud services with minimal friction.',
+    tags: ['Golang','SDK','Cloud','AWS','GCP','AZURE'],
     icon: '🤖',
-    liveUrl: 'https://example.com/code-review',
-    githubUrl: 'https://github.com/VAIBHAVSING/code-review-ai',
-    highlight: 'ML + AI'
+    liveUrl: 'https://pkg.go.dev/github.com/VAIBHAVSING/Cloudsdk/go',
+    githubUrl: 'https://github.com/VAIBHAVSING/Cloudsdk',
+    highlight: 'CLOUD + SDK'
   },
-  {
-    title: 'Real-time Collaboration Platform',
-    description: 'A web-based platform for real-time collaborative coding and project management, featuring live editing and video conferencing.',
-    tags: ['React', 'Node.js', 'Socket.io', 'WebRTC'],
-    icon: '⚡',
-    liveUrl: 'https://example.com/collab',
-    githubUrl: 'https://github.com/VAIBHAVSING/realtime-collab',
-    highlight: 'Realtime'
-  },
-  {
-    title: 'Open Source UI Component Library',
-    description: 'A comprehensive React component library with 50+ customizable components, used by developers worldwide.',
-    tags: ['React', 'TypeScript', 'Storybook', 'Rollup'],
-    icon: '🎨',
-    liveUrl: 'https://example.com/ui-kit',
-    githubUrl: 'https://github.com/VAIBHAVSING/ui-component-lib',
-    highlight: 'Library'
-  }
 ] as const;
 
 export const DOCK_ITEMS = [

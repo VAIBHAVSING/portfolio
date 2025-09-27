@@ -38,7 +38,7 @@ export const BackgroundComponent: React.FC<BackgroundComponentProps> = ({
   }, []);
 
   const userContent={
-    Href:"https://github.com/VAIBHAVSING/portfolio",
+    Href:"/gh-portfolio",
     CtaText:'Source Code'
   }
   return (

@@ -254,8 +254,7 @@ const MacOSDock: React.FC<MacOSDockProps> = ({
             <div
               key={app.id}
               ref={(el) => { iconRefs.current[index] = el; }}
-              className="absolute cursor-pointer flex flex-col items-center justify-end"
-              title={app.name}
+              className="absolute cursor-pointer flex flex-col items-center justify-end group"
               onClick={() => handleAppClick(app.id, index)}
               style={{
                 left: `${position - scaledSize / 2}px`,
@@ -277,54 +276,70 @@ const MacOSDock: React.FC<MacOSDockProps> = ({
                 }}
               />
 
-              {/* App Name Label */}
+              {/* Enhanced App Name Label */}
               <div
-                className="absolute pointer-events-none z-50"
+                className="absolute pointer-events-none z-[60] opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out transform translate-y-1 group-hover:translate-y-0"
                 style={{
-                  bottom: `${-baseIconSize * 1.4}px`,
+                  bottom: `${scaledSize + 8}px`,
                   left: '50%',
                   transform: 'translateX(-50%)',
-                  fontSize: `${Math.max(12, baseIconSize * 0.18)}px`,
-                  color: 'rgba(255, 255, 255, 1)',
-                  fontWeight: '700',
-                  textAlign: 'center',
-                  whiteSpace: 'nowrap',
-                  textShadow: '0 2px 6px rgba(0, 0, 0, 0.9)',
-                  maxWidth: `${baseIconSize * 2.5}px`,
-                  fontFamily: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-                  letterSpacing: '0.5px',
-                  padding: '4px 8px',
-                  borderRadius: '6px',
-                  background: 'rgba(0, 0, 0, 0.8)',
-                  backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(255, 255, 255, 0.3)',
-                  boxShadow: '0 3px 12px rgba(0, 0, 0, 0.5)',
-                  opacity: '0',
-                  transition: 'opacity 0.2s ease-in-out',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.opacity = '1';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.opacity = '0';
                 }}
               >
-                {app.name}
+                <div
+                  className="relative px-3 py-1.5 rounded-lg text-center whitespace-nowrap"
+                  style={{
+                    fontSize: `${Math.max(11, Math.min(14, baseIconSize * 0.22))}px`,
+                    fontWeight: '500',
+                    color: 'rgba(255, 255, 255, 0.95)',
+                    background: 'rgba(0, 0, 0, 0.85)',
+                    backdropFilter: 'blur(16px)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    boxShadow: `
+                      0 8px 32px rgba(0, 0, 0, 0.4),
+                      0 4px 16px rgba(0, 0, 0, 0.3),
+                      inset 0 1px 0 rgba(255, 255, 255, 0.1)
+                    `,
+                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                    letterSpacing: '0.3px',
+                    maxWidth: `${Math.max(120, baseIconSize * 3)}px`,
+                    minWidth: `${Math.max(60, baseIconSize * 1.5)}px`,
+                  }}
+                >
+                  <span className="hidden sm:inline">{app.name}</span>
+                  <span className="inline sm:hidden">
+                    {app.name.length > 10 ? `${app.name.substring(0, 8)}...` : app.name}
+                  </span>
+                  {/* Tooltip arrow */}
+                  <div
+                    className="absolute top-full left-1/2 transform -translate-x-1/2"
+                    style={{
+                      width: 0,
+                      height: 0,
+                      borderLeft: '6px solid transparent',
+                      borderRight: '6px solid transparent',
+                      borderTop: '6px solid rgba(0, 0, 0, 0.85)',
+                      filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2))'
+                    }}
+                  />
+                </div>
               </div>
 
               {/* App Indicator Dot */}
               {openApps.includes(app.id) && (
                 <div
-                  className="absolute"
+                  className="absolute transition-all duration-200"
                   style={{
-                    bottom: `${Math.max(-2, -baseIconSize * 0.05)}px`,
+                    bottom: `${Math.max(-3, -baseIconSize * 0.07)}px`,
                     left: '50%',
                     transform: 'translateX(-50%)',
-                    width: `${Math.max(3, baseIconSize * 0.06)}px`,
-                    height: `${Math.max(3, baseIconSize * 0.06)}px`,
+                    width: `${Math.max(4, baseIconSize * 0.08)}px`,
+                    height: `${Math.max(4, baseIconSize * 0.08)}px`,
                     borderRadius: '50%',
                     backgroundColor: 'rgba(255, 255, 255, 0.8)',
-                    boxShadow: '0 0 4px rgba(0, 0, 0, 0.3)',
+                    boxShadow: `
+                      0 0 8px rgba(255, 255, 255, 0.5),
+                      0 2px 4px rgba(0, 0, 0, 0.3)
+                    `,
                   }}
                 />
               )}

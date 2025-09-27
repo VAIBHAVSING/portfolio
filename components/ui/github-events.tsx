@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AnimatedListDemo } from "@/components/ui/demo";
 import { Eye, EyeOff } from 'lucide-react';
 import { useContributions } from '@/components/ui/contributions-context';
@@ -44,7 +44,13 @@ export function GitHubEvents() {
   // derive events from contributions list (limit 8 for animation)
   useEffect(() => {
     if (loading) return;
-    const derived = contributions.slice(0, 8).map(pr => {
+    const filtered = contributions.filter(pr => {
+      const owner = pr.repo?.split('/')[0]?.toLowerCase();
+      if (!owner) return true;
+      return owner !== 'vaibhavsing';
+    });
+
+    const derived = filtered.slice(0, 8).map(pr => {
       let name = 'Updated pull request';
       let icon = 'pr-updated';
       let color = '#57606a';

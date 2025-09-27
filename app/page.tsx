@@ -5,10 +5,11 @@ import { GitHubEvents } from "@/components/ui/github-events";
 import { LandingHero } from "@/components/ui/landing-hero";
 import { DockWrapper } from "@/components/ui/dock-wrapper";
 import { ExperienceSection } from "@/components/ui/experience-section";
+import { EducationSection } from "@/components/ui/education-section";
 import { OpenSourceSection } from "@/components/ui/open-source-section";
 import { TechStackSection } from "@/components/ui/tech-stack-section";
 import { ScheduleCallSection } from "@/components/ui/schedule-call";
-import { PERSONAL_INFO, PROJECTS } from '@/lib/personal-data';
+import { PERSONAL_INFO, PROJECTS, EDUCATION } from '@/lib/personal-data';
 import {GithubShowcase} from '@/components/ui/GithubShowcase';
 
 
@@ -51,6 +52,11 @@ export default function Home() {
   {/* Experience Section */}
   <div id="experience" className="px-6">
     <ExperienceSection />
+  </div>
+
+  {/* Education Section */}
+  <div id="education" className="px-6">
+    <EducationSection items={EDUCATION} />
   </div>
 
  {/* Open Source */}

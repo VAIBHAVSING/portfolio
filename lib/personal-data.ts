@@ -54,14 +54,19 @@ export const DOCK_ITEMS = [
   { name: "Projects", icon: "/projects.webp", targetId: "projects" },
   { name: "Schedule-meet", icon: "/calender.webp", targetId: "contact" },
   {
-    name: "Contact",
-    icon: "/email.webp",
-    targetId: "mailto:vpatil5212@gmail.com",
-  },
-  {
     name: "GitHub",
     icon: "/github.webp",
     external: "https://github.com/VAIBHAVSING",
+  },
+  {
+    name: "Twitter",
+    icon: "/twitter.webp",
+    external: "https://x.com/Vsing11",
+  },
+  {
+    name: "Contact",
+    icon: "/email.webp",
+    external: "mailto:vpatil5212@gmail.com",
   },
   {
     name: "LinkedIn",

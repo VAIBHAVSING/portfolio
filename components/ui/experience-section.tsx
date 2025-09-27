@@ -45,7 +45,7 @@ export function ExperienceSection({
         'Developed and maintained end-to-end Deno.js SDKs to streamline adoption and usage.',
         'Enhanced tooling and contribution workflows, supporting the open-source community.'
       ],
-      tech: ['React', 'Typescript', 'Compiler', 'Cli','SDK', 'Discord'],
+      tech: ['React', 'TypeScript', 'Compiler', 'CLI','SDK', 'Discord'],
       type: 'internship',
       logo: 'https://avatars.githubusercontent.com/u/155387533?v=4'
     },

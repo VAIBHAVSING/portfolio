@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+// @ts-ignore - allow side-effect CSS import without type declarations
 import "./globals.css";
 import { ContributionsProvider } from '@/components/ui/contributions-context';
 
@@ -14,21 +15,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vaibhav Singh - Open Source Contributor & Software Engineer",
-  description: "Portfolio of Vaibhav Singh, an open source contributor and software engineer specializing in full-stack development, machine learning, and innovative web applications.",
-  keywords: ["Vaibhav Singh", "Software Engineer", "Open Source", "Full Stack Developer", "React", "Node.js", "Machine Learning"],
-  authors: [{ name: "Vaibhav Singh" }],
-  creator: "Vaibhav Singh",
+  title: "Vaibhav Patil - Open Source Contributor & Software Engineer",
+  description: "Portfolio of Vaibhav Patil, an open source contributor and software engineer specializing in full-stack development, machine learning, and innovative web applications.",
+  keywords: ["Vaibhav Singh","vaibhav","patil","hire","engineer", "Software Engineer", "Open Source", "Full Stack Developer", "React", "Node.js", "Machine Learning"],
+  authors: [{ name: "Vaibhav Patil" }],
+  creator: "Vaibhav Patil",
   openGraph: {
-    title: "Vaibhav Singh - Open Source Contributor & Software Engineer",
-    description: "Portfolio of Vaibhav Singh, an open source contributor and software engineer specializing in full-stack development, machine learning, and innovative web applications.",
+    title: "Vaibhav Patil - Open Source Contributor & Software Engineer",
+    description: "Portfolio of Vaibhav Patil, an open source contributor and software engineer specializing in full-stack development, machine learning, and innovative web applications.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vaibhav Singh - Open Source Contributor & Software Engineer",
-    description: "Portfolio of Vaibhav Singh, an open source contributor and software engineer specializing in full-stack development, machine learning, and innovative web applications.",
+    title: "Vaibhav Patil - Open Source Contributor & Software Engineer",
+    description: "Portfolio of Vaibhav Patil, an open source contributor and software engineer specializing in full-stack development, machine learning, and innovative web applications.",
   },
   icons:{
     icon:'./avatar.webp'

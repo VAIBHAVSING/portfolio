@@ -52,26 +52,26 @@ export const DOCK_ITEMS = [
   { name: "Skills", icon: "/skills.webp", targetId: "skills" },
   { name: "Education", icon: "/education.webp", targetId: "education" },
   { name: "Projects", icon: "/projects.webp", targetId: "projects" },
-  { name: "Schedule-meet", icon: "/calender.webp", targetId: "contact" },
+  { name: "Schedule", icon: "/calender.webp", external: "/cal" },
   {
     name: "GitHub",
     icon: "/github.webp",
-    external: "https://github.com/VAIBHAVSING",
+    external: "/gh",
   },
   {
     name: "Twitter",
     icon: "/twitter.webp",
-    external: "https://x.com/Vsing11",
+    external: "/x",
   },
   {
     name: "Contact",
     icon: "/email.webp",
-    external: "mailto:vpatil5212@gmail.com",
+    external: "/email",
   },
   {
     name: "LinkedIn",
     icon: "/linkedin.webp",
-    external: "https://www.linkedin.com/in/vaibhavpatil24/",
+    external: "/in",
   },
   { name: "Resume", icon: "/resume.webp", download: true },
 ] as const;

@@ -36,14 +36,16 @@ export const PROJECTS = [
     liveUrl: "https://pkg.go.dev/github.com/VAIBHAVSING/Cloudsdk/go",
     githubUrl: "https://github.com/VAIBHAVSING/Cloudsdk",
     highlight: "CLOUD + SDK",
-  },{
-    title:"Time based Quiz App",
-    description:"",
-    tags:[""],
-    icon:"",
-    liveUrl:"",
-    githubUrl:"",
-    highlight:"",
+  },
+  {
+    title: "Quiz App (MERN)",
+    description:
+      "Full-stack quiz platform where admins craft multi-question tests and participants get instant scored results with detailed feedback.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "JWT", "Recoil"],
+    icon: "🧠",
+    liveUrl: "https://quiz.vaibhavsing.me/",
+    githubUrl: "https://github.com/VAIBHAVSING/Quiz-app-MERN",
+    highlight: "MERN QUIZ PLATFORM",
   }
 ] as const;
 

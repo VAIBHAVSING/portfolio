@@ -51,6 +51,7 @@ jobs:
             git commit -m "chore: update contributions cache"
           else
             echo "No changes to commit"
+          fi
 
       # Step 7: Create Pull Request if changes exist
       - name: Create Pull Request

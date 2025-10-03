@@ -7,7 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "update-cache": "node -r ts-node/register scripts/update-contributions-cache.ts"
+    "update-cache": "tsx scripts/update-contributions-cache.ts"
   },
   "dependencies": {
     "@octokit/auth-token": "^6.0.0",
@@ -37,6 +37,7 @@
     "eslint-config-next": "15.5.3",
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
     "tw-animate-css": "^1.3.8",
     "typescript": "^5.9.2"
   }

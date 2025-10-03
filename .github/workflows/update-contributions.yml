@@ -40,22 +40,8 @@ jobs:
           GITHUB_USERNAME: ${{ secrets.CONTRIB_GITHUB_USERNAME || 'VAIBHAVSING' }}
         run: pnpm update-cache
 
-      # Step 6: Commit any changes
-      - name: Commit changes
-        run: |
-          if [ -n "$(git status --porcelain public/data/contributions.json)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git checkout -B chore/update-contributions-cache
-            git add public/data/contributions.json
-            git commit -m "chore: update contributions cache"
-          else
-            echo "No changes to commit"
-          fi
-
-      # Step 7: Create Pull Request if changes exist
+      # Step 6: Create Pull Request if changes exist
       - name: Create Pull Request
-        if: success()
         uses: peter-evans/create-pull-request@v6
         with:
           branch: chore/update-contributions-cache
@@ -64,3 +50,5 @@ jobs:
           body: "Automated update of cached GitHub contributions JSON."
           labels: automated, contributions
           delete-branch: true
+          add-paths: |
+            public/data/contributions.json

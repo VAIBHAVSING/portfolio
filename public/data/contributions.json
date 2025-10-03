@@ -1,18 +1,149 @@
 {
-  "generated": "2025-09-23T11:26:43.110Z",
+  "generated": "2025-10-03T18:51:14.836Z",
   "username": "VAIBHAVSING",
-  "total": 56,
-  "apiCallsUsed": 67,
+  "total": 65,
+  "apiCallsUsed": 76,
   "rateLimit": {
-    "remaining": 4995,
-    "reset": "2025-09-23T12:17:56.000Z"
+    "remaining": 0,
+    "reset": "2025-10-03T18:50:54.827Z"
   },
   "breakdown": {
-    "open": 2,
-    "merged": 54,
+    "open": 7,
+    "merged": 58,
     "closed": 0
   },
   "contributions": [
+    {
+      "repo": "VAIBHAVSING/portfolio",
+      "title": "fix: resolve workflow TypeScript execution errors",
+      "url": "https://github.com/VAIBHAVSING/portfolio/pull/2",
+      "state": "merged",
+      "created": "2025-10-03T18:40:17Z",
+      "number": 2,
+      "comments": 2,
+      "labels": [],
+      "additions": 294,
+      "deletions": 1,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+    },
+    {
+      "repo": "Mintplex-Labs/anything-llm",
+      "title": "Openrouter user",
+      "url": "https://github.com/Mintplex-Labs/anything-llm/pull/4482",
+      "state": "open",
+      "created": "2025-10-03T10:57:25Z",
+      "number": 4482,
+      "comments": 1,
+      "labels": [
+        {
+          "name": "PR:needs review",
+          "color": "C642C1"
+        }
+      ],
+      "additions": 12,
+      "deletions": 2,
+      "language": "JavaScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/134426827?v=4"
+    },
+    {
+      "repo": "humanlayer/humanlayer",
+      "title": "session: inherit ANTHROPIC env into spawned Claude sessions #1",
+      "url": "https://github.com/humanlayer/humanlayer/pull/662",
+      "state": "open",
+      "created": "2025-10-01T16:05:25Z",
+      "number": 662,
+      "comments": 3,
+      "labels": [],
+      "additions": 232,
+      "deletions": 5,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/177409041?v=4"
+    },
+    {
+      "repo": "VAIBHAVSING/Dev8.dev",
+      "title": "🚀 Week 1 Foundation: Environment Schema & Types Package",
+      "url": "https://github.com/VAIBHAVSING/Dev8.dev/pull/33",
+      "state": "merged",
+      "created": "2025-09-30T16:35:08Z",
+      "number": 33,
+      "comments": 1,
+      "labels": [],
+      "additions": 4564,
+      "deletions": 15,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+    },
+    {
+      "repo": "VAIBHAVSING/Cloudsdk",
+      "title": "feat: comprehensive S3 service methods",
+      "url": "https://github.com/VAIBHAVSING/Cloudsdk/pull/21",
+      "state": "open",
+      "created": "2025-09-28T16:42:03Z",
+      "number": 21,
+      "comments": 0,
+      "labels": [],
+      "additions": 46,
+      "deletions": 8,
+      "language": "Go",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+    },
+    {
+      "repo": "VAIBHAVSING/Cloudsdk",
+      "title": "feat: enhanced instance management with comprehensive EC2 services",
+      "url": "https://github.com/VAIBHAVSING/Cloudsdk/pull/20",
+      "state": "open",
+      "created": "2025-09-28T16:10:57Z",
+      "number": 20,
+      "comments": 0,
+      "labels": [],
+      "additions": 884,
+      "deletions": 120,
+      "language": "Go",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+    },
+    {
+      "repo": "VAIBHAVSING/Cloudsdk",
+      "title": "feat: enhanced compute and storage interfaces with comprehensive AWS service coverage",
+      "url": "https://github.com/VAIBHAVSING/Cloudsdk/pull/19",
+      "state": "open",
+      "created": "2025-09-27T17:13:17Z",
+      "number": 19,
+      "comments": 0,
+      "labels": [],
+      "additions": 7832,
+      "deletions": 230,
+      "language": "Go",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+    },
+    {
+      "repo": "VAIBHAVSING/Cloudsdk",
+      "title": "feat: implement modular AWS service architecture",
+      "url": "https://github.com/VAIBHAVSING/Cloudsdk/pull/18",
+      "state": "merged",
+      "created": "2025-09-27T10:10:57Z",
+      "number": 18,
+      "comments": 1,
+      "labels": [],
+      "additions": 4803,
+      "deletions": 5,
+      "language": "Go",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+    },
+    {
+      "repo": "VAIBHAVSING/portfolio",
+      "title": "feat: added education section to portfolio",
+      "url": "https://github.com/VAIBHAVSING/portfolio/pull/1",
+      "state": "merged",
+      "created": "2025-09-27T09:10:10Z",
+      "number": 1,
+      "comments": 1,
+      "labels": [],
+      "additions": 400,
+      "deletions": 49,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+    },
     {
       "repo": "VAIBHAVSING/Cloudsdk",
       "title": "New dx br 1",
@@ -455,11 +586,7 @@
       "created": "2025-04-18T09:22:19Z",
       "number": 8,
       "comments": 2,
-      "labels": [],
-      "additions": 165,
-      "deletions": 0,
-      "language": "Python",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/205720652?v=4"
+      "labels": []
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",
@@ -469,11 +596,7 @@
       "created": "2025-04-09T17:02:28Z",
       "number": 675,
       "comments": 0,
-      "labels": [],
-      "additions": 69,
-      "deletions": 6,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/126684196?v=4"
+      "labels": []
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",
@@ -483,11 +606,7 @@
       "created": "2025-03-26T13:00:24Z",
       "number": 651,
       "comments": 0,
-      "labels": [],
-      "additions": 62,
-      "deletions": 20,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/126684196?v=4"
+      "labels": []
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",
@@ -497,11 +616,7 @@
       "created": "2025-03-22T17:58:25Z",
       "number": 639,
       "comments": 0,
-      "labels": [],
-      "additions": 1,
-      "deletions": 1,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/126684196?v=4"
+      "labels": []
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",
@@ -511,11 +626,7 @@
       "created": "2025-03-17T19:13:15Z",
       "number": 629,
       "comments": 10,
-      "labels": [],
-      "additions": 131,
-      "deletions": 25,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/126684196?v=4"
+      "labels": []
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",
@@ -525,11 +636,7 @@
       "created": "2025-03-16T14:19:12Z",
       "number": 616,
       "comments": 0,
-      "labels": [],
-      "additions": 11,
-      "deletions": 4,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/126684196?v=4"
+      "labels": []
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",
@@ -539,11 +646,7 @@
       "created": "2025-03-11T19:10:38Z",
       "number": 605,
       "comments": 6,
-      "labels": [],
-      "additions": 27,
-      "deletions": 16,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/126684196?v=4"
+      "labels": []
     },
     {
       "repo": "ohcnetwork/leaderboard-data",
@@ -553,11 +656,7 @@
       "created": "2024-10-29T12:06:01Z",
       "number": 68,
       "comments": 0,
-      "labels": [],
-      "additions": 4,
-      "deletions": 4,
-      "language": "CSS",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/62014451?v=4"
+      "labels": []
     },
     {
       "repo": "ohcnetwork/leaderboard",
@@ -567,11 +666,7 @@
       "created": "2024-10-29T11:29:26Z",
       "number": 534,
       "comments": 2,
-      "labels": [],
-      "additions": 37,
-      "deletions": 6,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/62014451?v=4"
+      "labels": []
     },
     {
       "repo": "ohcnetwork/leaderboard",
@@ -581,11 +676,7 @@
       "created": "2024-10-19T18:30:16Z",
       "number": 528,
       "comments": 3,
-      "labels": [],
-      "additions": 6,
-      "deletions": 6,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/62014451?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -595,11 +686,7 @@
       "created": "2024-09-27T11:40:21Z",
       "number": 16,
       "comments": 1,
-      "labels": [],
-      "additions": 13,
-      "deletions": 7,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -609,11 +696,7 @@
       "created": "2024-07-20T14:31:20Z",
       "number": 15,
       "comments": 1,
-      "labels": [],
-      "additions": 198,
-      "deletions": 13,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -623,11 +706,7 @@
       "created": "2024-07-20T14:11:40Z",
       "number": 14,
       "comments": 2,
-      "labels": [],
-      "additions": 299,
-      "deletions": 105,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -637,11 +716,7 @@
       "created": "2024-06-15T16:58:16Z",
       "number": 12,
       "comments": 0,
-      "labels": [],
-      "additions": 49,
-      "deletions": 21,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -651,11 +726,7 @@
       "created": "2024-05-11T18:32:24Z",
       "number": 11,
       "comments": 0,
-      "labels": [],
-      "additions": 1,
-      "deletions": 1,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -665,11 +736,7 @@
       "created": "2024-05-11T17:52:19Z",
       "number": 10,
       "comments": 0,
-      "labels": [],
-      "additions": 1,
-      "deletions": 1,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -679,11 +746,7 @@
       "created": "2024-05-11T17:18:00Z",
       "number": 9,
       "comments": 0,
-      "labels": [],
-      "additions": 14,
-      "deletions": 6,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -693,11 +756,7 @@
       "created": "2024-05-11T17:07:17Z",
       "number": 8,
       "comments": 0,
-      "labels": [],
-      "additions": 3,
-      "deletions": 3,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -707,11 +766,7 @@
       "created": "2024-05-11T17:00:44Z",
       "number": 7,
       "comments": 0,
-      "labels": [],
-      "additions": 19,
-      "deletions": 1,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -721,11 +776,7 @@
       "created": "2024-05-09T13:43:40Z",
       "number": 6,
       "comments": 0,
-      "labels": [],
-      "additions": 1,
-      "deletions": 1,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -735,11 +786,7 @@
       "created": "2024-05-09T13:31:14Z",
       "number": 5,
       "comments": 0,
-      "labels": [],
-      "additions": 94,
-      "deletions": 66,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -749,11 +796,7 @@
       "created": "2024-05-07T14:03:11Z",
       "number": 4,
       "comments": 0,
-      "labels": [],
-      "additions": 7,
-      "deletions": 1,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -763,11 +806,7 @@
       "created": "2024-05-07T13:49:03Z",
       "number": 3,
       "comments": 0,
-      "labels": [],
-      "additions": 264025,
-      "deletions": 1,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -777,11 +816,7 @@
       "created": "2024-05-07T13:06:28Z",
       "number": 2,
       "comments": 1,
-      "labels": [],
-      "additions": 73,
-      "deletions": 13,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -791,11 +826,7 @@
       "created": "2024-05-07T12:51:30Z",
       "number": 1,
       "comments": 0,
-      "labels": [],
-      "additions": 37,
-      "deletions": 1,
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     }
   ]
 }

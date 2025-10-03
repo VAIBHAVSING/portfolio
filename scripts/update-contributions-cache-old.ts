@@ -213,15 +213,15 @@ if (require.main === module) {
   Usage: pnpm ts-node scripts/update-contributions-cache.ts
   Requires: GITHUB_TOKEN (recommended) and optional GITHUB_USERNAME
 */
-import fs from 'fs';
-import path from 'path';
-import { Octokit } from '@octokit/rest';
+import fs from "fs";
+import path from "path";
+import { Octokit } from "@octokit/rest";
 
 interface ContributionRecord {
   repo: string;
   title: string;
   url: string;
-  state: 'open' | 'closed' | 'merged';
+  state: "open" | "closed" | "merged";
   created: string;
   number: number;
   comments?: number;
@@ -249,19 +249,21 @@ interface CacheOutput {
   contributions: ContributionRecord[];
 }
 
-const USERNAME = process.env.GITHUB_USERNAME || 'VAIBHAVSING';
+const USERNAME = process.env.GITHUB_USERNAME || "VAIBHAVSING";
 const TOKEN = process.env.GITHUB_TOKEN;
 const MAX_RESULTS = 150;
 const BATCH_SIZE = 10;
 
 console.log(`🚀 GitHub Contributions Cache Script`);
 console.log(`👤 Username: ${USERNAME}`);
-console.log(`🔑 Token: ${TOKEN ? '✅ Configured' : '❌ Not set (rate limited)'}`);
+console.log(
+  `🔑 Token: ${TOKEN ? "✅ Configured" : "❌ Not set (rate limited)"}`,
+);
 
 // Initialize Octokit
-const octokit = TOKEN 
-  ? new Octokit({ auth: TOKEN, userAgent: 'portfolio-cache-script/1.0' })
-  : new Octokit({ userAgent: 'portfolio-cache-script/1.0' });
+const octokit = TOKEN
+  ? new Octokit({ auth: TOKEN, userAgent: "portfolio-cache-script/1.0" })
+  : new Octokit({ userAgent: "portfolio-cache-script/1.0" });
 
 async function fetchSearchPages(): Promise<any[]> {
   const perPage = 50;
@@ -269,9 +271,11 @@ async function fetchSearchPages(): Promise<any[]> {
   const all: any[] = [];
   for (let page = 1; page <= maxPages; page++) {
     const url = `https://api.github.com/search/issues?q=${encodeURIComponent(`author:${USERNAME} type:pr`)}&sort=created&order=desc&per_page=${perPage}&page=${page}`;
-  // Legacy script fallback: safeFetch no longer imported; using fetch directly
-  // @ts-ignore legacy
-  const data = await fetch(url).then(r => r.json()).catch(() => null);
+    // Legacy script fallback: safeFetch no longer imported; using fetch directly
+    // @ts-ignore legacy
+    const data = await fetch(url)
+      .then((r) => r.json())
+      .catch(() => null);
     if (!data.items || data.items.length === 0) break;
     all.push(...data.items);
     if (data.items.length < perPage) break;
@@ -282,16 +286,22 @@ async function fetchSearchPages(): Promise<any[]> {
 async function enrich(raw: any[]): Promise<ContributionRecord[]> {
   const results: ContributionRecord[] = [];
   for (const pr of raw) {
-    const repoFull = pr.repository_url.replace('https://api.github.com/repos/', '');
+    const repoFull = pr.repository_url.replace(
+      "https://api.github.com/repos/",
+      "",
+    );
     const prNumMatch = pr.html_url.match(/pull\/(\d+)/);
     const prNumber = prNumMatch ? parseInt(prNumMatch[1], 10) : 0;
     let details: any = {};
     let merged = false;
-    
+
     try {
-      if (pr.state !== 'open') {
-  // @ts-ignore legacy headers helper removed
-  const prResp = await fetch(`https://api.github.com/repos/${repoFull}/pulls/${prNumber}`, { headers: typeof headers === 'function' ? headers() : {} as any });
+      if (pr.state !== "open") {
+        // @ts-ignore legacy headers helper removed
+        const prResp = await fetch(
+          `https://api.github.com/repos/${repoFull}/pulls/${prNumber}`,
+          { headers: typeof headers === "function" ? headers() : ({} as any) },
+        );
         if (prResp.ok) {
           details = await prResp.json();
           // Check both merged_at and merged boolean fields
@@ -301,28 +311,39 @@ async function enrich(raw: any[]): Promise<ContributionRecord[]> {
         }
       }
     } catch (e: any) {
-      console.warn(`Failed to fetch PR details for ${repoFull}#${prNumber}:`, e.message);
+      console.warn(
+        `Failed to fetch PR details for ${repoFull}#${prNumber}:`,
+        e.message,
+      );
     }
-    
+
     // Always double-check merge endpoint for closed PRs if not already marked as merged
-    if (pr.state === 'closed' && !merged) {
+    if (pr.state === "closed" && !merged) {
       try {
-  // @ts-ignore legacy headers helper removed
-  const mergeResp = await fetch(`https://api.github.com/repos/${repoFull}/pulls/${prNumber}/merge`, { headers: typeof headers === 'function' ? headers() : {} as any });
+        // @ts-ignore legacy headers helper removed
+        const mergeResp = await fetch(
+          `https://api.github.com/repos/${repoFull}/pulls/${prNumber}/merge`,
+          { headers: typeof headers === "function" ? headers() : ({} as any) },
+        );
         if (mergeResp.status === 204) {
           merged = true;
-          console.log(`PR ${repoFull}#${prNumber} confirmed merged via merge endpoint`);
+          console.log(
+            `PR ${repoFull}#${prNumber} confirmed merged via merge endpoint`,
+          );
         }
       } catch (e: any) {
-        console.warn(`Failed to check merge status for ${repoFull}#${prNumber}:`, e.message);
+        console.warn(
+          `Failed to check merge status for ${repoFull}#${prNumber}:`,
+          e.message,
+        );
       }
     }
-    
+
     results.push({
       repo: repoFull,
       title: pr.title,
       url: pr.html_url,
-      state: pr.state === 'open' ? 'open' : (merged ? 'merged' : 'closed'),
+      state: pr.state === "open" ? "open" : merged ? "merged" : "closed",
       created: pr.created_at,
       number: prNumber,
       comments: pr.comments,
@@ -330,7 +351,11 @@ async function enrich(raw: any[]): Promise<ContributionRecord[]> {
       deletions: details.deletions,
       language: details.base?.repo?.language,
       ownerAvatar: details.base?.repo?.owner?.avatar_url,
-      labels: Array.isArray(pr.labels) ? pr.labels.slice(0,4).map((l: any) => ({ name: l.name, color: l.color })) : []
+      labels: Array.isArray(pr.labels)
+        ? pr.labels
+            .slice(0, 4)
+            .map((l: any) => ({ name: l.name, color: l.color }))
+        : [],
     });
   }
   return results;
@@ -341,12 +366,17 @@ async function main() {
     console.log(`[cache] Fetching contributions for ${USERNAME}`);
     const raw = await fetchSearchPages();
     const enriched = await enrich(raw);
-    const outPath = path.join(process.cwd(), 'public', 'data', 'contributions.json');
+    const outPath = path.join(
+      process.cwd(),
+      "public",
+      "data",
+      "contributions.json",
+    );
     const payload = { generatedAt: Date.now(), contributions: enriched };
     fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
     console.log(`[cache] Wrote ${enriched.length} contributions to ${outPath}`);
   } catch (e: any) {
-    console.error('[cache] Failed:', e.message);
+    console.error("[cache] Failed:", e.message);
     process.exitCode = 1;
   }
 }

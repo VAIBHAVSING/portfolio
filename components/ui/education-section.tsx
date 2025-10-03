@@ -32,7 +32,8 @@ export function EducationSection({
             Education
           </h2>
           <p className="text-sm text-muted-foreground max-w-2xl">
-            A snapshot of formal learning that complements my hands-on engineering work.
+            A snapshot of formal learning that complements my hands-on
+            engineering work.
           </p>
         </div>
 
@@ -103,16 +104,17 @@ export function EducationSection({
                     </p>
                   )}
 
-                  {highlightAchievements && highlightAchievements.length > 0 && (
-                    <ul className="space-y-1.5 text-xs text-muted-foreground/90">
-                      {highlightAchievements.map((achievement) => (
-                        <li key={achievement} className="flex gap-2">
-                          <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary/60" />
-                          <span>{achievement}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  {highlightAchievements &&
+                    highlightAchievements.length > 0 && (
+                      <ul className="space-y-1.5 text-xs text-muted-foreground/90">
+                        {highlightAchievements.map((achievement) => (
+                          <li key={achievement} className="flex gap-2">
+                            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary/60" />
+                            <span>{achievement}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
 
                   {highlightCoursework && highlightCoursework.length > 0 && (
                     <div className="flex flex-wrap gap-1.5">

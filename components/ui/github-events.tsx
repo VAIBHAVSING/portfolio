@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { AnimatedListDemo } from "@/components/ui/demo";
-import { Eye, EyeOff } from 'lucide-react';
-import { useContributions } from '@/components/ui/contributions-context';
+import { Eye, EyeOff } from "lucide-react";
+import { useContributions } from "@/components/ui/contributions-context";
 
 interface GitHubEvent {
   name: string;
@@ -26,15 +26,15 @@ export function GitHubEvents() {
 
   // Load hidden state from localStorage on mount
   useEffect(() => {
-    const saved = localStorage.getItem('github-notifications-hidden');
-    if (saved === 'true') {
+    const saved = localStorage.getItem("github-notifications-hidden");
+    if (saved === "true") {
       setIsHidden(true);
     }
   }, []);
 
   // Save hidden state to localStorage when it changes
   useEffect(() => {
-    localStorage.setItem('github-notifications-hidden', isHidden.toString());
+    localStorage.setItem("github-notifications-hidden", isHidden.toString());
   }, [isHidden]);
 
   const toggleHidden = () => {
@@ -44,44 +44,44 @@ export function GitHubEvents() {
   // derive events from contributions list (limit 8 for animation)
   useEffect(() => {
     if (loading) return;
-    const filtered = contributions.filter(pr => {
-      const owner = pr.repo?.split('/')[0]?.toLowerCase();
+    const filtered = contributions.filter((pr) => {
+      const owner = pr.repo?.split("/")[0]?.toLowerCase();
       if (!owner) return true;
-      return owner !== 'vaibhavsing';
+      return owner !== "vaibhavsing";
     });
 
-    const derived = filtered.slice(0, 8).map(pr => {
-      let name = 'Updated pull request';
-      let icon = 'pr-updated';
-      let color = '#57606a';
-      let stateLabel = 'updated';
-      if (pr.state === 'open') {
-        name = 'Opened pull request';
-        icon = 'pr-open';
-        color = '#238636';
-        stateLabel = 'open';
-      } else if (pr.state === 'merged') {
-        name = 'Merged pull request';
-        icon = 'pr-merged';
-        color = '#8250df';
-        stateLabel = 'merged';
-      } else if (pr.state === 'closed') {
-        name = 'Closed pull request';
-        icon = 'pr-closed';
-        color = '#da3633';
-        stateLabel = 'closed';
+    const derived = filtered.slice(0, 8).map((pr) => {
+      let name = "Updated pull request";
+      let icon = "pr-updated";
+      let color = "#57606a";
+      let stateLabel = "updated";
+      if (pr.state === "open") {
+        name = "Opened pull request";
+        icon = "pr-open";
+        color = "#238636";
+        stateLabel = "open";
+      } else if (pr.state === "merged") {
+        name = "Merged pull request";
+        icon = "pr-merged";
+        color = "#8250df";
+        stateLabel = "merged";
+      } else if (pr.state === "closed") {
+        name = "Closed pull request";
+        icon = "pr-closed";
+        color = "#da3633";
+        stateLabel = "closed";
       }
       const repoFullName = pr.repo;
-      const orgName = repoFullName.split('/')[0];
+      const orgName = repoFullName.split("/")[0];
       return {
         name,
         description: pr.title,
-        time: new Date(pr.created).toLocaleString('en-US', {
-          month: 'short',
-          day: 'numeric',
-          hour: '2-digit',
-          minute: '2-digit',
-          hour12: true
+        time: new Date(pr.created).toLocaleString("en-US", {
+          month: "short",
+          day: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: true,
         }),
         icon,
         color,

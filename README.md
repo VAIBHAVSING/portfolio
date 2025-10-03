@@ -50,6 +50,7 @@ echo "GITHUB_USERNAME=VAIBHAVSING" >> .env.local
 ```
 
 The app will:
+
 - Use the serverless route `/api/contributions` to perform authenticated, batched, and cached (15m) fetches.
 - Fall back to a lighter client-side fetch if the API route fails or no token is present.
 - Minimize per-PR detail calls by only requesting details for closed PRs to determine merged vs closed state.
@@ -59,23 +60,29 @@ If you see a rate limit error in the browser console, add or rotate the token an
 ## Pre-Built Contributions Cache
 
 A static snapshot of contributions is stored at `public/data/contributions.json`. On initial load the client:
+
 - Reads the static file (fast, zero API calls).
 - Then background refreshes via `/api/contributions` (server token + cache) to update.
 
 ### Automated Updates
 
 GitHub Actions workflow: `.github/workflows/update-contributions.yml`
+
 - Runs daily (03:00 UTC) or on manual dispatch.
 - Executes `scripts/update-contributions-cache.ts` to regenerate `public/data/contributions.json`.
 - Opens a PR with changes (labels: `automated`, `contributions`).
 
 ### Required Secrets
+
 Add these repository secrets:
+
 - `CONTRIB_GITHUB_TOKEN` – PAT with `public_repo` scope.
 - `CONTRIB_GITHUB_USERNAME` – (optional) override username if different.
 
 ### Local Manual Update
+
 ```bash
 GITHUB_TOKEN=ghp_xxx pnpm ts-node scripts/update-contributions-cache.ts
 ```
+
 Commit the updated JSON file to ship a fresh snapshot with your deployment.

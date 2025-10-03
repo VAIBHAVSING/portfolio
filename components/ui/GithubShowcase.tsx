@@ -2,11 +2,15 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-interface UserContenetInterface{
-    Href:string,
-    CtaText:string
+interface UserContenetInterface {
+  Href: string;
+  CtaText: string;
 }
-export function Githubusercontent({ userContent }: { userContent: UserContenetInterface }) {
+export function Githubusercontent({
+  userContent,
+}: {
+  userContent: UserContenetInterface;
+}) {
   return (
     <motion.a
       href={userContent.Href}
@@ -24,11 +28,10 @@ export function Githubusercontent({ userContent }: { userContent: UserContenetIn
   );
 }
 export function GithubShowcase() {
-    const userContent={
-        Href:"/gh",
-        CtaText:"View All Projects on GitHub"
-        
-    }
+  const userContent = {
+    Href: "/gh",
+    CtaText: "View All Projects on GitHub",
+  };
   return (
     <motion.div>
       {/* Call to action */}
@@ -42,7 +45,7 @@ export function GithubShowcase() {
         <p className="text-muted-foreground mb-6">
           Want to see more of my work?
         </p>
-        <Githubusercontent userContent={userContent}/>
+        <Githubusercontent userContent={userContent} />
       </motion.div>
     </motion.div>
   );

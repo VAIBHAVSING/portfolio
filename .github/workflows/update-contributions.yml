@@ -2,7 +2,7 @@ name: Update Contributions Cache
 
 on:
   schedule:
-    - cron: '0 3 * * *' # daily at 03:00 UTC
+    - cron: "0 3 * * *" # daily at 03:00 UTC
   workflow_dispatch: {}
 
 jobs:
@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
+          cache: "pnpm"
 
       # Step 4: Install dependencies
       - name: Install dependencies

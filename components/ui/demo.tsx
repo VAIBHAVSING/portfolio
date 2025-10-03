@@ -2,7 +2,13 @@
 
 import { cn } from "@/lib/utils";
 import { AnimatedList } from "@/components/ui/animated-list";
-import { GitPullRequest, GitMerge, OctagonX, GitCommit, CircleDot } from 'lucide-react';
+import {
+  GitPullRequest,
+  GitMerge,
+  OctagonX,
+  GitCommit,
+  CircleDot,
+} from "lucide-react";
 import Image from "next/image";
 
 interface Item {
@@ -19,27 +25,39 @@ interface Item {
   stateLabel?: string;
 }
 
-const Notification = ({ name, description, icon, color, time, url, title, repoFullName, orgName, orgAvatar, stateLabel }: Item) => {
+const Notification = ({
+  name,
+  description,
+  icon,
+  color,
+  time,
+  url,
+  title,
+  repoFullName,
+  orgName,
+  orgAvatar,
+  stateLabel,
+}: Item) => {
   const handleClick = () => {
     if (url) {
-      window.open(url, '_blank');
+      window.open(url, "_blank");
     }
   };
 
   const getIcon = (iconName: string): React.JSX.Element => {
     switch (iconName) {
-      case 'pr-open':
+      case "pr-open":
         return <GitPullRequest className="h-4 w-4" />;
-      case 'pr-merged':
+      case "pr-merged":
         return <GitMerge className="h-4 w-4" />;
-      case 'pr-closed':
+      case "pr-closed":
         return <OctagonX className="h-4 w-4" />;
-      case 'commit':
+      case "commit":
         return <GitCommit className="h-4 w-4" />;
       default:
         return <CircleDot className="h-4 w-4" />;
     }
-  }
+  };
 
   return (
     <figure
@@ -54,8 +72,17 @@ const Notification = ({ name, description, icon, color, time, url, title, repoFu
       <div className="flex flex-row items-center gap-3">
         {orgAvatar ? (
           <div className="relative size-10 rounded-2xl overflow-hidden border border-white/10">
-            <Image src={orgAvatar} alt={orgName} width={40} height={40} className="object-cover w-full h-full" />
-            <div className="absolute -bottom-1 -right-1 size-5 rounded-full flex items-center justify-center border border-background" style={{ backgroundColor: color }}>
+            <Image
+              src={orgAvatar}
+              alt={orgName}
+              width={40}
+              height={40}
+              className="object-cover w-full h-full"
+            />
+            <div
+              className="absolute -bottom-1 -right-1 size-5 rounded-full flex items-center justify-center border border-background"
+              style={{ backgroundColor: color }}
+            >
               {getIcon(icon)}
             </div>
           </div>
@@ -73,7 +100,10 @@ const Notification = ({ name, description, icon, color, time, url, title, repoFu
             <span className="mx-1">·</span>
             <span className="text-xs text-gray-500">{time}</span>
             {stateLabel && (
-              <span className="ml-2 inline-flex items-center rounded-md px-2 py-0.5 text-[10px] font-semibold tracking-wide uppercase" style={{ backgroundColor: color + '22', color }}>
+              <span
+                className="ml-2 inline-flex items-center rounded-md px-2 py-0.5 text-[10px] font-semibold tracking-wide uppercase"
+                style={{ backgroundColor: color + "22", color }}
+              >
                 {stateLabel}
               </span>
             )}
@@ -82,7 +112,7 @@ const Notification = ({ name, description, icon, color, time, url, title, repoFu
             {title}
           </p>
           <p className="text-xs text-gray-400 mt-1">
-            {orgName}/{repoFullName.split('/')[1] || repoFullName}
+            {orgName}/{repoFullName.split("/")[1] || repoFullName}
           </p>
         </div>
       </div>

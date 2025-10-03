@@ -51,7 +51,7 @@ export const AnimatedList = React.memo(
         </AnimatePresence>
       </div>
     );
-  }
+  },
 );
 
 AnimatedList.displayName = "AnimatedList";

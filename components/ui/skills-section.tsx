@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React from "react";
 
 interface Stat {
   value: string;
@@ -20,10 +20,14 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ stats }) => {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-foreground mb-4 font-sans">
-            By the <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Numbers</span>
+            By the{" "}
+            <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+              Numbers
+            </span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Key metrics that showcase my journey and impact in software development
+            Key metrics that showcase my journey and impact in software
+            development
           </p>
         </div>
 
@@ -54,12 +58,25 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ stats }) => {
         {/* Additional skills showcase */}
         <div className="mt-20 text-center">
           <h3 className="text-2xl font-light text-foreground mb-8 font-sans">
-            Technical <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Expertise</span>
+            Technical{" "}
+            <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+              Expertise
+            </span>
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              'React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'Machine Learning',
-              'PostgreSQL', 'MongoDB', 'AWS', 'Docker', 'Git', 'GraphQL'
+              "React",
+              "Next.js",
+              "TypeScript",
+              "Node.js",
+              "Python",
+              "Machine Learning",
+              "PostgreSQL",
+              "MongoDB",
+              "AWS",
+              "Docker",
+              "Git",
+              "GraphQL",
             ].map((skill, index) => (
               <span
                 key={skill}

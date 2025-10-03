@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React from "react";
 
 interface NavLink {
   label: string;
@@ -19,18 +19,26 @@ interface NavigationProps {
   };
 }
 
-export const Navigation: React.FC<NavigationProps> = ({ logo, navLinks, resume }) => {
+export const Navigation: React.FC<NavigationProps> = ({
+  logo,
+  navLinks,
+  resume,
+}) => {
   return (
     <nav className="w-full px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 rounded-lg bg-border backdrop-blur-md border border-border flex items-center justify-center">
-            <span className="font-sans text-sm font-bold text-foreground">{logo.initials}</span>
+            <span className="font-sans text-sm font-bold text-foreground">
+              {logo.initials}
+            </span>
           </div>
-          <span className="font-sans text-lg font-medium text-foreground">{logo.name}</span>
+          <span className="font-sans text-lg font-medium text-foreground">
+            {logo.name}
+          </span>
         </div>
         <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map(link => (
+          {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}

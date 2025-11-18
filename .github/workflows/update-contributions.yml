@@ -81,8 +81,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Check if PR already exists
-          PR_EXISTS=$(gh pr list --head chore/update-contributions-cache --json number --jq length)
+          # Check if OPEN PR already exists
+          PR_EXISTS=$(gh pr list --state open --head chore/update-contributions-cache --json number --jq length)
 
           if [ "$PR_EXISTS" -eq "0" ]; then
             echo "Creating new PR..."
@@ -90,8 +90,7 @@ jobs:
               --title "chore: update contributions cache" \
               --body "Automated update of cached GitHub contributions JSON." \
               --base main \
-              --head chore/update-contributions-cache \
-              --label automated,contributions || echo "PR creation failed, but changes are committed"
+              --head chore/update-contributions-cache || echo "PR creation failed, but changes are committed"
           else
             echo "PR already exists, updated with new commit"
             gh pr view chore/update-contributions-cache --json number,title,url --jq '{number, title, url}'

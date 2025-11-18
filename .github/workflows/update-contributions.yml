@@ -53,16 +53,22 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+          # Stash current changes
+          git stash push -m "Temporary stash for contributions.json"
+
           # Check if branch exists remotely
           if git ls-remote --heads origin chore/update-contributions-cache | grep -q chore/update-contributions-cache; then
             echo "Branch exists, checking out and updating..."
             git fetch origin chore/update-contributions-cache
             git checkout chore/update-contributions-cache
-            git pull origin chore/update-contributions-cache || true
+            git merge --no-edit main || echo "Merge conflict or up to date"
           else
             echo "Creating new branch..."
             git checkout -b chore/update-contributions-cache
           fi
+
+          # Apply stashed changes
+          git stash pop || echo "No stash to apply"
 
           # Stage and commit changes
           git add public/data/contributions.json

@@ -1,34 +1,32 @@
 {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  "generated": "2025-11-18T03:45:25.060Z",
-=======
-  "generated": "2025-11-18T13:06:20.820Z",
->>>>>>> Stashed changes
-=======
-  "generated": "2025-11-18T13:09:27.723Z",
->>>>>>> Stashed changes
+  "generated": "2025-11-19T10:48:02.230Z",
   "username": "VAIBHAVSING",
-  "total": 86,
-  "apiCallsUsed": 106,
+  "total": 87,
+  "apiCallsUsed": 107,
   "rateLimit": {
     "remaining": 0,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    "reset": "2025-11-18T03:44:53.840Z"
-=======
-    "reset": "2025-11-18T13:05:51.148Z"
->>>>>>> Stashed changes
-=======
-    "reset": "2025-11-18T13:09:07.607Z"
->>>>>>> Stashed changes
+    "reset": "2025-11-19T10:47:34.382Z"
   },
   "breakdown": {
     "open": 7,
-    "merged": 79,
+    "merged": 80,
     "closed": 0
   },
   "contributions": [
+    {
+      "repo": "VAIBHAVSING/portfolio",
+      "title": "Chore/update contributions cache",
+      "url": "https://github.com/VAIBHAVSING/portfolio/pull/4",
+      "state": "merged",
+      "created": "2025-11-18T13:15:35Z",
+      "number": 4,
+      "comments": 1,
+      "labels": [],
+      "additions": 580,
+      "deletions": 136,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+    },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
       "title": "feat: Production-grade agent with observability and security",
@@ -671,11 +669,7 @@
       "created": "2025-08-15T12:46:56Z",
       "number": 6,
       "comments": 0,
-      "labels": [],
-      "additions": 36,
-      "deletions": 53,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+      "labels": []
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -685,11 +679,7 @@
       "created": "2025-08-15T12:25:17Z",
       "number": 5,
       "comments": 0,
-      "labels": [],
-      "additions": 261,
-      "deletions": 271,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+      "labels": []
     },
     {
       "repo": "lingodotdev/lingo.dev",
@@ -699,11 +689,7 @@
       "created": "2025-08-12T10:36:01Z",
       "number": 1129,
       "comments": 1,
-      "labels": [],
-      "additions": 163,
-      "deletions": 0,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+      "labels": []
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -723,18 +709,7 @@
       "created": "2025-08-05T20:48:08Z",
       "number": 1,
       "comments": 0,
-<<<<<<< Updated upstream
       "labels": []
-=======
-      "labels": [],
-      "additions": 1794,
-      "deletions": 0,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/lingo.dev",
@@ -744,13 +719,7 @@
       "created": "2025-07-25T10:40:28Z",
       "number": 1065,
       "comments": 2,
-<<<<<<< Updated upstream
       "labels": []
-=======
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
->>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/lingo.dev",
@@ -760,17 +729,7 @@
       "created": "2025-07-16T18:00:14Z",
       "number": 1049,
       "comments": 1,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "labels": []
-=======
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/lingo.dev",
@@ -780,17 +739,7 @@
       "created": "2025-07-03T13:46:28Z",
       "number": 998,
       "comments": 4,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "labels": []
-=======
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/lingo.dev",
@@ -800,17 +749,7 @@
       "created": "2025-07-03T11:19:07Z",
       "number": 997,
       "comments": 5,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "labels": []
-=======
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/lingo.dev",
@@ -820,17 +759,7 @@
       "created": "2025-06-25T18:56:58Z",
       "number": 966,
       "comments": 1,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "labels": []
-=======
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/lingo.dev",
@@ -840,17 +769,7 @@
       "created": "2025-06-24T11:02:44Z",
       "number": 956,
       "comments": 3,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "labels": []
-=======
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/lingo.dev",
@@ -860,17 +779,7 @@
       "created": "2025-06-12T10:34:11Z",
       "number": 917,
       "comments": 1,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "labels": []
-=======
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
     },
     {
       "repo": "Klavis-AI/klavis",
@@ -880,17 +789,7 @@
       "created": "2025-05-10T07:21:23Z",
       "number": 38,
       "comments": 1,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "labels": []
-=======
-      "labels": [],
-      "language": "Python",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/205720652?v=4"
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
     },
     {
       "repo": "Klavis-AI/klavis",
@@ -900,17 +799,7 @@
       "created": "2025-05-02T08:09:11Z",
       "number": 27,
       "comments": 0,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "labels": []
-=======
-      "labels": [],
-      "language": "Python",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/205720652?v=4"
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",
@@ -920,17 +809,7 @@
       "created": "2025-04-30T11:32:47Z",
       "number": 718,
       "comments": 0,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "labels": []
-=======
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/126684196?v=4"
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
     },
     {
       "repo": "Klavis-AI/klavis",
@@ -940,17 +819,7 @@
       "created": "2025-04-20T09:31:37Z",
       "number": 16,
       "comments": 2,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "labels": []
-=======
-      "labels": [],
-      "language": "Python",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/205720652?v=4"
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
     },
     {
       "repo": "Klavis-AI/klavis",
@@ -960,17 +829,7 @@
       "created": "2025-04-20T08:56:26Z",
       "number": 15,
       "comments": 1,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "labels": []
-=======
-      "labels": [],
-      "language": "Python",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/205720652?v=4"
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
     },
     {
       "repo": "Klavis-AI/klavis",
@@ -980,9 +839,7 @@
       "created": "2025-04-18T09:22:19Z",
       "number": 8,
       "comments": 2,
-      "labels": [],
-      "language": "Python",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/205720652?v=4"
+      "labels": []
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",
@@ -992,9 +849,7 @@
       "created": "2025-04-09T17:02:28Z",
       "number": 675,
       "comments": 0,
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/126684196?v=4"
+      "labels": []
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",
@@ -1004,9 +859,7 @@
       "created": "2025-03-26T13:00:24Z",
       "number": 651,
       "comments": 0,
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/126684196?v=4"
+      "labels": []
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",
@@ -1016,9 +869,7 @@
       "created": "2025-03-22T17:58:25Z",
       "number": 639,
       "comments": 0,
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/126684196?v=4"
+      "labels": []
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",
@@ -1028,9 +879,7 @@
       "created": "2025-03-17T19:13:15Z",
       "number": 629,
       "comments": 10,
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/126684196?v=4"
+      "labels": []
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",
@@ -1040,9 +889,7 @@
       "created": "2025-03-16T14:19:12Z",
       "number": 616,
       "comments": 0,
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/126684196?v=4"
+      "labels": []
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",
@@ -1052,9 +899,7 @@
       "created": "2025-03-11T19:10:38Z",
       "number": 605,
       "comments": 6,
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/126684196?v=4"
+      "labels": []
     },
     {
       "repo": "ohcnetwork/leaderboard-data.old",
@@ -1064,9 +909,7 @@
       "created": "2024-10-29T12:06:01Z",
       "number": 68,
       "comments": 0,
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/62014451?v=4"
+      "labels": []
     },
     {
       "repo": "ohcnetwork/leaderboard",
@@ -1076,9 +919,7 @@
       "created": "2024-10-29T11:29:26Z",
       "number": 534,
       "comments": 2,
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/62014451?v=4"
+      "labels": []
     },
     {
       "repo": "ohcnetwork/leaderboard",
@@ -1088,9 +929,7 @@
       "created": "2024-10-19T18:30:16Z",
       "number": 528,
       "comments": 3,
-      "labels": [],
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/62014451?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1100,9 +939,7 @@
       "created": "2024-09-27T11:40:21Z",
       "number": 16,
       "comments": 1,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1112,9 +949,7 @@
       "created": "2024-07-20T14:31:20Z",
       "number": 15,
       "comments": 1,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1124,9 +959,7 @@
       "created": "2024-07-20T14:11:40Z",
       "number": 14,
       "comments": 2,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1136,9 +969,7 @@
       "created": "2024-06-15T16:58:16Z",
       "number": 12,
       "comments": 0,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1148,9 +979,7 @@
       "created": "2024-05-11T18:32:24Z",
       "number": 11,
       "comments": 0,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1160,9 +989,7 @@
       "created": "2024-05-11T17:52:19Z",
       "number": 10,
       "comments": 0,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1172,9 +999,7 @@
       "created": "2024-05-11T17:18:00Z",
       "number": 9,
       "comments": 0,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1184,9 +1009,7 @@
       "created": "2024-05-11T17:07:17Z",
       "number": 8,
       "comments": 0,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1196,9 +1019,7 @@
       "created": "2024-05-11T17:00:44Z",
       "number": 7,
       "comments": 0,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1208,9 +1029,7 @@
       "created": "2024-05-09T13:43:40Z",
       "number": 6,
       "comments": 0,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1220,9 +1039,7 @@
       "created": "2024-05-09T13:31:14Z",
       "number": 5,
       "comments": 0,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1232,9 +1049,7 @@
       "created": "2024-05-07T14:03:11Z",
       "number": 4,
       "comments": 0,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1244,9 +1059,7 @@
       "created": "2024-05-07T13:49:03Z",
       "number": 3,
       "comments": 0,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1256,9 +1069,7 @@
       "created": "2024-05-07T13:06:28Z",
       "number": 2,
       "comments": 1,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Quiz-app-MERN",
@@ -1268,9 +1079,7 @@
       "created": "2024-05-07T12:51:30Z",
       "number": 1,
       "comments": 0,
-      "labels": [],
-      "language": "JavaScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     }
   ]
 }

@@ -1,8 +1,12 @@
 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2025-11-20T03:43:49.430Z",
 =======
   "generated": "2025-11-21T03:43:28.902Z",
+>>>>>>> Stashed changes
+=======
+  "generated": "2025-11-22T03:37:43.344Z",
 >>>>>>> Stashed changes
   "username": "VAIBHAVSING",
   "total": 86,
@@ -10,9 +14,13 @@
   "rateLimit": {
     "remaining": 0,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "reset": "2025-11-20T03:43:26.584Z"
 =======
     "reset": "2025-11-21T03:43:06.756Z"
+>>>>>>> Stashed changes
+=======
+    "reset": "2025-11-22T03:37:19.199Z"
 >>>>>>> Stashed changes
   },
   "breakdown": {
@@ -630,11 +638,7 @@
       "created": "2025-08-26T06:58:42Z",
       "number": 107,
       "comments": 0,
-      "labels": [],
-      "additions": 70,
-      "deletions": 56,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/217505287?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -644,11 +648,7 @@
       "created": "2025-08-25T11:33:57Z",
       "number": 1,
       "comments": 0,
-      "labels": [],
-      "additions": 3518,
-      "deletions": 219,
-      "language": "Go",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "lingodotdev/sdk-deno",

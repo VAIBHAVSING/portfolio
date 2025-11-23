@@ -1,12 +1,16 @@
 {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2025-11-20T03:43:49.430Z",
 =======
   "generated": "2025-11-21T03:43:28.902Z",
 >>>>>>> Stashed changes
 =======
   "generated": "2025-11-22T03:37:43.344Z",
+>>>>>>> Stashed changes
+=======
+  "generated": "2025-11-23T03:56:55.838Z",
 >>>>>>> Stashed changes
   "username": "VAIBHAVSING",
   "total": 86,
@@ -15,12 +19,16 @@
     "remaining": 0,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "reset": "2025-11-20T03:43:26.584Z"
 =======
     "reset": "2025-11-21T03:43:06.756Z"
 >>>>>>> Stashed changes
 =======
     "reset": "2025-11-22T03:37:19.199Z"
+>>>>>>> Stashed changes
+=======
+    "reset": "2025-11-23T03:56:31.389Z"
 >>>>>>> Stashed changes
   },
   "breakdown": {
@@ -596,11 +604,7 @@
       "created": "2025-08-26T14:00:22Z",
       "number": 9,
       "comments": 0,
-      "labels": [],
-      "additions": 8,
-      "deletions": 10,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+      "labels": []
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -610,11 +614,7 @@
       "created": "2025-08-26T13:40:49Z",
       "number": 8,
       "comments": 0,
-      "labels": [],
-      "additions": 8,
-      "deletions": 17,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+      "labels": []
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -624,11 +624,7 @@
       "created": "2025-08-26T13:29:39Z",
       "number": 7,
       "comments": 0,
-      "labels": [],
-      "additions": 79,
-      "deletions": 153,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+      "labels": []
     },
     {
       "repo": "traceroot-ai/traceroot",

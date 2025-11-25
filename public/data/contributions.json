@@ -3,6 +3,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2025-11-20T03:43:49.430Z",
 =======
   "generated": "2025-11-21T03:43:28.902Z",
@@ -43,6 +44,19 @@
   "rateLimit": {
     "remaining": 0,
     "reset": "2025-11-24T03:56:14.822Z"
+  },
+  "breakdown": {
+    "open": 6,
+    "merged": 74,
+>>>>>>> Stashed changes
+=======
+  "generated": "2025-11-25T03:48:32.997Z",
+  "username": "VAIBHAVSING",
+  "total": 80,
+  "apiCallsUsed": 97,
+  "rateLimit": {
+    "remaining": 0,
+    "reset": "2025-11-25T03:48:13.413Z"
   },
   "breakdown": {
     "open": 6,
@@ -710,7 +724,11 @@
       "created": "2025-06-25T18:56:58Z",
       "number": 966,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 458,
+      "deletions": 4,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
     },
     {
       "repo": "lingodotdev/lingo.dev",
@@ -720,7 +738,11 @@
       "created": "2025-06-24T11:02:44Z",
       "number": 956,
       "comments": 3,
-      "labels": []
+      "labels": [],
+      "additions": 506,
+      "deletions": 0,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
     },
     {
       "repo": "lingodotdev/lingo.dev",
@@ -730,7 +752,11 @@
       "created": "2025-06-12T10:34:11Z",
       "number": 917,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 110,
+      "deletions": 1,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
     },
     {
       "repo": "Klavis-AI/klavis",
@@ -740,7 +766,11 @@
       "created": "2025-05-10T07:21:23Z",
       "number": 38,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 1464,
+      "deletions": 775,
+      "language": "Python",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/205720652?v=4"
     },
     {
       "repo": "Klavis-AI/klavis",
@@ -750,7 +780,11 @@
       "created": "2025-05-02T08:09:11Z",
       "number": 27,
       "comments": 0,
-      "labels": []
+      "labels": [],
+      "additions": 2352,
+      "deletions": 0,
+      "language": "Python",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/205720652?v=4"
     },
     {
       "repo": "eclipse-sw360/sw360-frontend",

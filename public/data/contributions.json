@@ -6,6 +6,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2025-11-20T03:43:49.430Z",
 =======
   "generated": "2025-11-21T03:43:28.902Z",
@@ -85,6 +86,19 @@
   "rateLimit": {
     "remaining": 0,
     "reset": "2025-11-27T03:45:13.626Z"
+  },
+  "breakdown": {
+    "open": 6,
+    "merged": 74,
+>>>>>>> Stashed changes
+=======
+  "generated": "2025-11-28T03:44:59.354Z",
+  "username": "VAIBHAVSING",
+  "total": 80,
+  "apiCallsUsed": 97,
+  "rateLimit": {
+    "remaining": 0,
+    "reset": "2025-11-28T03:44:46.298Z"
   },
   "breakdown": {
     "open": 6,
@@ -464,11 +478,7 @@
       "created": "2025-10-04T11:03:21Z",
       "number": 692,
       "comments": 1,
-      "labels": [],
-      "additions": 1,
-      "deletions": 1,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/177409041?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/portfolio",
@@ -478,11 +488,7 @@
       "created": "2025-10-03T18:55:00Z",
       "number": 3,
       "comments": 2,
-      "labels": [],
-      "additions": 163,
-      "deletions": 132,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/portfolio",
@@ -492,11 +498,15 @@
       "created": "2025-10-03T18:40:17Z",
       "number": 2,
       "comments": 2,
+<<<<<<< Updated upstream
       "labels": [],
       "additions": 294,
       "deletions": 1,
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -506,11 +516,15 @@
       "created": "2025-09-30T16:35:08Z",
       "number": 33,
       "comments": 1,
+<<<<<<< Updated upstream
       "labels": [],
       "additions": 4564,
       "deletions": 15,
       "language": "Go",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/portfolio",
@@ -520,11 +534,15 @@
       "created": "2025-09-27T09:10:10Z",
       "number": 1,
       "comments": 1,
+<<<<<<< Updated upstream
       "labels": [],
       "additions": 400,
       "deletions": 49,
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -534,11 +552,7 @@
       "created": "2025-09-04T08:36:56Z",
       "number": 5,
       "comments": 0,
-      "labels": [],
-      "additions": 18,
-      "deletions": 1,
-      "language": "Go",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -548,11 +562,7 @@
       "created": "2025-08-29T13:33:11Z",
       "number": 4,
       "comments": 0,
-      "labels": [],
-      "additions": 702,
-      "deletions": 0,
-      "language": "Go",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -562,11 +572,7 @@
       "created": "2025-08-27T11:36:18Z",
       "number": 3,
       "comments": 1,
-      "labels": [],
-      "additions": 547,
-      "deletions": 17,
-      "language": "Go",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "lingodotdev/sdk-deno",

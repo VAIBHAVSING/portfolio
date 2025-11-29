@@ -7,6 +7,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2025-11-20T03:43:49.430Z",
 =======
   "generated": "2025-11-21T03:43:28.902Z",
@@ -99,6 +100,19 @@
   "rateLimit": {
     "remaining": 0,
     "reset": "2025-11-28T03:44:46.298Z"
+  },
+  "breakdown": {
+    "open": 6,
+    "merged": 74,
+>>>>>>> Stashed changes
+=======
+  "generated": "2025-11-29T03:45:04.756Z",
+  "username": "VAIBHAVSING",
+  "total": 80,
+  "apiCallsUsed": 97,
+  "rateLimit": {
+    "remaining": 0,
+    "reset": "2025-11-29T03:44:42.736Z"
   },
   "breakdown": {
     "open": 6,
@@ -504,8 +518,11 @@
       "deletions": 1,
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+<<<<<<< Updated upstream
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     },
     {
@@ -522,8 +539,11 @@
       "deletions": 15,
       "language": "Go",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+<<<<<<< Updated upstream
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     },
     {
@@ -540,8 +560,11 @@
       "deletions": 49,
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+<<<<<<< Updated upstream
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     },
     {

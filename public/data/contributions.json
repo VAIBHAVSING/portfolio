@@ -10,6 +10,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2025-11-20T03:43:49.430Z",
 =======
   "generated": "2025-11-21T03:43:28.902Z",
@@ -141,6 +142,19 @@
   "rateLimit": {
     "remaining": 0,
     "reset": "2025-12-01T04:10:25.875Z"
+  },
+  "breakdown": {
+    "open": 6,
+    "merged": 74,
+>>>>>>> Stashed changes
+=======
+  "generated": "2025-12-02T03:52:20.807Z",
+  "username": "VAIBHAVSING",
+  "total": 80,
+  "apiCallsUsed": 97,
+  "rateLimit": {
+    "remaining": 0,
+    "reset": "2025-12-02T03:51:56.640Z"
   },
   "breakdown": {
     "open": 6,
@@ -549,8 +563,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -576,8 +593,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -603,8 +623,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -830,9 +853,14 @@
       "labels": [],
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 458,
       "deletions": 4,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 458,
+      "deletions": 4,
 >>>>>>> Stashed changes
 =======
       "additions": 458,
@@ -851,9 +879,14 @@
       "comments": 3,
       "labels": [],
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 506,
       "deletions": 0,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 506,
+      "deletions": 0,
 >>>>>>> Stashed changes
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"

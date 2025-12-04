@@ -12,6 +12,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2025-11-20T03:43:49.430Z",
 =======
   "generated": "2025-11-21T03:43:28.902Z",
@@ -174,6 +175,19 @@
     "open": 6,
     "merged": 74,
 >>>>>>> Stashed changes
+=======
+  "generated": "2025-12-04T03:52:36.769Z",
+  "username": "VAIBHAVSING",
+  "total": 80,
+  "apiCallsUsed": 97,
+  "rateLimit": {
+    "remaining": 0,
+    "reset": "2025-12-04T03:52:11.522Z"
+  },
+  "breakdown": {
+    "open": 6,
+    "merged": 74,
+>>>>>>> Stashed changes
     "closed": 0
   },
   "contributions": [
@@ -202,7 +216,7 @@
       "labels": [],
       "additions": 1403,
       "deletions": 241,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -216,7 +230,7 @@
       "labels": [],
       "additions": 202,
       "deletions": 0,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -230,7 +244,7 @@
       "labels": [],
       "additions": 623,
       "deletions": 0,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -244,7 +258,7 @@
       "labels": [],
       "additions": 577,
       "deletions": 0,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -258,7 +272,7 @@
       "labels": [],
       "additions": 592,
       "deletions": 0,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -272,7 +286,7 @@
       "labels": [],
       "additions": 506,
       "deletions": 1,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -286,7 +300,7 @@
       "labels": [],
       "additions": 5733,
       "deletions": 344,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -300,7 +314,7 @@
       "labels": [],
       "additions": 44,
       "deletions": 5009,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -314,7 +328,7 @@
       "labels": [],
       "additions": 466,
       "deletions": 0,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -328,7 +342,7 @@
       "labels": [],
       "additions": 92,
       "deletions": 166,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -342,7 +356,7 @@
       "labels": [],
       "additions": 1194,
       "deletions": 5083,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -356,7 +370,7 @@
       "labels": [],
       "additions": 258,
       "deletions": 23,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -370,7 +384,7 @@
       "labels": [],
       "additions": 51,
       "deletions": 476,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -384,7 +398,7 @@
       "labels": [],
       "additions": 700,
       "deletions": 8,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -398,7 +412,7 @@
       "labels": [],
       "additions": 274,
       "deletions": 262,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -412,7 +426,7 @@
       "labels": [],
       "additions": 9,
       "deletions": 11,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -426,7 +440,7 @@
       "labels": [],
       "additions": 6651,
       "deletions": 5468,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -440,7 +454,7 @@
       "labels": [],
       "additions": 1292,
       "deletions": 0,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -454,7 +468,7 @@
       "labels": [],
       "additions": 3761,
       "deletions": 702,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -481,7 +495,7 @@
       ],
       "additions": 8338,
       "deletions": 12,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -509,7 +523,7 @@
       "labels": [],
       "additions": 633,
       "deletions": 50,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -523,7 +537,7 @@
       "labels": [],
       "additions": 315,
       "deletions": 39,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -537,7 +551,7 @@
       "labels": [],
       "additions": 2636,
       "deletions": 457,
-      "language": "Go",
+      "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
@@ -579,8 +593,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -605,6 +622,7 @@
       "labels": [],
       "additions": 4564,
       "deletions": 15,
+<<<<<<< Updated upstream
       "language": "Go",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
 <<<<<<< Updated upstream
@@ -624,6 +642,10 @@
 =======
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
 >>>>>>> Stashed changes
     },
     {
@@ -645,8 +667,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -667,7 +692,15 @@
       "created": "2025-09-04T08:36:56Z",
       "number": 5,
       "comments": 0,
+<<<<<<< Updated upstream
       "labels": []
+=======
+      "labels": [],
+      "additions": 18,
+      "deletions": 1,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -677,7 +710,15 @@
       "created": "2025-08-29T13:33:11Z",
       "number": 4,
       "comments": 0,
+<<<<<<< Updated upstream
       "labels": []
+=======
+      "labels": [],
+      "additions": 702,
+      "deletions": 0,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -687,7 +728,15 @@
       "created": "2025-08-27T11:36:18Z",
       "number": 3,
       "comments": 1,
+<<<<<<< Updated upstream
       "labels": []
+=======
+      "labels": [],
+      "additions": 547,
+      "deletions": 17,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+>>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -737,7 +786,15 @@
       "created": "2025-08-25T11:33:57Z",
       "number": 1,
       "comments": 0,
+<<<<<<< Updated upstream
       "labels": []
+=======
+      "labels": [],
+      "additions": 3518,
+      "deletions": 219,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+>>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -877,9 +934,14 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 458,
       "deletions": 4,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 458,
+      "deletions": 4,
 >>>>>>> Stashed changes
 =======
       "additions": 458,
@@ -903,9 +965,14 @@
       "labels": [],
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 506,
       "deletions": 0,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 506,
+      "deletions": 0,
 >>>>>>> Stashed changes
 =======
       "additions": 506,
@@ -924,9 +991,14 @@
       "comments": 1,
       "labels": [],
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 110,
       "deletions": 1,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 110,
+      "deletions": 1,
 >>>>>>> Stashed changes
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
@@ -941,9 +1013,14 @@
       "comments": 1,
       "labels": [],
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 1464,
       "deletions": 775,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 1464,
+      "deletions": 775,
 >>>>>>> Stashed changes
       "language": "Python",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/205720652?v=4"
@@ -958,9 +1035,14 @@
       "comments": 0,
       "labels": [],
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 2352,
       "deletions": 0,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 2352,
+      "deletions": 0,
 >>>>>>> Stashed changes
       "language": "Python",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/205720652?v=4"

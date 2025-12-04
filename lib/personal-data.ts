@@ -28,14 +28,14 @@ export const PERSONAL_INFO = {
 
 export const PROJECTS = [
   {
-    title: "Unified Cloud SDK",
+    title: "Dev8.dev",
     description:
-      "A Go Unified Cloud SDK designed to give developers a consistent, intuitive API for integrating multiple cloud services with minimal friction.",
-    tags: ["Golang", "SDK", "Cloud", "AWS", "GCP", "AZURE"],
-    icon: "🤖",
-    liveUrl: "https://pkg.go.dev/github.com/VAIBHAVSING/Cloudsdk/go",
-    githubUrl: "https://github.com/VAIBHAVSING/Cloudsdk",
-    highlight: "CLOUD + SDK",
+      "Open source alternative to GitHub Codespaces with GPU support. Built with Go to provide developers with powerful cloud-based development environments featuring GPU acceleration for ML/AI workloads.",
+    tags: ["Golang", "Cloud", "GPU", "DevOps", "Infrastructure", "Open Source"],
+    icon: "🚀",
+    liveUrl: "https://github.com/VAIBHAVSING/Dev8.dev",
+    githubUrl: "https://github.com/VAIBHAVSING/Dev8.dev",
+    highlight: "GPU-POWERED CLOUD IDE",
   },
   {
     title: "Quiz App (MERN)",
@@ -52,8 +52,9 @@ export const PROJECTS = [
 export const DOCK_ITEMS = [
   { name: "About", icon: "/home.webp", targetId: "about" },
   { name: "Skills", icon: "/skills.webp", targetId: "skills" },
-  { name: "Education", icon: "/education.webp", targetId: "education" },
   { name: "Projects", icon: "/projects.webp", targetId: "projects" },
+  { name: "Writing", icon: "/projects.webp", targetId: "writing" },
+  { name: "Education", icon: "/education.webp", targetId: "education" },
   { name: "Schedule", icon: "/calender.webp", external: "/cal" },
   {
     name: "GitHub",
@@ -86,7 +87,6 @@ export const EDUCATION = [
     description:
       "Pursuing Computer Science with specialization in software engineering, algorithms, and modern web technologies. Maintaining strong academic performance while actively contributing to open source projects.",
     achievements: [
-      "Maintained consistent academic excellence with CGPA of 8.5/10",
       "Active contributor to open source projects with 50+ contributions on GitHub",
       "Built and deployed multiple full-stack applications using modern technologies",
       "Participated in hackathons and coding competitions, securing top positions",
@@ -114,5 +114,50 @@ export const EDUCATION = [
   },
 ] as const;
 
+export const TESTIMONIALS = [
+  {
+    id: "1",
+    name: "Max Prilutskiy",
+    title: "Co-founder & CEO",
+    company: "Lingo.dev[YC-F24]",
+    relationship: "Worked together at Company",
+    text:  `I had the pleasure of working with Vaibhav Patil during his internship at Lingo.dev, where he contributed to our open-source i18n, localization and translation tools.
+
+Vaibhav stood out for his curiosity and eagerness to dive deep into complex systems, quickly grasping how our platform integrates with modern i18n workflows. He asked thoughtful questions, explored new approaches, and consistently turned insights into practical improvements.
+
+Excited to see where his curiosity and technical talent take him next!`,
+    avatar: "https://media.licdn.com/dms/image/v2/D4D03AQEAvc4AmrtLiQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1703891537293?e=1766620800&v=beta&t=uIy7WmVoTvYpYtYcwdflo8-QehCkufMruwrlbFfP2-Y", // Add profile picture URL here
+    linkedinUrl:
+      "https://www.linkedin.com/in/vaibhavpatil24/details/recommendations/",
+  },
+  // Add more testimonials as needed:
+  // {
+  //   id: "2",
+  //   name: "Another Person",
+  //   title: "Their Title",
+  //   company: "Company Name",
+  //   relationship: "Colleague/Manager",
+  //   text: "Their recommendation text...",
+  //   avatar: "/their-profile-pic.jpg",
+  //   linkedinUrl: "https://linkedin.com/...",
+  // },
+] as const;
+
+export const ARTICLES = [
+  {
+    id: "1",
+    title: "Building Scalable Web Applications: Lessons from Production",
+    excerpt:
+      "Deep dive into architectural patterns, performance optimization, and real-world challenges in building modern web applications at scale.",
+    url: "https://medium.com/@vpatil5212/building-scalable-web-applications-lessons-from-production-e83d5bc33411",
+    publishedDate: "2024-01-15",
+    readTime: "8 min read",
+    tags: ["Web Development", "Architecture", "Performance"],
+    platform: "Medium" as const,
+  },
+] as const;
+
 export type Project = (typeof PROJECTS)[number];
 export type EducationItem = (typeof EDUCATION)[number];
+export type Testimonial = (typeof TESTIMONIALS)[number];
+export type Article = (typeof ARTICLES)[number];

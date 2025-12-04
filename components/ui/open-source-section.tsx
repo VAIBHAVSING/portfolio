@@ -165,80 +165,118 @@ export function OpenSourceSection({}: OpenSourceSectionProps) {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background via-background/60 to-background" />
       <div className="absolute inset-0 -z-10 opacity-40 bg-[radial-gradient(circle_at_20%_20%,rgba(120,119,198,0.15),transparent_60%),radial-gradient(circle_at_80%_30%,rgba(56,189,248,0.12),transparent_55%),radial-gradient(circle_at_50%_80%,rgba(244,114,182,0.12),transparent_55%)]" />
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-14">
-          <div className="max-w-2xl">
-            <h2 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-primary via-primary/60 to-primary/30 bg-clip-text text-transparent">
-              Open Source Impact
-            </h2>
-            <p className="text-muted-foreground mt-4 text-sm md:text-base">
-              Recent public pull requests plus contribution metadata — showing
-              merged progress, code churn & language footprint.
-            </p>
-            <div className="mt-6 inline-flex gap-3 rounded-full border border-border/60 bg-card/40 px-4 py-2 text-xs backdrop-blur-sm">
-              <span className="flex items-center gap-1">
-                <Star className="h-3 w-3 text-yellow-400" />{" "}
-                <strong>{stars}</strong> stars
-              </span>
-              <span className="text-muted-foreground">•</span>
-              <span className="flex items-center gap-1">
-                <GitPullRequest className="h-3 w-3" /> {prs.length} PRs
-              </span>
-            </div>
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-primary via-primary/60 to-primary/30 bg-clip-text text-transparent">
+            Open Source Impact
+          </h2>
+        </div>
+
+        {/* Stats Bar */}
+        <div className="flex justify-center mb-8">
+          <div className="inline-flex gap-6 rounded-full border border-border/60 bg-card/40 px-6 py-3 text-sm backdrop-blur-sm">
+            <span className="flex items-center gap-2">
+              <Star className="h-4 w-4 text-yellow-400" />
+              <strong>{stars}</strong>{" "}
+              <span className="text-muted-foreground">stars</span>
+            </span>
+            <span className="text-muted-foreground">•</span>
+            <span className="flex items-center gap-2">
+              <GitPullRequest className="h-4 w-4 text-primary" />
+              <strong>{prs.length}</strong>{" "}
+              <span className="text-muted-foreground">PRs</span>
+            </span>
           </div>
-          <div className="flex flex-col items-start md:items-end gap-3 text-xs">
-            <div className="flex gap-2 flex-wrap max-w-[480px] justify-start md:justify-end">
-              {(["all", "open", "merged", "closed"] as const).map((f) => (
+        </div>
+
+        {/* Filters Section */}
+        <div className="flex flex-col gap-4 mb-10">
+          {/* Status Filters with Icons */}
+          <div className="flex flex-wrap gap-3 justify-center">
+            {(["all", "open", "merged", "closed"] as const).map((f) => (
+              <button
+                key={f}
+                onClick={() => setFilter(f)}
+                className={cn(
+                  "inline-flex items-center gap-2 rounded-full px-5 py-2.5 border backdrop-blur-sm transition-all text-sm font-medium",
+                  filter === f
+                    ? f === "open"
+                      ? "bg-emerald-500/20 text-emerald-400 border-emerald-500/40 shadow-lg shadow-emerald-500/20"
+                      : f === "merged"
+                        ? "bg-violet-500/20 text-violet-400 border-violet-500/40 shadow-lg shadow-violet-500/20"
+                        : f === "closed"
+                          ? "bg-red-500/20 text-red-400 border-red-500/40 shadow-lg shadow-red-500/20"
+                          : "bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20"
+                    : "bg-card/30 hover:bg-card/50 border-border/60 text-muted-foreground hover:border-primary/30",
+                )}
+              >
+                {f === "open" ? (
+                  <GitPullRequest className="h-4 w-4" />
+                ) : f === "merged" ? (
+                  <GitMerge className="h-4 w-4" />
+                ) : f === "closed" ? (
+                  <OctagonX className="h-4 w-4" />
+                ) : (
+                  <GitPullRequest className="h-4 w-4" />
+                )}
+                <span className="capitalize">{f}</span>
+              </button>
+            ))}
+          </div>
+
+          {/* Organization Filters with GitHub Icon */}
+          {orgs.length > 1 && (
+            <div className="flex flex-wrap gap-2 justify-center">
+              <button
+                onClick={() => setOrgFilter("all")}
+                className={cn(
+                  "inline-flex items-center gap-2 rounded-full px-4 py-2 border text-xs font-medium transition-all",
+                  orgFilter === "all"
+                    ? "bg-[#24292e] text-white border-[#24292e] shadow-lg shadow-[#24292e]/30"
+                    : "bg-card/30 hover:bg-card/50 border-border/60 text-muted-foreground hover:border-[#24292e]/40",
+                )}
+              >
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+                All Organizations
+              </button>
+              {orgs.map((org) => (
                 <button
-                  key={f}
-                  onClick={() => setFilter(f)}
+                  key={org}
+                  onClick={() => setOrgFilter(org)}
                   className={cn(
-                    "rounded-full px-4 py-2 border backdrop-blur-sm transition-colors",
-                    filter === f
-                      ? "bg-primary text-primary-foreground border-primary"
-                      : "bg-card/30 hover:bg-card/50 border-border/60 text-muted-foreground",
+                    "inline-flex items-center gap-2 rounded-full px-4 py-2 border text-xs font-medium transition-all",
+                    orgFilter === org
+                      ? "bg-[#24292e] text-white border-[#24292e] shadow-lg shadow-[#24292e]/30"
+                      : "bg-card/30 hover:bg-card/50 border-border/60 text-muted-foreground hover:border-[#24292e]/40",
                   )}
                 >
-                  {f}
+                  <svg
+                    className="h-4 w-4"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                  >
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                  {org}
                 </button>
               ))}
             </div>
-            {orgs.length > 1 && (
-              <div className="flex gap-2 flex-wrap max-w-[480px] justify-start md:justify-end">
-                <button
-                  onClick={() => setOrgFilter("all")}
-                  className={cn(
-                    "rounded-full px-3 py-1.5 border text-[11px] transition-colors",
-                    orgFilter === "all"
-                      ? "bg-primary text-primary-foreground border-primary"
-                      : "bg-card/30 hover:bg-card/50 border-border/60 text-muted-foreground",
-                  )}
-                >
-                  all orgs
-                </button>
-                {orgs.map((org) => (
-                  <button
-                    key={org}
-                    onClick={() => setOrgFilter(org)}
-                    className={cn(
-                      "rounded-full px-3 py-1.5 border text-[11px] transition-colors",
-                      orgFilter === org
-                        ? "bg-primary text-primary-foreground border-primary"
-                        : "bg-card/30 hover:bg-card/50 border-border/60 text-muted-foreground",
-                    )}
-                  >
-                    {org}
-                  </button>
-                ))}
-              </div>
-            )}
-            <div className="w-full flex justify-start md:justify-end">
-              <input
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                placeholder="Search title or repo..."
-                className="mt-1 w-full md:w-72 rounded-md bg-card/40 backdrop-blur-sm border border-border/60 px-3 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-primary/40"
-              />
-            </div>
+          )}
+
+          {/* Search Bar */}
+          <div className="flex justify-center">
+            <input
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search title or repo..."
+              className="w-full max-w-md rounded-full bg-card/40 backdrop-blur-sm border border-border/60 px-5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all"
+            />
           </div>
         </div>
         {loading && (

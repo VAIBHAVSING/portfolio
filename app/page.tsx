@@ -9,7 +9,16 @@ import { EducationSection } from "@/components/ui/education-section";
 import { OpenSourceSection } from "@/components/ui/open-source-section";
 import { TechStackSection } from "@/components/ui/tech-stack-section";
 import { ScheduleCallSection } from "@/components/ui/schedule-call";
-import { PERSONAL_INFO, PROJECTS, EDUCATION } from "@/lib/personal-data";
+import { TestimonialsSection } from "@/components/ui/testimonials-section";
+import { WritingSectionAuto } from "@/components/ui/writing-section-auto";
+import { SectionObserver } from "@/components/ui/section-observer";
+import {
+  PERSONAL_INFO,
+  PROJECTS,
+  EDUCATION,
+  TESTIMONIALS,
+  ARTICLES,
+} from "@/lib/personal-data";
 import { GithubShowcase } from "@/components/ui/GithubShowcase";
 
 // Derived project objects enriched for UI (map static PROJECTS to expected shape)
@@ -36,6 +45,21 @@ export default function Home() {
 
   return (
     <BackgroundComponent>
+      {/* Section Observer - Updates URL hash on scroll */}
+      <SectionObserver
+        sectionIds={[
+          "about",
+          "skills",
+          "experience",
+          "education",
+          "oss",
+          "projects",
+          "writing",
+          "testimonials",
+          "contact",
+        ]}
+      />
+
       <div className="relative z-10 space-y-10 ">
         {/* GitHub Events - Notification system at bottom right */}
         <div className="fixed bottom-4 right-4 z-[100]">
@@ -71,6 +95,20 @@ export default function Home() {
         <div id="projects" className="px-6">
           <ProjectsSection projects={mappedProjects} />
           <GithubShowcase />
+        </div>
+
+        {/* Writing Section - Automatically fetches from Medium RSS */}
+        <div id="writing" className="px-6">
+          <WritingSectionAuto
+            username="vpatil5212"
+            limit={10}
+            fallbackArticles={ARTICLES}
+          />
+        </div>
+
+        {/* Testimonials Section */}
+        <div id="testimonials" className="px-6">
+          <TestimonialsSection testimonials={TESTIMONIALS} />
         </div>
 
         <div id="contact" className="px-6">

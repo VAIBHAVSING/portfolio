@@ -67,9 +67,6 @@ export const LandingHero: React.FC<LandingHeroProps> = ({ words }) => {
           </button>
         </div>
       </div>
-      <div className="absolute bottom-20 left-20 w-2 h-2 bg-primary/30 rounded-full animate-pulse delay-1000" />
-      <div className="absolute bottom-32 left-32 w-3 h-3 bg-primary/20 rounded-full animate-pulse delay-1300" />
-      <div className="absolute bottom-40 left-16 w-1 h-4 bg-primary/40 animate-pulse delay-1500" />
     </section>
   );
 };

@@ -49,7 +49,7 @@ export function ExperienceSection({
       company: "Lingo.dev[YC-F24]",
       period: "July-25 Aug-25",
       description:
-        "Owned UI component library & performance uplift initiative.",
+        "Maintained 4k+ star oss repo and help contributor to contribute.",
       impact: [
         "Contributed to SDKs and CLI at Lingo.dev, helping developers integrate the platform into their products.",
         "Developed and maintained end-to-end Deno.js SDKs to streamline adoption and usage.",

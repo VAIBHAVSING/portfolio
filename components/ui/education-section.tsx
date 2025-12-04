@@ -90,11 +90,7 @@ export function EducationSection({
                         <Calendar className="h-3 w-3" />
                         {item.period}
                       </span>
-                      {item.gpa && (
-                        <span className="rounded-md bg-emerald-500/10 px-2 py-1 font-medium text-emerald-600 dark:text-emerald-400">
-                          GPA {item.gpa}
-                        </span>
-                      )}
+                      
                     </div>
                   </header>
 

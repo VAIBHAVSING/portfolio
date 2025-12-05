@@ -13,6 +13,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2025-11-20T03:43:49.430Z",
 =======
   "generated": "2025-11-21T03:43:28.902Z",
@@ -183,6 +184,19 @@
   "rateLimit": {
     "remaining": 0,
     "reset": "2025-12-04T03:52:11.522Z"
+  },
+  "breakdown": {
+    "open": 6,
+    "merged": 74,
+>>>>>>> Stashed changes
+=======
+  "generated": "2025-12-05T03:51:20.170Z",
+  "username": "VAIBHAVSING",
+  "total": 80,
+  "apiCallsUsed": 97,
+  "rateLimit": {
+    "remaining": 0,
+    "reset": "2025-12-05T03:50:58.466Z"
   },
   "breakdown": {
     "open": 6,
@@ -594,8 +608,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -623,6 +640,7 @@
       "additions": 4564,
       "deletions": 15,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "language": "Go",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
 <<<<<<< Updated upstream
@@ -644,6 +662,8 @@
 =======
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> Stashed changes
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
 >>>>>>> Stashed changes
@@ -668,8 +688,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -935,9 +958,14 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 458,
       "deletions": 4,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 458,
+      "deletions": 4,
 >>>>>>> Stashed changes
 =======
       "additions": 458,
@@ -966,9 +994,14 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 506,
       "deletions": 0,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 506,
+      "deletions": 0,
 >>>>>>> Stashed changes
 =======
       "additions": 506,
@@ -992,9 +1025,14 @@
       "labels": [],
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 110,
       "deletions": 1,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 110,
+      "deletions": 1,
 >>>>>>> Stashed changes
 =======
       "additions": 110,
@@ -1014,9 +1052,14 @@
       "labels": [],
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 1464,
       "deletions": 775,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 1464,
+      "deletions": 775,
 >>>>>>> Stashed changes
 =======
       "additions": 1464,
@@ -1036,9 +1079,14 @@
       "labels": [],
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 2352,
       "deletions": 0,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 2352,
+      "deletions": 0,
 >>>>>>> Stashed changes
 =======
       "additions": 2352,

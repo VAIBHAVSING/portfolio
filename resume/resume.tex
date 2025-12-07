@@ -1,0 +1,187 @@
+%-------------------------
+% Resume - Vaibhav Patil
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Vaibhav Patil} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-7820807240 ~ 
+    \href{mailto:vpatil5212@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vpatil5212@gmail.com}} ~ 
+    \href{https://linkedin.com/in/vaibhavpatil24/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/vaibhavpatil24}}  ~
+    \href{https://github.com/VAIBHAVSING}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/VAIBHAVSING}} ~
+    \href{https://vaibhavsing.me}{\raisebox{-0.2\height}\faGlobe\ \underline{vaibhavsing.me}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, JavaScript, Go, Python, SQL, HTML, CSS} \\
+     \textbf{Frontend}{: React, Next.js, Tailwind CSS, Framer Motion} \\
+     \textbf{Backend}{: Node.js, Express, FastAPI, REST, GraphQL, tRPC} \\
+     \textbf{Databases}{: PostgreSQL, MySQL, MongoDB, Redis, Prisma, Supabase} \\
+     \textbf{DevOps}{: Docker, GitHub Actions, CI/CD, AWS, Azure, Terraform, Linux} \\
+     \textbf{Tools}{: Git, Jest, Playwright, ESLint, Postman, NeoVim} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineering Intern}{Jul 2025 -- Sep 2025}
+      {Lingo.dev (YC F24)}{Remote}
+      \resumeItemListStart
+        \resumeItem{Worked on a 4k+ star OSS repo, reviewed PRs and helped onboard new contributors}
+        \resumeItem{Built SDKs and CLI tools to make it easier for developers to use the i18n platform}
+        \resumeItem{Created the Deno.js SDK from scratch and set up automated releases}
+        \resumeItem{Fixed bugs in the compiler and added new file format support (EJS, OpenRouter)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Open Source Contributor}{2024 -- Present}
+      {Various Projects}{Remote}
+      \resumeItemListStart
+        \resumeItem{80+ merged PRs across repos like Lingo.dev, HumanLayer, Klavis-AI, and Traceroot}
+        \resumeItem{Added code-splitting to a React app which cut initial load time by around 30\%}
+        \resumeItem{Set up CI pipelines with test and lint checks to catch issues before merge}
+        \resumeItem{Built features like file watching for hot-reload and AbortController for API cancellation}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Dev8.dev} $|$ \emph{Go, Docker, Azure, TypeScript}}{2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Building an open source cloud IDE similar to GitHub Codespaces but with GPU support}
+            \resumeItem{Set up a 4-layer Docker setup with VS Code Server running in containers}
+            \resumeItem{Added Azure Container Apps deployment for running workspaces in the cloud}
+            \resumeItem{Wrote the database schema for workspaces, SSH keys, secrets, and backups}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Quiz App} $|$ \emph{React, Node.js, Express, MongoDB}}{2024}
+          \resumeItemListStart
+            \resumeItem{Full-stack quiz platform with admin panel and instant scoring}
+            \resumeItem{Used JWT for auth and Recoil for state management}
+            \resumeItem{Deployed and live at quiz.vaibhavsing.me}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------OSS CONTRIBUTIONS-----------
+\section{Open Source}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Lingo.dev} $|$ \emph{YC F24, 4k+ stars}}{}
+          \resumeItemListStart
+            \resumeItem{Added EJS file support, file watcher for live reloads, and OpenRouter integration}
+            \resumeItem{Built and maintain the official Deno SDK with automated CI/CD}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Other Projects} $|$ \emph{HumanLayer, Klavis-AI, Traceroot}}{}
+          \resumeItemListStart
+            \resumeItem{Added WhatsApp client for MCP, fixed theming bugs, set up linting}
+            \resumeItem{Converted sync endpoints to async in FastAPI for better performance}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {K.K Wagh Institute of Engineering Education and Research}{2022 -- 2026}
+      {B.Tech in Information Technology}{Nashik, India}
+      \resumeItemListStart
+        \resumeItem{Courses: DSA, Software Engineering, DBMS, Networks, OS, ML, System Design}
+        \resumeItem{Ran workshops on web dev and mentored juniors on React and Node}
+        \resumeItem{Won prizes at college hackathons}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}

@@ -11,9 +11,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+
 
   // Static redirects for maximum performance
   async redirects() {

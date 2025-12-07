@@ -13,7 +13,7 @@ export const PERSONAL_INFO = {
     { text: "Software", className: "text-blue-500 dark:text-blue-500" },
     { text: "Engineer", className: "text-blue-500 dark:text-blue-500" },
   ],
-  bio: "I build innovative solutions and contribute to open source projects. Currently pursuing Computer Science while creating impactful software that makes a difference.",
+  bio: "I love to debug apps in production && build distributed systems.",
   avatar: "/avatar.webp",
   resume: {
     downloadName: "Vaibhav_Patil_Resume.pdf",
@@ -50,39 +50,39 @@ export const PROJECTS = [
 ] as const;
 
 export const DOCK_ITEMS = [
+  // Navigation - in order of page sections
   { name: "About", icon: "/home.webp", targetId: "about" },
   { name: "Skills", icon: "/skills.webp", targetId: "skills" },
-  { name: "Projects", icon: "/projects.webp", targetId: "projects" },
-  { name: "Writing", icon: "/projects.webp", targetId: "writing" },
+  { name: "Experience", icon: "/projects.webp", targetId: "experience" },
   { name: "Education", icon: "/education.webp", targetId: "education" },
-  { name: "Schedule", icon: "/calender.webp", external: "/cal" },
+  { name: "OSS", icon: "/github.webp", targetId: "oss" },
+  { name: "Projects", icon: "/projects.webp", targetId: "projects" },
+  { name: "Writing", icon: "/writing.png", targetId: "writing" },
+  { name: "Testimonials", icon: "/email.webp", targetId: "testimonials" },
+  { name: "Contact", icon: "/calender.webp", targetId: "contact" },
+  // External links
   {
     name: "GitHub",
     icon: "/github.webp",
     external: "/gh",
   },
   {
-    name: "Twitter",
-    icon: "/twitter.webp",
-    external: "/x",
-  },
-  {
-    name: "Contact",
-    icon: "/email.webp",
-    external: "/email",
-  },
-  {
     name: "LinkedIn",
     icon: "/linkedin.webp",
     external: "/in",
+  },
+  {
+    name: "Twitter",
+    icon: "/twitter.webp",
+    external: "/x",
   },
   { name: "Resume", icon: "/resume.webp", download: true },
 ] as const;
 
 export const EDUCATION = [
   {
-    degree: "Bachelor of Engineering in Computer Science",
-    institution: "Pune University",
+    degree: "Bachelor of Technology in Information Technology",
+    institution: "K.K Wagh Institute Of Engineering Education and Research",
     period: "2022 - 2026",
     description:
       "Pursuing Computer Science with specialization in software engineering, algorithms, and modern web technologies. Maintaining strong academic performance while actively contributing to open source projects.",
@@ -93,9 +93,8 @@ export const EDUCATION = [
       "Led technical workshops and mentored junior students in web development",
       "Completed internship at Y Combinator startup, contributing to production systems",
     ],
-    gpa: "8.5/10",
-    location: "Pune, India",
-    logo: "🎓",
+    location: "Nashik, India",
+    logo: "/kk-wagh-logo.png",
     coursework: [
       "Data Structures & Algorithms",
       "Software Engineering",
@@ -151,7 +150,7 @@ export const ARTICLES = [
       "Deep dive into architectural patterns, performance optimization, and real-world challenges in building modern web applications at scale.",
     url: "https://medium.com/@vpatil5212/building-scalable-web-applications-lessons-from-production-e83d5bc33411",
     publishedDate: "2024-01-15",
-    readTime: "8 min read",
+    readTime: "2 min read",
     tags: ["Web Development", "Architecture", "Performance"],
     platform: "Medium" as const,
   },

@@ -2,7 +2,9 @@
 
 import React, { useState } from "react";
 import { Card } from "./card";
-import { Quote, Star, ChevronDown, ChevronUp } from "lucide-react";
+import { Quote, Star, ChevronDown, ChevronUp, MessageCircle } from "lucide-react";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface Testimonial {
   id: string;
@@ -19,6 +21,21 @@ interface TestimonialsSectionProps {
   testimonials: readonly Testimonial[];
 }
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 },
+};
+
 export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
   testimonials,
 }) => {
@@ -26,45 +43,67 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
 
   return (
     <section
-      id="testimonials"
-      className="relative w-full py-20 px-6 overflow-hidden"
+      className="relative w-full py-28 px-6 overflow-hidden"
     >
+      {/* Background effects */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background via-background/60 to-background" />
+      <div className="absolute inset-0 -z-10 opacity-30 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.15),transparent_55%),radial-gradient(circle_at_70%_80%,rgba(244,114,182,0.12),transparent_55%)]" />
+
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6 animate-in fade-in slide-in-from-bottom-3 duration-500">
-            <Star className="w-4 h-4 text-primary fill-primary animate-pulse" />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6"
+          >
+            <MessageCircle className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-primary">
               Recommendations
             </span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-700">
+          </motion.div>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent"
+          >
             What People Say
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-900">
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-base text-muted-foreground max-w-2xl mx-auto"
+          >
             Trusted feedback from colleagues, mentors, and collaborators I have
             had the privilege to work with
-          </p>
+          </motion.p>
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={testimonial.id}
-              className="animate-in fade-in slide-in-from-bottom-6 duration-1000"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
+          {testimonials.map((testimonial) => (
+            <motion.div key={testimonial.id} variants={cardVariants}>
               <TestimonialCard testimonial={testimonial} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
 };
 
-// Improved Testimonial Card Component
+// Enhanced Testimonial Card Component
 const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({
   testimonial,
 }) => {
@@ -73,25 +112,25 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({
   const shouldTruncate = textLength > 200;
 
   return (
-    <Card className="group relative h-full bg-gradient-to-br from-card to-card/80 border border-border hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 flex flex-col overflow-hidden">
-      {/* Animated gradient border on hover */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/10 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+    <Card className="group relative h-full bg-card/40 backdrop-blur-sm border border-border/40 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-500 flex flex-col overflow-hidden">
+      {/* Gradient overlay on hover */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-      {/* Top decorative bar */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      {/* Top accent line */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
       <div className="relative p-6 flex flex-col h-full">
-        {/* Quote Icon with animation */}
-        <div className="mb-4">
-          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-            <Quote className="w-6 h-6 text-primary" />
+        {/* Quote Icon */}
+        <div className="mb-5">
+          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/10 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 transition-all duration-300">
+            <Quote className="w-5 h-5 text-primary" />
           </div>
         </div>
 
-        {/* Testimonial Text with expand/collapse */}
+        {/* Testimonial Text */}
         <blockquote className="flex-grow mb-6">
           <p
-            className={`text-foreground/90 leading-relaxed text-xl font-bold transition-all duration-300 ${
+            className={`text-foreground/90 leading-relaxed text-base transition-all duration-300 ${
               !isExpanded && shouldTruncate ? "line-clamp-4" : ""
             }`}
           >
@@ -101,7 +140,7 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({
           {shouldTruncate && (
             <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="mt-2 text-primary hover:text-primary/80 text-xs font-medium inline-flex items-center gap-1 transition-colors"
+              className="mt-3 text-primary hover:text-primary/80 text-xs font-medium inline-flex items-center gap-1 transition-colors"
             >
               {isExpanded ? (
                 <>
@@ -116,29 +155,20 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({
           )}
         </blockquote>
 
-        {/* Rating Stars with animation
-        <div className="flex gap-1 mb-4">
-          {[...Array(5)].map((_, i) => (
-            <Star
-              key={i}
-              className="w-4 h-4 text-amber-500 fill-amber-500 group-hover:scale-110 transition-transform duration-300"
-              style={{ transitionDelay: `${i * 50}ms` }}
-            />
-          ))}
-        </div> */}
-
         {/* Author Section */}
-        <div className="pt-4 border-t border-border/50">
-          <div className="flex items-center gap-3 mb-3">
-            {/* Avatar with hover effect */}
+        <div className="pt-5 border-t border-border/30">
+          <div className="flex items-center gap-3">
+            {/* Avatar */}
             {testimonial.avatar ? (
-              <img
+              <Image
                 src={testimonial.avatar}
                 alt={testimonial.name}
-                className="w-12 h-12 rounded-full object-cover border-2 border-primary/20 group-hover:border-primary/40 transition-all duration-300 group-hover:scale-105"
+                width={48}
+                height={48}
+                className="w-12 h-12 rounded-xl object-cover border border-border/40 group-hover:border-primary/30 transition-all duration-300"
               />
             ) : (
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center text-primary-foreground font-semibold text-lg group-hover:scale-105 transition-transform duration-300 shadow-md">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center text-primary-foreground font-semibold text-lg group-hover:scale-105 transition-transform duration-300 shadow-lg">
                 {testimonial.name.charAt(0)}
               </div>
             )}
@@ -149,33 +179,29 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({
                 {testimonial.name}
               </p>
               <p className="text-xs text-muted-foreground truncate">
-                {testimonial.title+" "+testimonial.company}
+                {testimonial.title} @ {testimonial.company}
               </p>
             </div>
 
-            {/* LinkedIn Link with improved design */}
+            {/* LinkedIn Link */}
             {testimonial.linkedinUrl && (
               <a
                 href={testimonial.linkedinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 w-9 h-9 rounded-full bg-[#0077b5]/10 flex items-center justify-center text-[#0077b5] hover:bg-[#0077b5] hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-md"
+                className="shrink-0 w-9 h-9 rounded-lg bg-[#0077b5]/10 border border-[#0077b5]/20 flex items-center justify-center text-[#0077b5] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-all duration-300 hover:scale-110"
                 aria-label={`View ${testimonial.name}'s LinkedIn`}
               >
-                <svg
-                  className="w-4 h-4"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
               </a>
             )}
           </div>
 
-          {/* Relationship badge with improved styling */}
-          <div className="mt-3 flex items-center justify-between">
-            <span className="inline-flex items-center gap-1.5 text-xs text-primary bg-primary/10 px-3 py-1.5 rounded-full font-medium border border-primary/20">
+          {/* Relationship badge */}
+          <div className="mt-4">
+            <span className="inline-flex items-center gap-1.5 text-xs text-primary/80 bg-primary/5 px-3 py-1.5 rounded-lg font-medium border border-primary/10">
               <svg
                 className="w-3 h-3"
                 fill="none"

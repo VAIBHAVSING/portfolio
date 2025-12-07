@@ -72,7 +72,7 @@ export default function Home() {
         {/* (Former carousel removed to emphasize concise hero tech stack) */}
 
         {/* Detailed Tech Stack Section */}
-        <div id="stack" className="px-6">
+        <div id="skills" className="px-6">
           <TechStackSection />
         </div>
 

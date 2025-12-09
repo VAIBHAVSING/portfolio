@@ -17,6 +17,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2025-11-20T03:43:49.430Z",
 =======
   "generated": "2025-11-21T03:43:28.902Z",
@@ -239,6 +240,19 @@
   "rateLimit": {
     "remaining": 0,
     "reset": "2025-12-08T03:55:06.755Z"
+  },
+  "breakdown": {
+    "open": 6,
+    "merged": 74,
+>>>>>>> Stashed changes
+=======
+  "generated": "2025-12-09T03:50:58.454Z",
+  "username": "VAIBHAVSING",
+  "total": 80,
+  "apiCallsUsed": 97,
+  "rateLimit": {
+    "remaining": 0,
+    "reset": "2025-12-09T03:50:37.605Z"
   },
   "breakdown": {
     "open": 6,
@@ -654,8 +668,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -695,6 +712,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "language": "Go",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
 <<<<<<< Updated upstream
@@ -716,6 +734,8 @@
 =======
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -752,8 +772,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1030,9 +1053,14 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 458,
       "deletions": 4,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 458,
+      "deletions": 4,
 >>>>>>> Stashed changes
 =======
       "additions": 458,
@@ -1076,9 +1104,14 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 506,
       "deletions": 0,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 506,
+      "deletions": 0,
 >>>>>>> Stashed changes
 =======
       "additions": 506,

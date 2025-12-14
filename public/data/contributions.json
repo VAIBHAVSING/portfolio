@@ -1,11 +1,19 @@
 {
+<<<<<<< Updated upstream
   "generated": "2025-12-13T03:49:19.560Z",
+=======
+  "generated": "2025-12-14T03:59:33.771Z",
+>>>>>>> Stashed changes
   "username": "VAIBHAVSING",
   "total": 81,
   "apiCallsUsed": 99,
   "rateLimit": {
     "remaining": 0,
+<<<<<<< Updated upstream
     "reset": "2025-12-13T03:48:57.876Z"
+=======
+    "reset": "2025-12-14T03:59:11.621Z"
+>>>>>>> Stashed changes
   },
   "breakdown": {
     "open": 7,
@@ -734,11 +742,15 @@
       "created": "2025-06-12T10:34:11Z",
       "number": 917,
       "comments": 1,
+<<<<<<< Updated upstream
       "labels": [],
       "additions": 110,
       "deletions": 1,
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "Klavis-AI/klavis",

@@ -1,12 +1,16 @@
 {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2025-12-13T03:49:19.560Z",
 =======
   "generated": "2025-12-14T03:59:33.771Z",
 >>>>>>> Stashed changes
 =======
   "generated": "2025-12-15T04:04:35.875Z",
+>>>>>>> Stashed changes
+=======
+  "generated": "2025-12-16T03:57:47.941Z",
 >>>>>>> Stashed changes
   "username": "VAIBHAVSING",
   "total": 81,
@@ -15,12 +19,16 @@
     "remaining": 0,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "reset": "2025-12-13T03:48:57.876Z"
 =======
     "reset": "2025-12-14T03:59:11.621Z"
 >>>>>>> Stashed changes
 =======
     "reset": "2025-12-15T04:04:09.787Z"
+>>>>>>> Stashed changes
+=======
+    "reset": "2025-12-16T03:57:15.543Z"
 >>>>>>> Stashed changes
   },
   "breakdown": {
@@ -38,8 +46,13 @@
       "number": 178,
       "comments": 3,
       "labels": [],
+<<<<<<< Updated upstream
       "additions": 2458,
       "deletions": 1521,
+=======
+      "additions": 2968,
+      "deletions": 1735,
+>>>>>>> Stashed changes
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/235786389?v=4"
     },
@@ -736,11 +749,15 @@
       "created": "2025-06-24T11:02:44Z",
       "number": 956,
       "comments": 3,
+<<<<<<< Updated upstream
       "labels": [],
       "additions": 506,
       "deletions": 0,
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/lingo.dev",
@@ -751,11 +768,15 @@
       "number": 917,
       "comments": 1,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": [],
       "additions": 110,
       "deletions": 1,
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+=======
+      "labels": []
+>>>>>>> Stashed changes
 =======
       "labels": []
 >>>>>>> Stashed changes

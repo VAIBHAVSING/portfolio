@@ -1,11 +1,19 @@
 {
+<<<<<<< Updated upstream
   "generated": "2025-12-31T03:59:57.386Z",
+=======
+  "generated": "2026-01-01T04:09:33.932Z",
+>>>>>>> Stashed changes
   "username": "VAIBHAVSING",
   "total": 84,
   "apiCallsUsed": 104,
   "rateLimit": {
     "remaining": 0,
+<<<<<<< Updated upstream
     "reset": "2025-12-31T03:59:32.652Z"
+=======
+    "reset": "2026-01-01T04:09:05.270Z"
+>>>>>>> Stashed changes
   },
   "breakdown": {
     "open": 10,
@@ -20,7 +28,11 @@
       "state": "open",
       "created": "2025-12-30T07:56:57Z",
       "number": 106,
+<<<<<<< Updated upstream
       "comments": 0,
+=======
+      "comments": 1,
+>>>>>>> Stashed changes
       "labels": [],
       "additions": 471,
       "deletions": 73,

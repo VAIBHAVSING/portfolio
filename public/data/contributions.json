@@ -2,6 +2,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2025-12-31T03:59:57.386Z",
 =======
   "generated": "2026-01-01T04:09:33.932Z",
@@ -12,11 +13,15 @@
 =======
   "generated": "2026-01-03T03:55:12.131Z",
 >>>>>>> Stashed changes
+=======
+  "generated": "2026-01-04T04:10:55.858Z",
+>>>>>>> Stashed changes
   "username": "VAIBHAVSING",
   "total": 84,
   "apiCallsUsed": 104,
   "rateLimit": {
     "remaining": 0,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -30,6 +35,9 @@
 =======
     "reset": "2026-01-03T03:54:43.853Z"
 >>>>>>> Stashed changes
+=======
+    "reset": "2026-01-04T04:10:31.175Z"
+>>>>>>> Stashed changes
   },
   "breakdown": {
     "open": 10,
@@ -40,7 +48,11 @@
     {
       "repo": "accretional/statue",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "title": "Add runtime theme switcher component",
+=======
+      "title": "feat: Zero-config theme system with virtual modules and runtime switching (fixes #101)",
+>>>>>>> Stashed changes
 =======
       "title": "feat: Zero-config theme system with virtual modules and runtime switching (fixes #101)",
 >>>>>>> Stashed changes
@@ -48,6 +60,7 @@
       "state": "open",
       "created": "2025-12-30T07:56:57Z",
       "number": 106,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -59,6 +72,11 @@
       "comments": 3,
       "labels": [],
       "additions": 1021,
+=======
+      "comments": 3,
+      "labels": [],
+      "additions": 1022,
+>>>>>>> Stashed changes
       "deletions": 140,
       "language": "Svelte",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/163517361?v=4"
@@ -70,10 +88,14 @@
       "state": "open",
       "created": "2025-12-23T18:21:08Z",
       "number": 98,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "comments": 1,
 >>>>>>> Stashed changes
       "labels": [],
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "additions": 471,
       "deletions": 73,
@@ -91,6 +113,8 @@
       "labels": [],
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "additions": 620,
       "deletions": 403,
       "language": "Svelte",
@@ -104,7 +128,11 @@
       "created": "2025-12-21T19:18:55Z",
       "number": 94,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "comments": 2,
+=======
+      "comments": 4,
+>>>>>>> Stashed changes
 =======
       "comments": 4,
 >>>>>>> Stashed changes
@@ -122,6 +150,7 @@
       "created": "2025-12-21T16:08:33Z",
       "number": 93,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "comments": 3,
 =======
       "comments": 4,
@@ -129,6 +158,12 @@
       "labels": [],
       "additions": 557,
       "deletions": 480,
+=======
+      "comments": 5,
+      "labels": [],
+      "additions": 62,
+      "deletions": 43,
+>>>>>>> Stashed changes
       "language": "Svelte",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/163517361?v=4"
     },
@@ -673,6 +708,9 @@
       "comments": 0,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
       "labels": [],
@@ -681,8 +719,11 @@
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

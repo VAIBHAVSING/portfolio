@@ -1,318 +1,31 @@
 {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  "generated": "2025-12-31T03:59:57.386Z",
-=======
-  "generated": "2026-01-01T04:09:33.932Z",
->>>>>>> Stashed changes
-=======
-  "generated": "2026-01-02T04:04:01.306Z",
->>>>>>> Stashed changes
-=======
-  "generated": "2026-01-03T03:55:12.131Z",
->>>>>>> Stashed changes
-=======
-  "generated": "2026-01-04T04:10:55.858Z",
->>>>>>> Stashed changes
-  "username": "VAIBHAVSING",
-  "total": 84,
-  "apiCallsUsed": 104,
-  "rateLimit": {
-    "remaining": 0,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    "reset": "2025-12-31T03:59:32.652Z"
-=======
-    "reset": "2026-01-01T04:09:05.270Z"
->>>>>>> Stashed changes
-=======
-    "reset": "2026-01-02T04:03:29.741Z"
->>>>>>> Stashed changes
-=======
-    "reset": "2026-01-03T03:54:43.853Z"
->>>>>>> Stashed changes
-=======
-    "reset": "2026-01-04T04:10:31.175Z"
->>>>>>> Stashed changes
-  },
-  "breakdown": {
-    "open": 10,
-=======
-  "generated": "2026-01-05T04:16:02.431Z",
-  "username": "VAIBHAVSING",
-  "total": 85,
-  "apiCallsUsed": 105,
-  "rateLimit": {
-    "remaining": 0,
-    "reset": "2026-01-05T04:15:49.672Z"
-  },
-  "breakdown": {
-    "open": 11,
->>>>>>> Stashed changes
-=======
-  "generated": "2026-01-06T04:02:05.502Z",
-  "username": "VAIBHAVSING",
-  "total": 85,
-  "apiCallsUsed": 105,
-  "rateLimit": {
-    "remaining": 0,
-    "reset": "2026-01-06T04:01:40.040Z"
-  },
-  "breakdown": {
-    "open": 11,
->>>>>>> Stashed changes
-=======
-  "generated": "2026-01-07T04:02:35.481Z",
-  "username": "VAIBHAVSING",
-  "total": 85,
-  "apiCallsUsed": 105,
-  "rateLimit": {
-    "remaining": 0,
-    "reset": "2026-01-07T04:02:10.772Z"
-  },
-  "breakdown": {
-    "open": 11,
->>>>>>> Stashed changes
-=======
-  "generated": "2026-01-08T04:02:11.716Z",
-  "username": "VAIBHAVSING",
-  "total": 85,
-  "apiCallsUsed": 105,
-  "rateLimit": {
-    "remaining": 0,
-    "reset": "2026-01-08T04:01:49.009Z"
-  },
-  "breakdown": {
-    "open": 11,
->>>>>>> Stashed changes
-=======
-  "generated": "2026-01-09T04:02:17.906Z",
+  "generated": "2026-01-13T04:02:48.984Z",
   "username": "VAIBHAVSING",
   "total": 84,
   "apiCallsUsed": 105,
   "rateLimit": {
     "remaining": 0,
-    "reset": "2026-01-09T04:01:54.308Z"
+    "reset": "2026-01-13T04:02:26.773Z"
   },
   "breakdown": {
     "open": 10,
->>>>>>> Stashed changes
-=======
-  "generated": "2026-01-10T03:56:48.180Z",
-  "username": "VAIBHAVSING",
-  "total": 84,
-  "apiCallsUsed": 105,
-  "rateLimit": {
-    "remaining": 0,
-    "reset": "2026-01-10T03:56:20.315Z"
-  },
-  "breakdown": {
-    "open": 10,
->>>>>>> Stashed changes
-=======
-  "generated": "2026-01-11T04:09:50.805Z",
-  "username": "VAIBHAVSING",
-  "total": 84,
-  "apiCallsUsed": 105,
-  "rateLimit": {
-    "remaining": 0,
-    "reset": "2026-01-11T04:09:22.860Z"
-  },
-  "breakdown": {
-    "open": 10,
->>>>>>> Stashed changes
-=======
-  "generated": "2026-01-12T04:11:06.200Z",
-  "username": "VAIBHAVSING",
-  "total": 84,
-  "apiCallsUsed": 105,
-  "rateLimit": {
-    "remaining": 0,
-    "reset": "2026-01-12T04:10:32.454Z"
-  },
-  "breakdown": {
-    "open": 10,
->>>>>>> Stashed changes
     "merged": 74,
     "closed": 0
   },
   "contributions": [
     {
       "repo": "accretional/statue",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "title": "Add runtime theme switcher component",
-=======
-      "title": "feat: Zero-config theme system with virtual modules and runtime switching (fixes #101)",
->>>>>>> Stashed changes
-=======
-      "title": "feat: Zero-config theme system with virtual modules and runtime switching (fixes #101)",
->>>>>>> Stashed changes
-      "url": "https://github.com/accretional/statue/pull/106",
-      "state": "open",
-      "created": "2025-12-30T07:56:57Z",
-      "number": 106,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "comments": 0,
-=======
-=======
->>>>>>> Stashed changes
-=======
-      "comments": 3,
-      "labels": [],
-      "additions": 1021,
-=======
-      "comments": 3,
-      "labels": [],
-      "additions": 1022,
->>>>>>> Stashed changes
-      "deletions": 140,
-      "language": "Svelte",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/163517361?v=4"
-    },
-    {
-      "repo": "accretional/statue",
-      "title": "Migrate JavaScript scripts to bash with unified CLI",
-      "url": "https://github.com/accretional/statue/pull/98",
-      "state": "open",
-      "created": "2025-12-23T18:21:08Z",
-      "number": 98,
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
-      "title": "feat: add claude-theme",
-      "url": "https://github.com/accretional/statue/pull/115",
-      "state": "open",
-      "created": "2026-01-04T10:07:26Z",
-      "number": 115,
->>>>>>> Stashed changes
-=======
-      "title": "feat: add claude-theme",
-      "url": "https://github.com/accretional/statue/pull/115",
-      "state": "open",
-      "created": "2026-01-04T10:07:26Z",
-      "number": 115,
->>>>>>> Stashed changes
-=======
-      "title": "feat: add claude-theme",
-      "url": "https://github.com/accretional/statue/pull/115",
-      "state": "open",
-      "created": "2026-01-04T10:07:26Z",
-      "number": 115,
->>>>>>> Stashed changes
-=======
-      "title": "feat: add claude-theme",
-      "url": "https://github.com/accretional/statue/pull/115",
-      "state": "open",
-      "created": "2026-01-04T10:07:26Z",
-      "number": 115,
->>>>>>> Stashed changes
-=======
-      "title": "feat: add claude-theme",
-      "url": "https://github.com/accretional/statue/pull/115",
-      "state": "open",
-      "created": "2026-01-04T10:07:26Z",
-      "number": 115,
->>>>>>> Stashed changes
-=======
-      "title": "feat: add claude-theme",
-      "url": "https://github.com/accretional/statue/pull/115",
-      "state": "open",
-      "created": "2026-01-04T10:07:26Z",
-      "number": 115,
->>>>>>> Stashed changes
-=======
-      "title": "feat: add claude-theme",
-      "url": "https://github.com/accretional/statue/pull/115",
-      "state": "open",
-      "created": "2026-01-04T10:07:26Z",
-      "number": 115,
->>>>>>> Stashed changes
-      "comments": 1,
->>>>>>> Stashed changes
-      "labels": [],
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "additions": 471,
-      "deletions": 73,
-      "language": "Svelte",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/163517361?v=4"
-=======
       "title": "feat: add claude-theme",
       "url": "https://github.com/accretional/statue/pull/115",
       "state": "open",
       "created": "2026-01-04T10:07:26Z",
       "number": 115,
       "comments": 1,
-      "labels": []
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+      "labels": [],
       "additions": 26,
       "deletions": 0,
       "language": "Svelte",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/163517361?v=4"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     },
     {
       "repo": "accretional/statue",
@@ -322,99 +35,11 @@
       "created": "2025-12-30T07:56:57Z",
       "number": 106,
       "comments": 3,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "labels": []
->>>>>>> Stashed changes
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       "labels": [],
       "additions": 1185,
       "deletions": 145,
       "language": "Svelte",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/163517361?v=4"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-    },
-    {
-      "repo": "accretional/statue",
-      "title": "Migrate JavaScript scripts to bash with unified CLI",
-      "url": "https://github.com/accretional/statue/pull/98",
-      "state": "open",
-      "created": "2025-12-23T18:21:08Z",
-      "number": 98,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "comments": 0,
-      "labels": [],
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
-      "comments": 1,
-      "labels": [],
->>>>>>> Stashed changes
-=======
-      "comments": 1,
-      "labels": [],
->>>>>>> Stashed changes
-=======
-      "comments": 2,
-      "labels": [],
->>>>>>> Stashed changes
-      "additions": 620,
-      "deletions": 403,
-      "language": "Svelte",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/163517361?v=4"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-      "comments": 1,
-      "labels": []
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     },
     {
       "repo": "accretional/statue",
@@ -423,76 +48,12 @@
       "state": "open",
       "created": "2025-12-21T19:18:55Z",
       "number": 94,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "comments": 2,
-=======
-      "comments": 4,
->>>>>>> Stashed changes
-=======
-      "comments": 4,
->>>>>>> Stashed changes
-      "labels": [],
-      "additions": 2295,
-      "deletions": 6,
-      "language": "Svelte",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/163517361?v=4"
-=======
-      "comments": 4,
-      "labels": []
->>>>>>> Stashed changes
-=======
-      "comments": 5,
-=======
-      "comments": 6,
->>>>>>> Stashed changes
-=======
       "comments": 7,
->>>>>>> Stashed changes
-=======
-      "comments": 7,
->>>>>>> Stashed changes
-=======
-      "comments": 7,
->>>>>>> Stashed changes
-=======
-      "comments": 7,
->>>>>>> Stashed changes
-=======
-      "comments": 7,
->>>>>>> Stashed changes
       "labels": [],
       "additions": 2513,
       "deletions": 6,
       "language": "Svelte",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/163517361?v=4"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     },
     {
       "repo": "accretional/statue",
@@ -501,78 +62,12 @@
       "state": "open",
       "created": "2025-12-21T16:08:33Z",
       "number": 93,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "comments": 3,
-=======
-      "comments": 4,
->>>>>>> Stashed changes
-      "labels": [],
-      "additions": 557,
-      "deletions": 480,
-=======
-=======
->>>>>>> Stashed changes
-      "comments": 5,
-      "labels": [],
-      "additions": 62,
-      "deletions": 43,
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-      "language": "Svelte",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/163517361?v=4"
-=======
-      "comments": 5,
-      "labels": []
->>>>>>> Stashed changes
-=======
-      "language": "Svelte",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/163517361?v=4"
->>>>>>> Stashed changes
-=======
-      "comments": 7,
-      "labels": [],
-      "additions": 62,
-      "deletions": 43,
-      "language": "Svelte",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/163517361?v=4"
->>>>>>> Stashed changes
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       "comments": 7,
       "labels": [],
       "additions": 61,
       "deletions": 42,
       "language": "Svelte",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/163517361?v=4"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/portfolio",
@@ -582,7 +77,11 @@
       "created": "2025-11-18T13:15:35Z",
       "number": 4,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 580,
+      "deletions": 136,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -592,7 +91,11 @@
       "created": "2025-11-17T09:51:52Z",
       "number": 74,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 1403,
+      "deletions": 241,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -602,7 +105,11 @@
       "created": "2025-11-14T12:12:06Z",
       "number": 73,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 202,
+      "deletions": 0,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -612,7 +119,11 @@
       "created": "2025-11-14T12:10:20Z",
       "number": 72,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 623,
+      "deletions": 0,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -622,7 +133,11 @@
       "created": "2025-11-14T12:05:59Z",
       "number": 71,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 577,
+      "deletions": 0,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -632,7 +147,11 @@
       "created": "2025-11-14T12:03:16Z",
       "number": 70,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 592,
+      "deletions": 0,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -642,7 +161,11 @@
       "created": "2025-11-14T11:59:21Z",
       "number": 69,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 506,
+      "deletions": 1,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -652,7 +175,11 @@
       "created": "2025-10-31T13:02:00Z",
       "number": 68,
       "comments": 4,
-      "labels": []
+      "labels": [],
+      "additions": 5733,
+      "deletions": 344,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -662,7 +189,11 @@
       "created": "2025-10-30T13:52:24Z",
       "number": 67,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 44,
+      "deletions": 5009,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -672,7 +203,11 @@
       "created": "2025-10-30T13:28:45Z",
       "number": 66,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 466,
+      "deletions": 0,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -682,7 +217,11 @@
       "created": "2025-10-30T12:09:06Z",
       "number": 65,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 92,
+      "deletions": 166,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -692,7 +231,11 @@
       "created": "2025-10-28T18:05:50Z",
       "number": 63,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 1194,
+      "deletions": 5083,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -702,7 +245,11 @@
       "created": "2025-10-26T16:44:27Z",
       "number": 61,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 258,
+      "deletions": 23,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -712,7 +259,11 @@
       "created": "2025-10-26T13:54:14Z",
       "number": 60,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 51,
+      "deletions": 476,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -722,7 +273,11 @@
       "created": "2025-10-26T13:13:26Z",
       "number": 58,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 700,
+      "deletions": 8,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -732,7 +287,11 @@
       "created": "2025-10-25T15:49:22Z",
       "number": 57,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 274,
+      "deletions": 262,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -742,7 +301,11 @@
       "created": "2025-10-25T15:06:22Z",
       "number": 56,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 9,
+      "deletions": 11,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -752,7 +315,11 @@
       "created": "2025-10-24T09:18:18Z",
       "number": 53,
       "comments": 6,
-      "labels": []
+      "labels": [],
+      "additions": 6651,
+      "deletions": 5468,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -762,7 +329,11 @@
       "created": "2025-10-24T08:35:41Z",
       "number": 52,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 1292,
+      "deletions": 0,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -772,7 +343,11 @@
       "created": "2025-10-16T09:40:33Z",
       "number": 49,
       "comments": 1,
-      "labels": []
+      "labels": [],
+      "additions": 3761,
+      "deletions": 702,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -795,7 +370,11 @@
           "name": "core",
           "color": "ff6b6b"
         }
-      ]
+      ],
+      "additions": 8338,
+      "deletions": 12,
+      "language": "TypeScript",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
     },
     {
       "repo": "humanlayer/humanlayer",
@@ -845,11 +424,7 @@
       "created": "2025-10-04T11:03:21Z",
       "number": 692,
       "comments": 1,
-      "labels": [],
-      "additions": 1,
-      "deletions": 1,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/177409041?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/portfolio",
@@ -859,11 +434,7 @@
       "created": "2025-10-03T18:55:00Z",
       "number": 3,
       "comments": 2,
-      "labels": [],
-      "additions": 163,
-      "deletions": 132,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/portfolio",
@@ -873,35 +444,7 @@
       "created": "2025-10-03T18:40:17Z",
       "number": 2,
       "comments": 2,
-      "labels": [],
-      "additions": 294,
-      "deletions": 1,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
       "labels": []
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -911,35 +454,7 @@
       "created": "2025-09-30T16:35:08Z",
       "number": 33,
       "comments": 1,
-      "labels": [],
-      "additions": 4564,
-      "deletions": 15,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
       "labels": []
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/portfolio",
@@ -949,55 +464,7 @@
       "created": "2025-09-27T09:10:10Z",
       "number": 1,
       "comments": 1,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-      "labels": [],
-      "additions": 400,
-      "deletions": 49,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
       "labels": []
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -1007,55 +474,7 @@
       "created": "2025-09-04T08:36:56Z",
       "number": 5,
       "comments": 0,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-      "labels": [],
-      "additions": 18,
-      "deletions": 1,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
       "labels": []
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -1065,55 +484,7 @@
       "created": "2025-08-29T13:33:11Z",
       "number": 4,
       "comments": 0,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-      "labels": [],
-      "additions": 702,
-      "deletions": 0,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
       "labels": []
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -1123,55 +494,7 @@
       "created": "2025-08-27T11:36:18Z",
       "number": 3,
       "comments": 1,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-      "labels": [],
-      "additions": 547,
-      "deletions": 17,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
       "labels": []
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -1181,11 +504,7 @@
       "created": "2025-08-26T14:00:22Z",
       "number": 9,
       "comments": 0,
-      "labels": [],
-      "additions": 8,
-      "deletions": 10,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+      "labels": []
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -1195,11 +514,7 @@
       "created": "2025-08-26T13:40:49Z",
       "number": 8,
       "comments": 0,
-      "labels": [],
-      "additions": 8,
-      "deletions": 17,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+      "labels": []
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -1209,11 +524,7 @@
       "created": "2025-08-26T13:29:39Z",
       "number": 7,
       "comments": 0,
-      "labels": [],
-      "additions": 79,
-      "deletions": 153,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+      "labels": []
     },
     {
       "repo": "traceroot-ai/traceroot",
@@ -1223,11 +534,7 @@
       "created": "2025-08-26T06:58:42Z",
       "number": 107,
       "comments": 0,
-      "labels": [],
-      "additions": 70,
-      "deletions": 56,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/217505287?v=4"
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -1237,71 +544,7 @@
       "created": "2025-08-25T11:33:57Z",
       "number": 1,
       "comments": 0,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-      "labels": [],
-      "additions": 3518,
-      "deletions": 219,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
       "labels": []
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
-=======
-      "labels": []
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -1330,44 +573,8 @@
       "state": "open",
       "created": "2025-08-12T10:36:01Z",
       "number": 1129,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "comments": 1,
-=======
-      "comments": 2,
->>>>>>> Stashed changes
-=======
-      "comments": 2,
->>>>>>> Stashed changes
-      "labels": []
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-      "comments": 2,
-      "labels": [],
-      "additions": 163,
-      "deletions": 0,
-      "language": "TypeScript",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
->>>>>>> Stashed changes
-=======
       "comments": 2,
       "labels": []
->>>>>>> Stashed changes
-=======
-      "comments": 2,
-      "labels": []
->>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/sdk-deno",

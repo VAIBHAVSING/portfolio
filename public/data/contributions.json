@@ -6,6 +6,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2026-01-13T04:02:48.984Z",
 =======
   "generated": "2026-01-14T04:09:01.340Z",
@@ -75,10 +76,15 @@
   "generated": "2026-01-20T04:07:08.031Z",
   "username": "VAIBHAVSING",
 >>>>>>> Stashed changes
+=======
+  "generated": "2026-01-21T04:06:45.781Z",
+  "username": "VAIBHAVSING",
+>>>>>>> Stashed changes
   "total": 83,
   "apiCallsUsed": 105,
   "rateLimit": {
     "remaining": 0,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "reset": "2026-01-19T04:11:38.656Z"
   },
@@ -88,10 +94,16 @@
 >>>>>>> Stashed changes
 =======
     "reset": "2026-01-20T04:06:35.335Z"
+=======
+    "reset": "2026-01-21T04:06:07.465Z"
+>>>>>>> Stashed changes
   },
   "breakdown": {
     "open": 7,
     "merged": 76,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     "closed": 0
   },
@@ -101,15 +113,21 @@
       "title": "feat: add claude-theme",
       "url": "https://github.com/accretional/statue/pull/115",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "state": "open",
       "created": "2026-01-04T10:07:26Z",
       "number": 115,
       "comments": 1,
 =======
+=======
+>>>>>>> Stashed changes
       "state": "merged",
       "created": "2026-01-04T10:07:26Z",
       "number": 115,
       "comments": 2,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "labels": [],
       "additions": 26,
@@ -564,6 +582,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -600,6 +621,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -629,8 +653,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -654,6 +681,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -683,8 +713,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -708,6 +741,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -737,8 +773,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -762,6 +801,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -791,8 +833,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -816,6 +861,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -885,8 +933,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -910,6 +961,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -948,6 +1002,7 @@
       "comments": 0,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": [],
       "additions": 261,
       "deletions": 271,
@@ -981,6 +1036,8 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "labels": [],
       "additions": 261,
       "deletions": 271,
@@ -992,6 +1049,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

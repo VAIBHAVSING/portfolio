@@ -9,6 +9,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2026-01-13T04:02:48.984Z",
 =======
   "generated": "2026-01-14T04:09:01.340Z",
@@ -90,10 +91,15 @@
   "generated": "2026-01-23T04:05:22.582Z",
   "username": "VAIBHAVSING",
 >>>>>>> Stashed changes
+=======
+  "generated": "2026-01-24T03:59:31.354Z",
+  "username": "VAIBHAVSING",
+>>>>>>> Stashed changes
   "total": 83,
   "apiCallsUsed": 105,
   "rateLimit": {
     "remaining": 0,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -115,6 +121,9 @@
 =======
     "reset": "2026-01-23T04:04:45.418Z"
 >>>>>>> Stashed changes
+=======
+    "reset": "2026-01-24T03:58:57.586Z"
+>>>>>>> Stashed changes
   },
   "breakdown": {
     "open": 7,
@@ -122,6 +131,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -140,11 +152,14 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "state": "open",
       "created": "2026-01-04T10:07:26Z",
       "number": 115,
       "comments": 1,
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -158,6 +173,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -178,7 +196,11 @@
       "state": "open",
       "created": "2025-12-30T07:56:57Z",
       "number": 106,
+<<<<<<< Updated upstream
       "comments": 3,
+=======
+      "comments": 4,
+>>>>>>> Stashed changes
       "labels": [],
       "additions": 1185,
       "deletions": 145,
@@ -192,7 +214,11 @@
       "state": "open",
       "created": "2025-12-21T19:18:55Z",
       "number": 94,
+<<<<<<< Updated upstream
       "comments": 7,
+=======
+      "comments": 8,
+>>>>>>> Stashed changes
       "labels": [],
       "additions": 2513,
       "deletions": 6,
@@ -621,6 +647,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -666,6 +695,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -704,8 +736,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -738,6 +773,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -776,8 +814,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -810,6 +851,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -848,8 +892,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -882,6 +929,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -920,8 +970,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -954,6 +1007,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1032,6 +1088,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
 =======
@@ -1085,6 +1142,9 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -1120,6 +1180,7 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
     },
     {
+<<<<<<< Updated upstream
       "repo": "lingodotdev/lingo.dev",
       "title": "feat(cli): implement lingo.dev check command for CICD validation",
       "url": "https://github.com/lingodotdev/lingo.dev/pull/1129",
@@ -1187,6 +1248,8 @@
 >>>>>>> Stashed changes
     },
     {
+=======
+>>>>>>> Stashed changes
       "repo": "lingodotdev/sdk-deno",
       "title": "feat: added github action workflow and examples",
       "url": "https://github.com/lingodotdev/sdk-deno/pull/2",

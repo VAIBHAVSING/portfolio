@@ -70,6 +70,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2026-01-13T04:02:48.984Z",
 =======
   "generated": "2026-01-14T04:09:01.340Z",
@@ -951,10 +952,24 @@
     "open": 8,
     "merged": 78,
 >>>>>>> Stashed changes
+=======
+  "generated": "2026-03-26T05:07:09.298Z",
+  "username": "VAIBHAVSING",
+  "total": 86,
+  "apiCallsUsed": 109,
+  "rateLimit": {
+    "remaining": 0,
+    "reset": "2026-03-26T05:06:46.887Z"
+  },
+  "breakdown": {
+    "open": 8,
+    "merged": 78,
+>>>>>>> Stashed changes
     "closed": 0
   },
   "contributions": [
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -1179,12 +1194,15 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "repo": "coast-guard/coasts",
       "title": "refactor keystore store_secret params",
       "url": "https://github.com/coast-guard/coasts/pull/115",
       "state": "merged",
       "created": "2026-03-22T18:37:56Z",
       "number": 115,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "comments": 0,
       "labels": [],
@@ -1563,6 +1581,37 @@
 =======
       "comments": 1,
 >>>>>>> Stashed changes
+=======
+      "comments": 0,
+      "labels": [],
+      "additions": 282,
+      "deletions": 134,
+      "language": "Rust",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/263468388?v=4"
+    },
+    {
+      "repo": "coast-guard/coasts",
+      "title": "Refactor build_dind_config to use a params struct",
+      "url": "https://github.com/coast-guard/coasts/pull/100",
+      "state": "merged",
+      "created": "2026-03-21T10:06:46Z",
+      "number": 100,
+      "comments": 0,
+      "labels": [],
+      "additions": 193,
+      "deletions": 164,
+      "language": "Rust",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/263468388?v=4"
+    },
+    {
+      "repo": "accretional/statue",
+      "title": "Add XCard tweet embeds for markdown content",
+      "url": "https://github.com/accretional/statue/pull/207",
+      "state": "open",
+      "created": "2026-03-12T18:18:44Z",
+      "number": 207,
+      "comments": 1,
+>>>>>>> Stashed changes
       "labels": [],
       "additions": 1796,
       "deletions": 1,
@@ -1580,6 +1629,9 @@
       "labels": [],
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1670,7 +1722,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "comments": 3,
+=======
+      "comments": 4,
+>>>>>>> Stashed changes
 =======
       "comments": 4,
 >>>>>>> Stashed changes
@@ -1928,7 +1984,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "comments": 7,
+=======
+      "comments": 8,
+>>>>>>> Stashed changes
 =======
       "comments": 8,
 >>>>>>> Stashed changes
@@ -2166,9 +2226,14 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 580,
       "deletions": 136,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 580,
+      "deletions": 136,
 >>>>>>> Stashed changes
 =======
       "additions": 580,
@@ -2358,9 +2423,14 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 592,
       "deletions": 0,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 592,
+      "deletions": 0,
 >>>>>>> Stashed changes
 =======
       "additions": 592,
@@ -2850,6 +2920,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -2992,6 +3063,8 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -3001,6 +3074,7 @@
       "created": "2025-09-30T16:35:08Z",
       "number": 33,
       "comments": 1,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -3222,6 +3296,9 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/portfolio",
@@ -3231,6 +3308,7 @@
       "created": "2025-09-27T09:10:10Z",
       "number": 1,
       "comments": 1,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -3654,6 +3732,9 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -3663,6 +3744,7 @@
       "created": "2025-09-04T08:36:56Z",
       "number": 5,
       "comments": 0,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -4086,6 +4168,9 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -4095,6 +4180,7 @@
       "created": "2025-08-29T13:33:11Z",
       "number": 4,
       "comments": 0,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -4518,6 +4604,9 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -4527,6 +4616,7 @@
       "created": "2025-08-27T11:36:18Z",
       "number": 3,
       "comments": 1,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -4948,6 +5038,9 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -4997,6 +5090,7 @@
       "created": "2025-08-25T11:33:57Z",
       "number": 1,
       "comments": 0,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -5402,6 +5496,9 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -5484,6 +5581,7 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
     },
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -5800,6 +5898,8 @@
 >>>>>>> Stashed changes
     },
     {
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======

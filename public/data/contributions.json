@@ -71,6 +71,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2026-01-13T04:02:48.984Z",
 =======
   "generated": "2026-01-14T04:09:01.340Z",
@@ -965,10 +966,24 @@
     "open": 8,
     "merged": 78,
 >>>>>>> Stashed changes
+=======
+  "generated": "2026-03-27T05:07:20.928Z",
+  "username": "VAIBHAVSING",
+  "total": 87,
+  "apiCallsUsed": 111,
+  "rateLimit": {
+    "remaining": 0,
+    "reset": "2026-03-27T05:06:59.543Z"
+  },
+  "breakdown": {
+    "open": 8,
+    "merged": 79,
+>>>>>>> Stashed changes
     "closed": 0
   },
   "contributions": [
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -1207,6 +1222,22 @@
       "comments": 0,
       "labels": [],
 =======
+=======
+      "repo": "coast-guard/coasts",
+      "title": "Reduce complexity in secret.rs - extract helpers and add tests",
+      "url": "https://github.com/coast-guard/coasts/pull/152",
+      "state": "merged",
+      "created": "2026-03-26T18:16:38Z",
+      "number": 152,
+      "comments": 0,
+      "labels": [],
+      "additions": 227,
+      "deletions": 61,
+      "language": "Rust",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/263468388?v=4"
+    },
+    {
+>>>>>>> Stashed changes
       "repo": "coast-guard/coasts",
       "title": "refactor keystore store_secret params",
       "url": "https://github.com/coast-guard/coasts/pull/115",
@@ -1215,6 +1246,9 @@
       "number": 115,
       "comments": 0,
       "labels": [],
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "additions": 282,
       "deletions": 134,
@@ -1223,6 +1257,9 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1240,6 +1277,9 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/263468388?v=4"
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     },
@@ -1250,6 +1290,7 @@
       "state": "open",
       "created": "2026-03-12T18:18:44Z",
       "number": 207,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "comments": 0,
       "labels": [],
@@ -1612,6 +1653,9 @@
       "number": 207,
       "comments": 1,
 >>>>>>> Stashed changes
+=======
+      "comments": 1,
+>>>>>>> Stashed changes
       "labels": [],
       "additions": 1796,
       "deletions": 1,
@@ -1630,6 +1674,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1723,7 +1770,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "comments": 3,
+=======
+      "comments": 4,
+>>>>>>> Stashed changes
 =======
       "comments": 4,
 >>>>>>> Stashed changes
@@ -1985,7 +2036,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "comments": 7,
+=======
+      "comments": 8,
+>>>>>>> Stashed changes
 =======
       "comments": 8,
 >>>>>>> Stashed changes
@@ -2227,9 +2282,14 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 580,
       "deletions": 136,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 580,
+      "deletions": 136,
 >>>>>>> Stashed changes
 =======
       "additions": 580,
@@ -2424,9 +2484,14 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "additions": 592,
       "deletions": 0,
 =======
+>>>>>>> Stashed changes
+=======
+      "additions": 592,
+      "deletions": 0,
 >>>>>>> Stashed changes
 =======
       "additions": 592,
@@ -2921,6 +2986,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -3026,6 +3092,8 @@
 >>>>>>> Stashed changes
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -3153,6 +3221,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -3298,6 +3367,8 @@
 >>>>>>> Stashed changes
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     },
     {
@@ -3380,8 +3451,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -3588,6 +3662,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -3734,6 +3809,8 @@
 >>>>>>> Stashed changes
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     },
     {
@@ -3744,6 +3821,7 @@
       "created": "2025-09-04T08:36:56Z",
       "number": 5,
       "comments": 0,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -4171,6 +4249,9 @@
 =======
       "labels": []
 >>>>>>> Stashed changes
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -4180,6 +4261,7 @@
       "created": "2025-08-29T13:33:11Z",
       "number": 4,
       "comments": 0,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -4607,6 +4689,9 @@
 =======
       "labels": []
 >>>>>>> Stashed changes
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -4616,6 +4701,7 @@
       "created": "2025-08-27T11:36:18Z",
       "number": 3,
       "comments": 1,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -5041,6 +5127,9 @@
 =======
       "labels": []
 >>>>>>> Stashed changes
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -5090,6 +5179,7 @@
       "created": "2025-08-25T11:33:57Z",
       "number": 1,
       "comments": 0,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -5499,6 +5589,9 @@
 =======
       "labels": []
 >>>>>>> Stashed changes
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "lingodotdev/sdk-deno",
@@ -5581,6 +5674,7 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
     },
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -5898,6 +5992,8 @@
 >>>>>>> Stashed changes
     },
     {
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======

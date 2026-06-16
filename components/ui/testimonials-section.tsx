@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Card } from "./card";
-import { Quote, Star, ChevronDown, ChevronUp, MessageCircle } from "lucide-react";
+import { Quote, ChevronDown, ChevronUp, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 

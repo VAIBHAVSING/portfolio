@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { GraduationCap, Calendar, BookOpen } from "lucide-react";
+import { GraduationCap, Calendar } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -179,4 +179,3 @@ export function EducationSection({
     </section>
   );
 }
-

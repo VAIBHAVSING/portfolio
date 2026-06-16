@@ -237,6 +237,39 @@
     animation: glow 2s ease-in-out infinite;
   }
 
+  @keyframes techStackMarquee {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  .tech-stack-mask {
+    mask-image: linear-gradient(
+      90deg,
+      transparent,
+      black 8%,
+      black 92%,
+      transparent
+    );
+  }
+
+  .tech-stack-marquee {
+    animation: techStackMarquee 36s linear infinite;
+  }
+
+  .tech-stack-marquee:hover {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tech-stack-marquee {
+      animation: none;
+    }
+  }
+
   /* Aurora background effects */
   @keyframes auroraMove {
     0% {

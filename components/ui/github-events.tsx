@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { AnimatedListDemo } from "@/components/ui/demo";
 import { Eye, EyeOff } from "lucide-react";
 import { useContributions } from "@/components/ui/contributions-context";
@@ -21,16 +21,11 @@ interface GitHubEvent {
 
 export function GitHubEvents() {
   const { contributions, loading } = useContributions();
-  const [githubEvents, setGithubEvents] = useState<GitHubEvent[]>([]);
-  const [isHidden, setIsHidden] = useState(false);
-
-  // Load hidden state from localStorage on mount
-  useEffect(() => {
+  const [isHidden, setIsHidden] = useState(() => {
+    if (typeof window === "undefined") return false;
     const saved = localStorage.getItem("github-notifications-hidden");
-    if (saved === "true") {
-      setIsHidden(true);
-    }
-  }, []);
+    return saved === "true";
+  });
 
   // Save hidden state to localStorage when it changes
   useEffect(() => {
@@ -41,16 +36,15 @@ export function GitHubEvents() {
     setIsHidden(!isHidden);
   };
 
-  // derive events from contributions list (limit 8 for animation)
-  useEffect(() => {
-    if (loading) return;
+  const githubEvents = useMemo<GitHubEvent[]>(() => {
+    if (loading) return [];
     const filtered = contributions.filter((pr) => {
       const owner = pr.repo?.split("/")[0]?.toLowerCase();
       if (!owner) return true;
       return owner !== "vaibhavsing";
     });
 
-    const derived = filtered.slice(0, 8).map((pr) => {
+    return filtered.slice(0, 8).map((pr) => {
       let name = "Updated pull request";
       let icon = "pr-updated";
       let color = "#57606a";
@@ -93,7 +87,6 @@ export function GitHubEvents() {
         stateLabel,
       } as GitHubEvent;
     });
-    setGithubEvents(derived);
   }, [contributions, loading]);
 
   return (

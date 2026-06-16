@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useCallback, useEffect } from "react";
+import React, { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import Image from "next/image";
 // Types for the component
 interface DockApp {
@@ -21,6 +21,12 @@ interface ResponsiveConfig {
   effectWidth: number;
 }
 
+const DEFAULT_CONFIG: ResponsiveConfig = {
+  baseIconSize: 64,
+  maxScale: 1.6,
+  effectWidth: 240,
+};
+
 const MacOSDock: React.FC<MacOSDockProps> = ({
   apps,
   onAppClick,
@@ -31,18 +37,10 @@ const MacOSDock: React.FC<MacOSDockProps> = ({
   const [currentScales, setCurrentScales] = useState<number[]>(
     apps.map(() => 1),
   );
-  const [currentPositions, setCurrentPositions] = useState<number[]>([]);
   const dockRef = useRef<HTMLDivElement>(null);
   const iconRefs = useRef<(HTMLDivElement | null)[]>([]);
   const animationFrameRef = useRef<number | undefined>(undefined);
   const lastMouseMoveTime = useRef<number>(0);
-
-  // Deterministic default config for SSR + first client render
-  const DEFAULT_CONFIG: ResponsiveConfig = {
-    baseIconSize: 64,
-    maxScale: 1.6,
-    effectWidth: 240,
-  };
 
   // Responsive size calculations based on viewport (run only client-side after mount)
   const getResponsiveConfig = useCallback((): ResponsiveConfig => {
@@ -130,65 +128,44 @@ const MacOSDock: React.FC<MacOSDockProps> = ({
     [baseIconSize, baseSpacing],
   );
 
-  // Initialize positions
-  useEffect(() => {
-    const initialScales = apps.map(() => minScale);
-    const initialPositions = calculatePositions(initialScales);
-    setCurrentScales(initialScales);
-    setCurrentPositions(initialPositions);
-  }, [apps, calculatePositions, minScale, config]);
+  const currentPositions = useMemo(
+    () => calculatePositions(currentScales),
+    [calculatePositions, currentScales],
+  );
 
   // Animation loop
-  const animateToTarget = useCallback(() => {
+  useEffect(() => {
     const targetScales = calculateTargetMagnification(mouseX);
-    const targetPositions = calculatePositions(targetScales);
     const lerpFactor = mouseX !== null ? 0.2 : 0.12;
 
-    setCurrentScales((prevScales) => {
-      return prevScales.map((currentScale, index) => {
-        const diff = targetScales[index] - currentScale;
-        return currentScale + diff * lerpFactor;
+    const tick = () => {
+      setCurrentScales((prevScales) => {
+        let needsUpdate = mouseX !== null;
+        const nextScales = prevScales.map((currentScale, index) => {
+          const diff = targetScales[index] - currentScale;
+          if (Math.abs(diff) > 0.002) needsUpdate = true;
+          return currentScale + diff * lerpFactor;
+        });
+
+        if (needsUpdate) {
+          animationFrameRef.current = requestAnimationFrame(tick);
+        }
+
+        return nextScales;
       });
-    });
+    };
 
-    setCurrentPositions((prevPositions) => {
-      return prevPositions.map((currentPos, index) => {
-        const diff = targetPositions[index] - currentPos;
-        return currentPos + diff * lerpFactor;
-      });
-    });
-
-    const scalesNeedUpdate = currentScales.some(
-      (scale, index) => Math.abs(scale - targetScales[index]) > 0.002,
-    );
-    const positionsNeedUpdate = currentPositions.some(
-      (pos, index) => Math.abs(pos - targetPositions[index]) > 0.1,
-    );
-
-    if (scalesNeedUpdate || positionsNeedUpdate || mouseX !== null) {
-      animationFrameRef.current = requestAnimationFrame(animateToTarget);
-    }
-  }, [
-    mouseX,
-    calculateTargetMagnification,
-    calculatePositions,
-    currentScales,
-    currentPositions,
-  ]);
-
-  // Start/stop animation loop
-  useEffect(() => {
     if (animationFrameRef.current) {
       cancelAnimationFrame(animationFrameRef.current);
     }
-    animationFrameRef.current = requestAnimationFrame(animateToTarget);
+    animationFrameRef.current = requestAnimationFrame(tick);
 
     return () => {
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current);
       }
     };
-  }, [animateToTarget]);
+  }, [calculateTargetMagnification, mouseX]);
 
   // Throttled mouse movement handler
   const handleMouseMove = useCallback(

@@ -41,16 +41,19 @@ export const WritingSectionAuto: React.FC<WritingSectionAutoProps> = ({
   limit = 10,
   fallbackArticles = [],
 }) => {
+  const hasFallbackArticles = fallbackArticles.length > 0;
   const [articles, setArticles] = useState<Article[]>(
     fallbackArticles.map((a) => ({ ...a, tags: a.tags ? [...a.tags] : [] })),
   );
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(!hasFallbackArticles);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    let cancelled = false;
+
     const fetchArticles = async () => {
       try {
-        setLoading(true);
+        if (!hasFallbackArticles) setLoading(true);
         const response = await fetch(
           `/api/medium?username=${username}&limit=${limit}`,
         );
@@ -60,6 +63,8 @@ export const WritingSectionAuto: React.FC<WritingSectionAutoProps> = ({
         }
 
         const data = await response.json();
+
+        if (cancelled) return;
 
         if (data.success && data.articles.length > 0) {
           setArticles(data.articles);
@@ -83,12 +88,29 @@ export const WritingSectionAuto: React.FC<WritingSectionAutoProps> = ({
           );
         }
       } finally {
-        setLoading(false);
+        if (!cancelled) setLoading(false);
       }
     };
 
-    fetchArticles();
-  }, [username, limit, fallbackArticles]);
+    if (hasFallbackArticles && "requestIdleCallback" in window) {
+      const idleId = window.requestIdleCallback(fetchArticles, {
+        timeout: 4000,
+      });
+      return () => {
+        cancelled = true;
+        window.cancelIdleCallback(idleId);
+      };
+    }
+
+    const timeoutId = window.setTimeout(
+      fetchArticles,
+      hasFallbackArticles ? 1500 : 0,
+    );
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timeoutId);
+    };
+  }, [username, limit, fallbackArticles, hasFallbackArticles]);
 
   // Loading state with skeleton embeds
   if (loading) {

@@ -27,7 +27,6 @@ interface Item {
 
 const Notification = ({
   name,
-  description,
   icon,
   color,
   time,

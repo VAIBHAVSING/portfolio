@@ -75,24 +75,34 @@ interface RepoGroup {
 }
 
 type OpenSourceSectionProps = Record<string, never>;
+type ContributionFilter = "all" | "open" | "merged" | "closed";
+
+function readPersistedFilters(): { filter: ContributionFilter; search: string } {
+  if (typeof window === "undefined") return { filter: "all", search: "" };
+
+  try {
+    const persisted = localStorage.getItem("oss-filters-v2");
+    if (!persisted) return { filter: "all", search: "" };
+    const parsed = JSON.parse(persisted);
+    const filter = ["all", "open", "merged", "closed"].includes(parsed.filter)
+      ? (parsed.filter as ContributionFilter)
+      : "all";
+    return {
+      filter,
+      search: typeof parsed.search === "string" ? parsed.search : "",
+    };
+  } catch {
+    return { filter: "all", search: "" };
+  }
+}
 
 export function OpenSourceSection({}: OpenSourceSectionProps) {
   const { contributions, loading } = useContributions();
   const [expandedRepos, setExpandedRepos] = useState<Set<string>>(new Set());
-  const [filter, setFilter] = useState<"all" | "open" | "merged" | "closed">("all");
-  const [search, setSearch] = useState("");
-
-  // restore persisted filters
-  useEffect(() => {
-    try {
-      const persisted = localStorage.getItem("oss-filters-v2");
-      if (persisted) {
-        const { filter: pf, search: ps } = JSON.parse(persisted);
-        if (pf) setFilter(pf);
-        if (typeof ps === "string") setSearch(ps);
-      }
-    } catch {}
-  }, []);
+  const [filter, setFilter] = useState<ContributionFilter>(
+    () => readPersistedFilters().filter,
+  );
+  const [search, setSearch] = useState(() => readPersistedFilters().search);
 
   // persist filters
   useEffect(() => {

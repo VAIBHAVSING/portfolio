@@ -13,26 +13,19 @@ export const BackgroundComponent: React.FC<BackgroundComponentProps> = ({
   children,
   className = "",
 }) => {
-  const [theme, setTheme] = useState<"light" | "dark">("dark");
+  const [theme, setTheme] = useState<"light" | "dark">(() => {
+    if (typeof window === "undefined") return "dark";
+    const stored = localStorage.getItem("theme");
+    return stored === "light" || stored === "dark" ? stored : "dark";
+  });
 
-  // Initialize from localStorage / system
   useEffect(() => {
-    const stored =
-      typeof window !== "undefined" ? localStorage.getItem("theme") : null;
-    if (stored === "light" || stored === "dark") {
-      setTheme(stored);
-      document.documentElement.classList.toggle("dark", stored === "dark");
-    } else {
-      // default to dark
-      document.documentElement.classList.add("dark");
-      setTheme("dark");
-    }
-  }, []);
+    document.documentElement.classList.toggle("dark", theme === "dark");
+  }, [theme]);
 
   const toggleTheme = useCallback(() => {
     setTheme((prev) => {
       const next = prev === "dark" ? "light" : "dark";
-      document.documentElement.classList.toggle("dark", next === "dark");
       try {
         localStorage.setItem("theme", next);
       } catch {}

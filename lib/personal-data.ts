@@ -57,7 +57,7 @@ export const DOCK_ITEMS = [
   { name: "Education", icon: "/education.webp", targetId: "education" },
   { name: "OSS", icon: "/github.webp", targetId: "oss" },
   { name: "Projects", icon: "/projects.webp", targetId: "projects" },
-  { name: "Writing", icon: "/writing.png", targetId: "writing" },
+  { name: "Writing", icon: "/writing.webp", targetId: "writing" },
   { name: "Testimonials", icon: "/email.webp", targetId: "testimonials" },
   { name: "Contact", icon: "/calender.webp", targetId: "contact" },
   // External links

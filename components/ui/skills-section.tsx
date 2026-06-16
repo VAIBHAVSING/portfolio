@@ -32,7 +32,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ stats }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {stats.map((stat, index) => (
+          {stats.map((stat) => (
             <div
               key={stat.label}
               className="group relative bg-card/20 backdrop-blur-sm border border-border/30 rounded-2xl p-8 text-center hover:bg-card/40 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:border-primary/30"

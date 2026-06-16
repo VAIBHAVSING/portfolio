@@ -41,6 +41,19 @@ interface CacheOutput {
   contributions: ContributionRecord[];
 }
 
+interface GitHubSearchPullRequestItem {
+  repository_url: string;
+  html_url: string;
+  title: string;
+  state: "open" | "closed";
+  created_at: string;
+  comments?: number;
+  labels?: { name?: string; color?: string }[];
+  pull_request?: {
+    merged_at?: string | null;
+  };
+}
+
 const USERNAME = process.env.GITHUB_USERNAME || "VAIBHAVSING";
 const TOKEN = process.env.GITHUB_TOKEN;
 const MAX_RESULTS = 150;
@@ -78,9 +91,11 @@ async function getOrganizationAvatar(
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-async function fetchAllPRs(): Promise<{ prs: any[]; apiCalls: number }> {
-  let allPRs: any[] = [];
+async function fetchAllPRs(): Promise<{
+  prs: GitHubSearchPullRequestItem[];
+  apiCalls: number;
+}> {
+  let allPRs: GitHubSearchPullRequestItem[] = [];
   let apiCalls = 0;
 
   console.log(`🔍 Fetching PRs for ${USERNAME}...`);
@@ -102,7 +117,7 @@ async function fetchAllPRs(): Promise<{ prs: any[]; apiCalls: number }> {
       });
 
       apiCalls++;
-      const items = response.data.items;
+      const items = response.data.items as GitHubSearchPullRequestItem[];
 
       if (!items || items.length === 0) {
         console.log(`✅ No more results on page ${page}`);
@@ -131,9 +146,8 @@ async function fetchAllPRs(): Promise<{ prs: any[]; apiCalls: number }> {
   return { prs: allPRs, apiCalls };
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 async function enrichPRDetails(
-  prItems: any[],
+  prItems: GitHubSearchPullRequestItem[],
 ): Promise<{ results: ContributionRecord[]; apiCalls: number }> {
   const results: ContributionRecord[] = [];
   let apiCalls = 0;
@@ -159,9 +173,9 @@ async function enrichPRDetails(
         const prNumber = prNumberMatch ? parseInt(prNumberMatch[1], 10) : 0;
 
         // Check if PR was merged using search API data first
-        const isMerged = prItem.pull_request?.merged_at !== null;
+        const isMerged = prItem.pull_request?.merged_at != null;
 
-        let record: ContributionRecord = {
+        const record: ContributionRecord = {
           repo: repoFullName,
           title: prItem.title,
           url: prItem.html_url,
@@ -173,7 +187,7 @@ async function enrichPRDetails(
           labels: Array.isArray(prItem.labels)
             ? prItem.labels
                 .slice(0, 4)
-                .map((l: any) => ({ name: l.name, color: l.color }))
+                .map((l) => ({ name: l.name || "", color: l.color || "" }))
             : [],
         };
 
@@ -209,7 +223,7 @@ async function enrichPRDetails(
               try {
                 record.ownerAvatar = await getOrganizationAvatar(owner);
                 apiCalls++;
-              } catch (avatarError) {
+              } catch {
                 // Keep undefined if we can't get it
               }
             }
@@ -248,12 +262,12 @@ async function enrichPRDetails(
               record.language = repoResponse.data.language || undefined;
               record.ownerAvatar =
                 repoResponse.data.owner.avatar_url || undefined;
-            } catch (repoError) {
+            } catch {
               // If repo info also fails, try to get organization/user avatar directly
               try {
                 record.ownerAvatar = await getOrganizationAvatar(owner);
                 apiCalls++; // Count the org/user API call
-              } catch (avatarError) {
+              } catch {
                 record.ownerAvatar = undefined;
               }
               record.language = undefined;
@@ -291,7 +305,7 @@ async function main() {
           reset: new Date(rateLimitResponse.data.rate.reset * 1000),
         };
         console.log(`📊 Rate limit: ${rateLimit.remaining} requests remaining`);
-      } catch (error) {
+      } catch {
         console.warn("⚠️  Failed to get rate limit info");
       }
     }

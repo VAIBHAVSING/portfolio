@@ -2,17 +2,19 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    // Allow optimized remote avatars from GitHub (recommended remotePatterns API)
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**",
+        hostname: "avatars.githubusercontent.com",
+        pathname: "/u/**",
+      },
+      {
+        protocol: "https",
+        hostname: "media.licdn.com",
         pathname: "/**",
       },
     ],
   },
-
-
   // Static redirects for maximum performance
   async redirects() {
     return [

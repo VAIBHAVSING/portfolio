@@ -76,7 +76,7 @@ function loadContributionsFromCache(): CachedContributionsData | null {
   }
 }
 
-export async function GET(request: Request) {
+export async function GET() {
   const startTime = Date.now();
 
   try {

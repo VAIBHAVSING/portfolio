@@ -38,41 +38,68 @@ const cardVariants = {
 export function ExperienceSection({
   items = [
     {
-      role: "Open Source Developer",
-      company: "Open Source / Community",
-      period: "2024 - Present",
+      role: "Software Engineering Intern",
+      company: "Rankad AI",
+      period: "Jan 2026 - Apr 2026",
       description:
-        "Ship production-grade features & performance improvements across React / Node microservices & CI automation.",
+        "Built AI SEO/GEO optimization infrastructure across analytics integrations, crawler workflows, LLM serving, and database performance.",
       impact: [
-        "Optimized bundle & introduced code-splitting reducing initial load ~30%",
-        "Implemented PR quality gates (tests + lint) cutting regressions",
+        "Built a Google Analytics 4 integration and website crawler to track backlinks across search engines.",
+        "Deployed a QLoRA fine-tuned GPT-OSS 120B model on GCP GPU VMs with vLLM, serving 1,000+ tokens/sec.",
+        "Reduced PostgreSQL/Supabase query latency from ~1,500ms to ~30ms through indexing and RLS optimization.",
       ],
       tech: [
         "TypeScript",
-        "Next.js",
         "Node.js",
         "PostgreSQL",
-        "CI/CD",
-        "Github-Action",
-        "Python",
+        "Supabase",
+        "Deno",
+        "vLLM",
+        "QLoRA",
+        "AWS Lambda",
+        "GCP GPU VMs",
       ],
-      type: "work",
-      logo: "🌐",
+      type: "internship",
+      location: "Remote (Sweden)",
+      logo: "⚡",
     },
     {
       role: "Software Engineering Intern",
       company: "Lingo.dev[YC-F24]",
-      period: "July-25 Sept-25",
+      period: "Jul 2025 - Sep 2025",
       description:
-        "Maintained 4k+ star oss repo and help contributor to contribute.",
+        "Contributed to a 5k+ star open-source i18n platform, improving SDKs, CLI tooling, compiler support, and contributor workflows.",
       impact: [
-        "Contributed to SDKs and CLI at Lingo.dev, helping developers integrate the platform into their products.",
-        "Developed and maintained end-to-end Deno.js SDKs to streamline adoption and usage.",
-        "Enhanced tooling and contribution workflows, supporting the open-source community.",
+        "Built SDK and CLI features that improved developer workflows for localization and translation.",
+        "Fixed compiler bugs and added EJS file support plus OpenRouter provider integration.",
+        "Reviewed PRs and helped onboard new open-source contributors.",
       ],
-      tech: ["React", "TypeScript", "Compiler", "CLI", "SDK", "Discord"],
+      tech: ["TypeScript", "Deno", "Compiler", "CLI", "SDK", "Open Source"],
       type: "internship",
       logo: "https://avatars.githubusercontent.com/u/155387533?v=4",
+    },
+    {
+      role: "Open Source Contributor",
+      company: "90+ merged PRs",
+      period: "2024 - Present",
+      description:
+        "Ship developer-tooling features, performance improvements, CI workflows, and integrations across open-source projects.",
+      impact: [
+        "Helped Coasts.dev (YC F25) ship remote runtime support for Codex/Claude Code workflows on VM resources.",
+        "Shipped HumanLayer UI improvements, including editor-opening actions and web search result theming fixes.",
+        "Added a WhatsApp MCP client for Klavis-AI and converted Traceroot-AI REST endpoints to async FastAPI.",
+      ],
+      tech: [
+        "TypeScript",
+        "React",
+        "FastAPI",
+        "Rust",
+        "CI/CD",
+        "Playwright",
+        "Open Source",
+      ],
+      type: "work",
+      logo: "🌐",
     },
   ],
 }: ExperienceSectionProps) {
@@ -212,4 +239,3 @@ export function ExperienceSection({
     </section>
   );
 }
-

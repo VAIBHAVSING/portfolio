@@ -15,15 +15,16 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiTailwindcss,
-  SiMongodb,
   SiPostgresql,
   SiExpress,
   SiRedis,
-  SiRedux,
   SiPostman,
+  SiDeno,
+  SiSupabase,
+  SiGooglecloud,
+  SiOpenai,
 } from "react-icons/si";
-import { MdApi, MdAccountTree } from "react-icons/md";
-import { BiNetworkChart } from "react-icons/bi";
+import { MdApi } from "react-icons/md";
 
 const items = [
   {
@@ -63,8 +64,8 @@ const items = [
     icon: <SiTailwindcss className="h-8 w-8 text-cyan-500" />,
   },
   {
-    name: "MongoDB",
-    icon: <SiMongodb className="h-8 w-8 text-green-500" />,
+    name: "Supabase",
+    icon: <SiSupabase className="h-8 w-8 text-green-500" />,
   },
   {
     name: "PostgreSQL",
@@ -75,7 +76,7 @@ const items = [
     icon: <SiExpress className="h-8 w-8" />,
   },
   {
-    name: "AWS",
+    name: "AWS Lambda",
     icon: <FaAws className="h-8 w-8 text-orange-500" />,
   },
   {
@@ -91,24 +92,24 @@ const items = [
     icon: <FaGitAlt className="h-8 w-8 text-orange-600" />,
   },
   {
-    name: "Redux",
-    icon: <SiRedux className="h-8 w-8 text-purple-600" />,
+    name: "Deno",
+    icon: <SiDeno className="h-8 w-8" />,
   },
   {
     name: "REST APIs",
     icon: <MdApi className="h-8 w-8 text-green-600" />,
   },
   {
-    name: "WebSocket",
-    icon: <BiNetworkChart className="h-8 w-8 text-blue-600" />,
+    name: "QLoRA",
+    icon: <SiOpenai className="h-8 w-8 text-emerald-500" />,
   },
   {
     name: "Postman",
     icon: <SiPostman className="h-8 w-8 text-orange-500" />,
   },
   {
-    name: "Microservices",
-    icon: <MdAccountTree className="h-8 w-8 text-gray-600" />,
+    name: "vLLM",
+    icon: <SiGooglecloud className="h-8 w-8 text-blue-600" />,
   },
 ];
 

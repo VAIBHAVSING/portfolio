@@ -15,7 +15,6 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
@@ -74,11 +73,11 @@
 %----------HEADING----------
 \begin{center}
     {\Huge \scshape Vaibhav Patil} \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ +91-7820807240 ~ 
-    \href{mailto:vpatil5212@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vpatil5212@gmail.com}} ~ 
-    \href{https://linkedin.com/in/vaibhavpatil24/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/vaibhavpatil24}}  ~
-    \href{https://github.com/VAIBHAVSING}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/VAIBHAVSING}} ~
-    \href{https://vaibhavsing.me}{\raisebox{-0.2\height}\faGlobe\ \underline{vaibhavsing.me}}
+    \small +91-7820807240 $|$
+    \href{mailto:vpatil5212@gmail.com}{\underline{vpatil5212@gmail.com}} $|$
+    \href{https://linkedin.com/in/vaibhavpatil24/}{\underline{linkedin.com/in/vaibhavpatil24}} $|$
+    \href{https://github.com/VAIBHAVSING}{\underline{github.com/VAIBHAVSING}} $|$
+    \href{https://vaibhavsing.me}{\underline{vaibhavsing.me}}
     \vspace{-8pt}
 \end{center}
 
@@ -87,12 +86,11 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: TypeScript, JavaScript, Go, Python, SQL, HTML, CSS} \\
+     \textbf{Languages}{: TypeScript, JavaScript, Go, Python, SQL, HTML/CSS} \\
      \textbf{Frontend}{: React, Next.js, Tailwind CSS, Framer Motion} \\
-     \textbf{Backend}{: Node.js, Express, FastAPI, REST, GraphQL, tRPC} \\
-     \textbf{Databases}{: PostgreSQL, MySQL, MongoDB, Redis, Prisma, Supabase} \\
-     \textbf{DevOps}{: Docker, GitHub Actions, CI/CD, AWS, Azure, Terraform, Linux} \\
-     \textbf{Tools}{: Git, Jest, Playwright, ESLint, Postman, NeoVim} \\
+     \textbf{Backend/AI}{: Node.js, Express, Deno, FastAPI, REST APIs, GraphQL, vLLM, QLoRA fine-tuning} \\
+     \textbf{Data/Cloud}{: PostgreSQL, MongoDB, Redis, Prisma, Supabase, Docker, AWS Lambda, GCP GPU VMs} \\
+     \textbf{Tools}{: Git, GitHub Actions, Jest, Playwright, ESLint, Postman, Neovim} \\
     }}
  \end{itemize}
  \vspace{-16pt}
@@ -103,23 +101,32 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+      {Software Engineering Intern}{Jan 2026 -- Apr 2026}
+      {\href{https://rankad.ai}{Rankad AI} $|$ AI SEO/GEO Optimization SaaS}{Remote (Sweden)}
+      \resumeItemListStart
+        \resumeItem{Built a Google Analytics 4 integration and website crawler to track backlinks across search engines}
+        \resumeItem{Deployed a QLoRA fine-tuned GPT-OSS 120B model on GCP GPU VMs with vLLM, serving 1,000+ tokens/sec}
+        \resumeItem{Optimized PostgreSQL/Supabase indexes and RLS policies, reducing query latency from \textasciitilde1,500ms to \textasciitilde30ms}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {Software Engineering Intern}{Jul 2025 -- Sep 2025}
       {Lingo.dev (YC F24)}{Remote}
       \resumeItemListStart
-        \resumeItem{Worked on a 4k+ star OSS repo, reviewed PRs and helped onboard new contributors}
-        \resumeItem{Built SDKs and CLI tools to make it easier for developers to use the i18n platform}
-        \resumeItem{Created the Deno.js SDK from scratch and set up automated releases}
-        \resumeItem{Fixed bugs in the compiler and added new file format support (EJS, OpenRouter)}
+        \resumeItem{Contributed to a 5k+ star open-source i18n platform, reviewing PRs and onboarding contributors}
+        \resumeItem{Built SDKs and CLI features that improved developer workflows for localization and translation}
+        \resumeItem{Fixed compiler bugs and added EJS file support plus OpenRouter provider integration}
       \resumeItemListEnd
 
     \resumeSubheading
       {Open Source Contributor}{2024 -- Present}
-      {80+ merged PRs | \href{https://github.com/VAIBHAVSING}{github.com/VAIBHAVSING}}{Remote}
+      {90+ merged PRs | \href{https://github.com/VAIBHAVSING}{github.com/VAIBHAVSING}}{Remote}
       \resumeItemListStart
-        \resumeItem{Added code-splitting to a React app which cut initial load time by around 30\%}
-        \resumeItem{Set up CI pipelines with test and lint checks to catch issues before merge}
-        \resumeItem{Built features like file watching for hot-reload and AbortController for API cancellation}
-        \resumeItem{Contributed to HumanLayer, Klavis-AI, Traceroot, and AnythingLLM}
+        \resumeItem{Added code-splitting to a React app, reducing initial load time by around 30\%}
+        \resumeItem{Set up CI pipelines, hot-reload file watching, and AbortController-based API cancellation}
+        \resumeItem{Helped \href{https://coasts.dev}{Coasts.dev (YC F25)} ship remote runtime support for Codex/Claude Code workflows on VM resources}
+        \resumeItem{Shipped HumanLayer UI improvements, including editor-opening actions and web search result theming fixes}
+        \resumeItem{Added a WhatsApp MCP client for Klavis-AI and converted Traceroot-AI REST endpoints to async FastAPI}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -133,44 +140,18 @@
       \resumeProjectHeading
           {\textbf{Dev8.dev} $|$ \emph{Go, Docker, Azure, TypeScript} $|$ \href{https://github.com/VAIBHAVSING/Dev8.dev}{\underline{GitHub}}}{2024 -- Present}
           \resumeItemListStart
-            \resumeItem{Building an open source cloud IDE similar to GitHub Codespaces but with GPU support}
-            \resumeItem{Set up a 4-layer Docker setup with VS Code Server running in containers}
-            \resumeItem{Added Azure Container Apps deployment for running workspaces in the cloud}
-            \resumeItem{Wrote the database schema for workspaces, SSH keys, secrets, and backups}
+            \resumeItem{Building an open-source cloud IDE for AI agents with containerized workspaces and GPU support}
+            \resumeItem{Designed a layered Docker runtime with VS Code Server running inside isolated containers}
+            \resumeItem{Configured Azure Container Apps deployment for cloud-hosted development workspaces}
+            \resumeItem{Modeled workspaces, SSH keys, secrets, and backups in the application database}
           \resumeItemListEnd
           \vspace{-13pt}
       \resumeProjectHeading
-          {\textbf{Quiz App} $|$ \emph{React, Node.js, MongoDB} $|$ \href{https://quiz.vaibhavsing.me}{\underline{Live}} $|$ \href{https://github.com/VAIBHAVSING/Quiz-app-MERN}{\underline{GitHub}}}{2024}
+          {\textbf{OpenGhost} $|$ \emph{TypeScript, Bun, Docker, Vercel AI SDK, Playwright} $|$ \href{https://github.com/VAIBHAVSING/openghost}{\underline{Skill}} $|$ \href{https://github.com/VAIBHAVSING/open-ghost}{\underline{Harness}}}{2026 -- Present}
           \resumeItemListStart
-            \resumeItem{Full-stack quiz platform with admin panel and instant scoring}
-            \resumeItem{Used JWT for auth and Recoil for state management}
-          \resumeItemListEnd 
-    \resumeSubHeadingListEnd
-\vspace{-15pt}
-
-
-%-----------OSS CONTRIBUTIONS-----------
-\section{Open Source Contributions}
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{HumanLayer} $|$ \href{https://github.com/pulls?q=is\%3Apr+author\%3AVAIBHAVSING+org\%3Ahumanlayer}{\underline{View PRs}}}{}
-          \resumeItemListStart
-            \resumeItem{Added "Open in Editor" button with configurable editor preference}
-            \resumeItem{Fixed link theming issues in web search results}
-          \resumeItemListEnd
-          \vspace{-13pt}
-      \resumeProjectHeading
-          {\textbf{Klavis-AI} $|$ \href{https://github.com/pulls?q=is\%3Apr+author\%3AVAIBHAVSING+org\%3AKlavis-AI}{\underline{View PRs}}}{}
-          \resumeItemListStart
-            \resumeItem{Added WhatsApp MCP Client for messaging integration}
-            \resumeItem{Set up TypeScript/JavaScript linting for code quality}
-          \resumeItemListEnd
-          \vspace{-13pt}
-      \resumeProjectHeading
-          {\textbf{Traceroot-AI} $|$ \href{https://github.com/pulls?q=is\%3Apr+author\%3AVAIBHAVSING+org\%3Atraceroot-ai}{\underline{View PRs}}}{}
-          \resumeItemListStart
-            \resumeItem{Converted sync REST endpoints to async in FastAPI for better performance}
+            \resumeItem{Built an open-source AI pentesting harness for authorized web and API security assessments}
+            \resumeItem{Created a Codex/Claude agent skill with Docker sandboxing, scope files, evidence capture, findings, and reports}
+            \resumeItem{Packaged OWASP WSTG and API Top 10 workflows with ZAP/Playwright validation and risk triage}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-15pt}
@@ -180,14 +161,13 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {K.K Wagh Institute of Engineering Education and Research}{2022 -- 2026}
+      {K. K. Wagh Institute of Engineering Education and Research}{2022 -- 2026}
       {B.Tech in Information Technology}{Nashik, India}
       \resumeItemListStart
-        \resumeItem{Courses: DSA, Software Engineering, DBMS, Networks, OS, ML, System Design}
-        \resumeItem{Ran workshops on web dev and mentored juniors on React and Node}
+        \resumeItem{Coursework: Data Structures, Software Engineering, DBMS, Networks, OS, ML, System Design}
+        \resumeItem{Led web development workshops and mentored juniors on React and Node.js}
         \resumeItem{Won prizes at college hackathons}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 \end{document}
-

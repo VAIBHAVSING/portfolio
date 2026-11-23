@@ -310,6 +310,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "generated": "2026-01-13T04:02:48.984Z",
 =======
   "generated": "2026-01-14T04:09:01.340Z",
@@ -4291,10 +4292,24 @@
     "open": 17,
     "merged": 95,
 >>>>>>> Stashed changes
+=======
+  "generated": "2026-11-23T11:53:12.065Z",
+  "username": "VAIBHAVSING",
+  "total": 112,
+  "apiCallsUsed": 140,
+  "rateLimit": {
+    "remaining": 0,
+    "reset": "2026-11-23T11:52:57.145Z"
+  },
+  "breakdown": {
+    "open": 17,
+    "merged": 95,
+>>>>>>> Stashed changes
     "closed": 0
   },
   "contributions": [
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -25790,10 +25805,169 @@
       "state": "open",
       "created": "2026-09-15T12:14:44Z",
       "number": 4,
+=======
+      "repo": "VAIBHAVSING/Domjet",
+      "title": "Remove obsolete project assets",
+      "url": "https://github.com/VAIBHAVSING/Domjet/pull/4",
+      "state": "open",
+      "created": "2026-09-15T12:14:44Z",
+      "number": 4,
       "comments": 1,
       "labels": []
     },
     {
+      "repo": "VAIBHAVSING/Domjet",
+      "title": "Document the Domjet SDK and landing site",
+      "url": "https://github.com/VAIBHAVSING/Domjet/pull/3",
+      "state": "open",
+      "created": "2026-09-15T12:14:41Z",
+      "number": 3,
+      "comments": 1,
+      "labels": []
+    },
+    {
+      "repo": "VAIBHAVSING/Domjet",
+      "title": "Add the Domjet Node SDK and CI",
+      "url": "https://github.com/VAIBHAVSING/Domjet/pull/2",
+      "state": "merged",
+      "created": "2026-09-15T12:14:39Z",
+      "number": 2,
+      "comments": 3,
+      "labels": []
+    },
+    {
+      "repo": "VAIBHAVSING/Domjet",
+      "title": "Migrate the portable browser engine",
+      "url": "https://github.com/VAIBHAVSING/Domjet/pull/1",
+      "state": "merged",
+      "created": "2026-08-09T17:14:39Z",
+      "number": 1,
+      "comments": 7,
+      "labels": []
+    },
+    {
+      "repo": "rivet-dev/agentos",
+      "title": "feat(sandbox): keep mount endpoints stable",
+      "url": "https://github.com/rivet-dev/agentos/pull/1886",
+      "state": "open",
+      "created": "2026-08-04T07:31:42Z",
+      "number": 1886,
+      "comments": 0,
+      "labels": []
+    },
+    {
+      "repo": "VAIBHAVSING/openghost",
+      "title": "Prepare OpenGhost public repo hygiene",
+      "url": "https://github.com/VAIBHAVSING/openghost/pull/3",
+      "state": "merged",
+      "created": "2026-05-31T11:26:55Z",
+      "number": 3,
+      "comments": 0,
+      "labels": []
+    },
+    {
+      "repo": "VAIBHAVSING/openghost",
+      "title": "Add OpenGhost pentest script templates",
+      "url": "https://github.com/VAIBHAVSING/openghost/pull/2",
+      "state": "merged",
+      "created": "2026-05-25T09:29:45Z",
+      "number": 2,
+      "comments": 0,
+      "labels": []
+    },
+    {
+      "repo": "VAIBHAVSING/openghost",
+      "title": "Add structured OpenGhost engagement store",
+      "url": "https://github.com/VAIBHAVSING/openghost/pull/1",
+      "state": "merged",
+      "created": "2026-05-22T07:47:24Z",
+      "number": 1,
+      "comments": 0,
+      "labels": []
+    },
+    {
+      "repo": "VAIBHAVSING/coasts",
+      "title": "feat: implement workspace sync with Mutagen (Phase 2)",
+      "url": "https://github.com/VAIBHAVSING/coasts/pull/3",
+      "state": "merged",
+      "created": "2026-03-29T10:29:52Z",
+      "number": 3,
+      "comments": 1,
+      "labels": []
+    },
+    {
+      "repo": "VAIBHAVSING/coasts",
+      "title": "feat: add remote coasts infrastructure (Phase 0)",
+      "url": "https://github.com/VAIBHAVSING/coasts/pull/2",
+      "state": "open",
+      "created": "2026-03-28T18:49:12Z",
+      "number": 2,
+      "comments": 1,
+      "labels": []
+    },
+    {
+      "repo": "coast-guard/coasts",
+      "title": "feat: add remote coasts infrastructure (Phase 0)",
+      "url": "https://github.com/coast-guard/coasts/pull/168",
+      "state": "open",
+      "created": "2026-03-28T18:46:01Z",
+      "number": 168,
+      "comments": 2,
+      "labels": []
+    },
+    {
+      "repo": "coast-guard/coasts",
+      "title": "refactor: extract validate_unassignable from unassign.rs handle",
+      "url": "https://github.com/coast-guard/coasts/pull/165",
+      "state": "merged",
+      "created": "2026-03-27T11:03:24Z",
+      "number": 165,
+      "comments": 0,
+      "labels": []
+    },
+    {
+      "repo": "coast-guard/coasts",
+      "title": "Reduce complexity in secret.rs - extract helpers and add tests",
+      "url": "https://github.com/coast-guard/coasts/pull/152",
+      "state": "merged",
+      "created": "2026-03-26T18:16:38Z",
+      "number": 152,
+      "comments": 0,
+      "labels": []
+    },
+    {
+      "repo": "coast-guard/coasts",
+      "title": "refactor keystore store_secret params",
+      "url": "https://github.com/coast-guard/coasts/pull/115",
+      "state": "merged",
+      "created": "2026-03-22T18:37:56Z",
+      "number": 115,
+      "comments": 0,
+      "labels": []
+    },
+    {
+      "repo": "coast-guard/coasts",
+      "title": "Refactor build_dind_config to use a params struct",
+      "url": "https://github.com/coast-guard/coasts/pull/100",
+      "state": "merged",
+      "created": "2026-03-21T10:06:46Z",
+      "number": 100,
+      "comments": 0,
+      "labels": []
+    },
+    {
+      "repo": "VAIBHAVSING/open-ghost",
+      "title": "feat: add Langfuse observability integration",
+      "url": "https://github.com/VAIBHAVSING/open-ghost/pull/8",
+      "state": "merged",
+      "created": "2026-03-14T09:16:11Z",
+      "number": 8,
+>>>>>>> Stashed changes
+      "comments": 1,
+      "labels": []
+    },
+    {
+<<<<<<< Updated upstream
       "repo": "VAIBHAVSING/Domjet",
       "title": "Document the Domjet SDK and landing site",
       "url": "https://github.com/VAIBHAVSING/Domjet/pull/3",
@@ -26321,6 +26495,9 @@
 =======
       "repo": "accretional/statue",
 >>>>>>> Stashed changes
+=======
+      "repo": "accretional/statue",
+>>>>>>> Stashed changes
       "title": "Add XCard tweet embeds for markdown content",
       "url": "https://github.com/accretional/statue/pull/207",
       "state": "open",
@@ -26433,6 +26610,9 @@
       "repo": "accretional/statue",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -26448,6 +26628,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -26493,6 +26674,8 @@
 >>>>>>> Stashed changes
 =======
       "labels": []
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -26570,6 +26753,7 @@
       "state": "open",
       "created": "2025-12-21T19:18:55Z",
       "number": 94,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -28340,6 +28524,10 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+      "comments": 8,
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "accretional/statue",
@@ -28349,6 +28537,7 @@
       "created": "2025-12-21T16:08:33Z",
       "number": 93,
       "comments": 7,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -28937,6 +29126,9 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -28946,6 +29138,7 @@
       "created": "2025-12-12T12:37:21Z",
       "number": 78,
       "comments": 1,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -29639,6 +29832,9 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+      "labels": []
+>>>>>>> Stashed changes
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -29648,6 +29844,7 @@
       "created": "2025-11-19T19:10:52Z",
       "number": 76,
       "comments": 1,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -30361,6 +30558,9 @@
 =======
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
     },
     {
@@ -33801,6 +34001,16 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+    },
+    {
+      "repo": "VAIBHAVSING/LP-II-Practical",
+      "title": "Optimize application for Render deployment with production-grade features",
+      "url": "https://github.com/VAIBHAVSING/LP-II-Practical/pull/1",
+      "state": "open",
+      "created": "2025-11-04T08:55:38Z",
+      "number": 1,
+      "comments": 1,
+      "labels": []
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
@@ -42638,6 +42848,16 @@
     },
     {
       "repo": "VAIBHAVSING/Dev8.dev",
+      "title": "Migrate Docker CD production workflow from Azure Container Registry to Docker Hub",
+      "url": "https://github.com/VAIBHAVSING/Dev8.dev/pull/55",
+      "state": "merged",
+      "created": "2025-10-25T12:44:48Z",
+      "number": 55,
+      "comments": 3,
+      "labels": []
+    },
+    {
+      "repo": "VAIBHAVSING/Dev8.dev",
       "title": "feat: implement 4-layer Docker architecture with VS Code Server and AI CLI tools",
       "url": "https://github.com/VAIBHAVSING/Dev8.dev/pull/53",
       "state": "merged",
@@ -44366,6 +44586,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "repo": "humanlayer/humanlayer",
       "title": "feat: Add open in editor button with configurable editor preference",
       "url": "https://github.com/humanlayer/humanlayer/pull/730",
@@ -44494,6 +44715,8 @@
 >>>>>>> Stashed changes
     },
     {
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -45706,6 +45929,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
       "labels": [],
@@ -45792,6 +46016,9 @@
       "deletions": 457,
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
 =======
       "labels": []
@@ -46324,11 +46551,15 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
       "labels": [],
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/154789507?v=4"
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
 =======
       "labels": []
@@ -46903,6 +47134,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
       "labels": [],
@@ -47826,6 +48058,9 @@
       "labels": []
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
 =======
       "labels": []
@@ -48033,6 +48268,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
       "labels": [],
@@ -48924,6 +49160,9 @@
       "labels": []
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
 =======
       "labels": []
@@ -49257,6 +49496,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
 =======
@@ -50422,6 +50662,9 @@
       "labels": []
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
 =======
       "labels": []
@@ -50755,6 +50998,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
 =======
@@ -51902,6 +52146,9 @@
       "labels": []
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
 =======
       "labels": []
@@ -52235,6 +52482,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
 =======
@@ -53376,6 +53624,9 @@
       "labels": []
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
 =======
       "labels": []
@@ -53709,6 +53960,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
 =======
@@ -54848,6 +55100,9 @@
       "labels": []
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
 =======
       "labels": []
@@ -55056,11 +55311,15 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
       "labels": [],
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
 =======
       "labels": []
@@ -55812,11 +56071,15 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
       "labels": [],
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
 =======
       "labels": []
@@ -56568,11 +56831,15 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
       "labels": [],
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
 =======
       "labels": []
@@ -57324,11 +57591,15 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
       "labels": [],
       "language": "TypeScript",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/217505287?v=4"
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
 =======
       "labels": []
@@ -58205,6 +58476,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "labels": []
 =======
 =======
@@ -59286,6 +59558,9 @@
       "labels": []
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+      "labels": []
 >>>>>>> Stashed changes
 =======
       "labels": []
@@ -59478,6 +59753,7 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/155387533?v=4"
     },
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -60132,6 +60408,8 @@
 >>>>>>> Stashed changes
     },
     {
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -62840,7 +63118,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "repo": "ohcnetwork/leaderboard-data.old",
+=======
+      "repo": "Coronasafe/leaderboard-data.old",
+>>>>>>> Stashed changes
 =======
       "repo": "Coronasafe/leaderboard-data.old",
 >>>>>>> Stashed changes
